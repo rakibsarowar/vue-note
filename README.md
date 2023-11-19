@@ -33,9 +33,9 @@ npm run dev
 
 ```
 
-```markdown
 
-Showing Data from variable to template
+###Showing Data from variable to template
+
 ```javascript
 
 <script setup>
@@ -44,7 +44,7 @@ const message = 'Welcome. Get ready to';
 <template>
 <h1 class="text-4xl"> **{{ message }}** </h1>
 </template>
-\```
+
 \```
 
 
