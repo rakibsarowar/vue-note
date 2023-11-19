@@ -8,7 +8,7 @@ Learned about vue js
 ```js
 yarn create vite project-name
 
-npm create project-name
+npm create vite project-name
 
 ```
 2. Go to project Directory: 
@@ -18,13 +18,36 @@ cd project-name
 ```
 3. Install dependency 
 
-
 ```
 yarn install 
 
 npm install
 
 ```
+3. For running project:
+
+```
+yarn dev
+
+npm run dev
+
+```
+
+### Showing Data from variable to template
+
+```
+<script setup>
+const message = 'Welcome. Get ready to 
+</script>
+
+<template>
+
+<h1 class="text-4xl"> {{ message }} </h1>
+
+</template>
+
+```
+
 
 
 
