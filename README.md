@@ -33,20 +33,19 @@ npm run dev
 
 ```
 
-### Showing Data from variable to template
+```markdown
 
-```
+Showing Data from variable to template
+```javascript
+
 <script setup>
-const **message** = 'Welcome. Get ready to 
+const message = 'Welcome. Get ready to';
 </script>
-
 <template>
-
 <h1 class="text-4xl"> **{{ message }}** </h1>
-
 </template>
-
-```
+\```
+\```
 
 
 
