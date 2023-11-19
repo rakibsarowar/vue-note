@@ -65,7 +65,7 @@ function getDate(){
 ### Showing data from Object
 ## Showing data from Object
 # Showing data from Object
-// must destructure the object: date=>message=>
+* Must destructure the object: date=>message=>
 
 ```
 <script setup>
