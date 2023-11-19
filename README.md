@@ -35,6 +35,8 @@ npm run dev
 
 
 ### Showing Data from variable to template
+// use {{ variable name }} to show data.
+// install Volor to get all extension. 
 
 ```javascript
 <script setup>
@@ -43,16 +45,8 @@ const message = 'Welcome. Get ready to';
 
 <template>
 
-<h1 class="text-4xl"> **{{ message }}** </h1>
+<h1 class="text-4xl"> {{ message }} </h1>
 
 </template>
 
-
-
-
-
-
-
-
-
-
+```
