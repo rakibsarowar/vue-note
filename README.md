@@ -1,6 +1,6 @@
-"# vue- note"
+**VUE NOTE**
 
-Learned about vue js
+A text bank of vue js journey.....
 
 # Setting up
 1. open command panel: 
@@ -16,7 +16,7 @@ npm create vite project-name
 ```
 cd project-name
 ```
-3. Install dependency 
+3. Install dependency: 
 
 ```
 yarn install 
@@ -32,7 +32,6 @@ yarn dev
 npm run dev
 
 ```
-
 
 # Showing Data from variable to template
 - use {{ variable name/ function name }} to show data.
@@ -86,8 +85,9 @@ const data = {
 
 ```
 
-#Displaying-html
+# Displaying-html
  - v-html can bind the html
+ - 
 ```
 <script setup>
     const message = 'Welcome. Get ready to master <em>Vue.js 3!</em>'
