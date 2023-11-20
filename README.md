@@ -1,5 +1,5 @@
-**VUE NOTE**
-A text bank of vue js journey.....
+#VUE NOTE
+### A text bank of vue js journey.....
 
 # Setting up
 **1. open command panel: 
