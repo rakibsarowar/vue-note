@@ -1,4 +1,4 @@
-#VUE NOTE
+# VUE NOTE
 ### A text bank of vue js journey.....
 
 # Setting up
