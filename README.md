@@ -3,28 +3,27 @@
 <br>
 
 # For setting up the project
-**1. open command panel: 
-**
+1. open command panel: 
+
 ```js
 yarn create vite project-name
 
 npm create vite project-name
 
 ```
-**2. Go to project Directory: **
+2. Go to project Directory:
 
 ```
 cd project-name
 ```
-**3. Install dependency: 
-**
+3. Install dependency: 
 ```
 yarn install 
 
 npm install
 
 ```
-**3. For running project:**
+3. For running project:
 
 ```
 yarn dev
@@ -34,9 +33,9 @@ npm run dev
 ```
 
 # Showing Data from variable to template
-**- use {{ variable name/ function name }} to show data.
+- use {{ variable name/ function name }} to show data.
 - install Volor to get all extension. 
-**
+
 ```javascript
 <script setup>
 // variable: 
@@ -62,7 +61,7 @@ function getDate(){
 ```
 
 # Showing data from Object
-*** Must destructure the object: date=>message=>**
+Must destructure the object: date=>message=>
 
 ```
 <script setup>
@@ -86,7 +85,7 @@ const data = {
 ```
 
 # Displaying-html
-** - v-html can bind the html**
+- v-html can bind the html
 ```
 <script setup>
     const message = 'Welcome. Get ready to master <em>Vue.js 3!</em>'
