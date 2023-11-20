@@ -1,7 +1,8 @@
 # VUE NOTE
 ### A text bank of vue js journey.....
+<br>
 
-# Setting up
+# For setting up the project
 **1. open command panel: 
 **
 ```js
