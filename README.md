@@ -405,13 +405,9 @@ const data = {
 </script>
 
 <template>
-    <section class="mt-10">
-
       <div class="h-16 flex items-center justify-center text-white" :class="weekday?'bg-red-600':'bg-green-600'">
         It's a weekday!
       </div>
-    </section>
-
 </template>
 
 ```
