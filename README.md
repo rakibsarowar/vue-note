@@ -1,8 +1,22 @@
 # VUE NOTE
 ### A hand note of my vue js journey.....
 <br>
+### Need to note first
 
-## ✅ For setting up the project: 
+🎯        : Main Topic. 
+🟩 🟨 🟥 : Paragraph
+📕 : Havey Note.  
+📒 : Attention Note. 
+🏷️ : Regular Note 
+📌 : Regular Note 
+💎 : High Value 
+🧨 : High 
+✋ : Stop  
+
+<br> 
+
+## 🎯  For setting up the project: 
+
 <br>
 👉 Step 01. open command panel (কমান্ড প্যানেল খুলুন): 
 
