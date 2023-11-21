@@ -362,6 +362,7 @@ const data = {
 ## Displaying-html
 <br>
 👉 v-html can bind the html
+
 ```
 <script setup>
     const message = 'Welcome. Get ready to master <em>Vue.js 3!</em>'
