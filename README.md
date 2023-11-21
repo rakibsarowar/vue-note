@@ -379,8 +379,7 @@ const data = {
 ```
 
 ## ✅ Class Binding
-<br>
-👉
+
 
 ```
 <script setup>
@@ -394,8 +393,10 @@ const data = {
 </template>
 
 ```
+
 ### ✅ showing style by condition
 <br>
+
 ```
 <script setup>
   
