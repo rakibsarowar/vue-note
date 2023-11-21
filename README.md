@@ -597,6 +597,7 @@ const tasks = [
 </style>
 
 ```
+
 ## ✅ showing object by loop:
 <br>
 
@@ -652,3 +653,7 @@ function getTasksInProgress(){
 
 ```
 
+```
+<style scoped></style>
+
+```
