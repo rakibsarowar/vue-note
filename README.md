@@ -1,5 +1,5 @@
 # VUE NOTE
-### A text bank of vue js journey.....
+### A hand note of my vue js journey.....
 <br>
 
 ## ✅ For setting up the project: 
