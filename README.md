@@ -4,7 +4,7 @@
 
 ## ✅ For setting up the project: 
 <br>
-1. open command panel (কমান্ড প্যানেল খুলুন): 
+👉 Step 01. open command panel (কমান্ড প্যানেল খুলুন): 
 
 ```js
 yarn create vite project-name
@@ -12,12 +12,12 @@ yarn create vite project-name
 npm create vite project-name
 
 ```
-2. Go to project Directory ( নিম্ন কোড দিয়ে প্রজেক্ট ডাইরেক্টরিতে যান ):
+👉 Step 02. Go to project Directory ( নিম্ন কোড দিয়ে প্রজেক্ট ডাইরেক্টরিতে যান ):
 
 ```
 cd project-name
 ```
-3. Install dependency ( ডিপেন্ডেন্সিগুলো ইন্সটল করুন নিম্ন কোড দিয়ে ): 
+👉 Step 03. Install dependency ( ডিপেন্ডেন্সিগুলো ইন্সটল করুন নিম্ন কোড দিয়ে ): 
 ```
 yarn install 
 
@@ -41,7 +41,8 @@ npm create vite @latest
 ```
 👉 To get started, we'll need to install some tools and configure our environment. Here's a step - by - step guide:
 
-✅Step 1: Install Node.js and npm
+👉 **Step 1: Install Node.js and npm**
+<br> 
 Node.js is a JavaScript runtime that allows us to execute JavaScript outside of a browser.It also includes npm(Node Package Manager), which we'll use to install Vue.js and other dependencies.
 - Visit the official Node.js website(https://nodejs.org) and download the latest stable version for your operating system.
 - Run the installer and follow the prompts to install Node.js.Make sure to include npm during the installation process.
@@ -52,7 +53,8 @@ npm--version
 ```
 These commands should display the version numbers of Node.js and npm, respectively.
 
-✅   Step 2: Create a new Vue.js project
+👉 **Step 2: Create a new Vue.js project**
+<br>
 Now that we have Node.js and npm installed, we can use Vue CLI(Command Line Interface) to create a new Vue.js project.
 
 👉 Open a terminal or command prompt and run the following command to install Vue CLI globally:
@@ -79,8 +81,9 @@ The dot at the end of the command specifies the current directory as the project
 - Vue CLI will ask whether you want to use history mode for the router.If you're unsure, you can choose the default option (Yes) by pressing Enter.
 
 - Finally, Vue CLI will ask whether you want to save this as a preset for future projects.You can choose Yes or No based on your preference.
-
-✅    Step 3: Install project dependencies
+<br>
+👉 **Step 3: Install project dependencies**
+<br> 
 After creating the Vue.js project, we need to install the project dependencies defined in the package.json file.
 
 In the terminal or command prompt, navigate to the project directory(if you're not already in it).
@@ -88,7 +91,10 @@ In the terminal or command prompt, navigate to the project directory(if you're n
 ```
 npm install
 ```
+<br>
+
 ✅Step 4: Start the development server
+<br>
 Now that our project is set up, we can start the development server and see our Vue.js application in action.
 
 In the terminal or command prompt, make sure you're in the project directory.
@@ -100,10 +106,10 @@ This command will start the development server and display the local development
 
  ** Vite is a build tool that provides a fast and optimized development experience for Vue.js applications.Let's get started:
 **
-👉 Step 1: Install Node.js and npm
+👉 **Step 1: Install Node.js and npm**
 Before we begin, ensure that you have Node.js and npm installed on your system.If you don't have them installed, please follow the instructions provided in Step 1 of the previous tutorial.
 
-👉 Step 2: Create a new Vue.js 3 project with Vite
+👉 **Step 2: Create a new Vue.js 3 project with Vite**
 To create a new Vue.js 3 project with Vite, follow these steps:
 
  Open a terminal or command prompt.
@@ -132,7 +138,7 @@ Vite will ask whether to use the JavaScript or TypeScript template.Choose your p
 
 Vite will then install the project dependencies and set up the project structure for you.
 
-👉 Step 3: Start the development server
+👉 **Step 3: Start the development server**
 After creating the project, we can start the development server and see our Vue.js application in action.
 
 In the terminal or command prompt, navigate to the project directory(if you're not already in it).
@@ -153,7 +159,7 @@ Congratulations! You have successfully set up a Vue.js 3 project with Vite.You c
 
 ## ✅ 6_project_structure
 <br>
-✅## **Vue.js 3 application structure.**
+✅ ###Vue.js 3 application structure.
 <br>
 Vue.js is a popular JavaScript framework for building user interfaces.It provides a structured approach to developing web applications by separating concerns into components.Here's a step-by-step guide to understanding the Vue.js 3 application structure:
 
@@ -330,7 +336,7 @@ function getDate(){
 
 # ✅ Showing data from Object
 <br>
-Must destructure the object: date=>message=>
+👉 Must destructure the object: date=>message=>
 
 ```
 <script setup>
@@ -353,8 +359,9 @@ const data = {
 
 ```
 
-# Displaying-html
-- v-html can bind the html
+## Displaying-html
+<br>
+👉 v-html can bind the html
 ```
 <script setup>
     const message = 'Welcome. Get ready to master <em>Vue.js 3!</em>'
@@ -372,7 +379,8 @@ const data = {
 
 ## ✅ Class Binding
 <br>
-- 
+👉
+
 ```
 <script setup>
   
@@ -408,7 +416,7 @@ const data = {
 
 ### ✅ showing multiple condition
 <br>
-- use array to show multiple condition
+👉 use array to show multiple condition
 
 ```
 <script setup>
@@ -428,7 +436,7 @@ const data = {
 </template>
 
 ```
-- another example
+👉 👉 another example
 
 ```
 <script setup>
@@ -469,7 +477,7 @@ const data = {
 
 ## ✅ Style Binding
 <br>
-- just use :style
+👉 just use :style
 
 ```
 <script setup>
@@ -527,7 +535,7 @@ if('error'==messageType){
 
 ```
 
--- use array for multiple condition style
+👉 👉 use array for multiple condition style
 
 ```
 :style="[weekday == true ? bgRed : bgDarkGreen, weekday == true ? 'font-size:20px' : 'font-size:30px']
@@ -541,8 +549,8 @@ if('error'==messageType){
 
 ## ✅ Simple Loop or List Rendering (this is called for looping in vue js)
 <br>
-- use v-for for looping
-- must give a unique :key (ID)
+👉 use v-for for looping
+👉 must give a unique :key (ID)
 
 
 ```
@@ -563,7 +571,7 @@ const items = [1,2,3,4,5]
 </style>
 
 ```
-- another example:
+👉 another example:
 
 ```
 <script setup>
