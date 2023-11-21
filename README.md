@@ -658,6 +658,7 @@ Vue.js is a popular JavaScript framework for building user interfaces.It allows 
 ## Vue Instance:
 <br>
 A Vue instance is the root of every Vue application.It acts as a container that connects your HTML template with your JavaScript code.You create a Vue instance using the Vue constructor function. Here's an example of creating a basic Vue instance:
+<br>
 
 ```
     // HTML
@@ -685,6 +686,7 @@ Data binding in Vue allows you to establish a connection between the data in you
 ## Text Interpolation:
 <br>
 Text interpolation allows you to display the value of a property in your Vue instance directly in the template.Use double curly braces({{}}) to perform text interpolation.Here's an example:
+<br>
 
 ```
      < div id = "app" >
@@ -695,6 +697,7 @@ Text interpolation allows you to display the value of a property in your Vue ins
 
 ## Property Binding:
 Property binding allows you to bind the value of an HTML attribute to a property in your Vue instance.Use the v - bind directive or its shorthand(: ) to perform property binding.Here's an example:
+<br>
 
 ``` 
      < div id = "app" >
@@ -707,6 +710,7 @@ In this example, the src attribute of the < img > tag is bound to the imageUrl p
 ##  Event Binding:
 <br>
 Event binding allows you to bind DOM events to methods in your Vue instance.Use the v - on directive or its shorthand(@) to perform event binding.Here's an example:
+<br>
 
 ```
      < div id = "app" >
@@ -717,6 +721,71 @@ Event binding allows you to bind DOM events to methods in your Vue instance.Use 
 In this example, the click event of the < button > element is bound to the sayHello method in the Vue instance.When the button is clicked, the sayHello method will be called.
 
 These are just a few examples of data binding in Vue.Vue provides many more features and directives for handling more complex scenarios.I hope this introduction to Vue instances and data binding was helpful to you.Feel free to explore the official Vue documentation for more in -depth information and examples.Happy coding!
+
+
+
+
+# 8 Vue.js directives. 
+<br>
+Directives are special attributes that you can use in your Vue templates to apply behavior to the DOM elements. Vue.js provides several built-in directives that you can use out of the box, and you can also create custom directives.
+
+Here are some of the most commonly used Vue.js directives:
+
+- v-if / v-else: These directives are used for conditional rendering. You can use them to conditionally render elements based on a certain condition.
+
+<br>
+
+```
+ <div v-if="isVisible">This is visible</div>
+ 
+ <div v-else>This is hidden</div> 
+
+```
+
+### v-for: 
+The v-for directive is used to render a list of items based on an array. It iterates over the array and generates the necessary DOM elements.
+<br>
+
+```
+ <ul>
+  <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+</ul >
+
+```
+    
+### v-bind: 
+The v-bind directive is used for binding values to an element's attributes or props. It allows you to dynamically set values based on data in your Vue instance.
+<br>
+
+```
+ <img v-bind:src="imageSrc">
+
+ <a v-bind:href="linkUrl">{{ linkText }}</a>
+```
+
+### v-on: 
+The v-on directive is used to attach event listeners to elements. It allows you to listen to DOM events and trigger methods in response.
+<br>
+
+```
+ <button v-on:click="handleClick">Click me</button> 
+
+```
+
+### v-model: 
+The v-model directive is used for two-way data binding. It creates a relationship between form input elements and the data in your Vue instance.
+<br>
+
+```
+<input v-model="message" type="text">
+
+```
+
+These are just a few examples of Vue.js directives. There are more directives available in Vue.js, and you can even create your own custom directives if needed.
+
+Remember that directives are applied to DOM elements as attributes. The v- prefix is used to indicate that an attribute is a Vue directive.
+
+
 
 
 
