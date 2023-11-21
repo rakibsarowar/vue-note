@@ -3,7 +3,7 @@
 <br>
 
 # For setting up the project
-1. open command panel: 
+1. open command panel (কমান্ড প্যানেল খুলুন): 
 
 ```js
 yarn create vite project-name
@@ -11,19 +11,19 @@ yarn create vite project-name
 npm create vite project-name
 
 ```
-2. Go to project Directory:
+2. Go to project Directory ( নিম্ন কোড দিয়ে প্রজেক্ট ডাইরেক্টরিতে যান ):
 
 ```
 cd project-name
 ```
-3. Install dependency: 
+3. Install dependency ( ডিপেন্ডেন্সিগুলো ইন্সটল করুন নিম্ন কোড দিয়ে ): 
 ```
 yarn install 
 
 npm install
 
 ```
-3. For running project:
+3. For running project ( এবার নিম্ন কোড দিয়ে প্রজেক্ট রান করুন | কোড রানের আগে code . দিয়ে vscode এ ফাইলটি ওপেন করতে পারনে।) :
 
 ```
 yarn dev
