@@ -815,13 +815,18 @@ In Vue.js, v-bind is a directive used to bind data or expressions to an HTML att
 Now, let's dive into some examples to illustrate how v-bind works:
 
 ### ✅ Example 1: Binding a Data Property
+
 <br>
-Suppose you have a data property called title in your Vue component, and you want to bind it to the title attribute of an <h1> element.
+
+Suppose you have a data property called title in your Vue component, and you want to bind it to the title attribute of an ``` <h1> ```  element.
+
 <br>
 
 ```
 <template>
+
   <h1 v-bind:title="title">Hello World</h1>
+
 </template>
 
 <script>
