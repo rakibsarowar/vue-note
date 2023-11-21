@@ -650,6 +650,4 @@ function getTasksInProgress(){
 </template>
 
 <style scoped></style>
-
-<style scoped></style>
 ```
