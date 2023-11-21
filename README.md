@@ -651,9 +651,5 @@ function getTasksInProgress(){
 
 <style scoped></style>
 
-```
-
-```
 <style scoped></style>
-
 ```
