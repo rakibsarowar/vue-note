@@ -599,6 +599,7 @@ const tasks = [
 ```
 ## ✅ showing object by loop:
 <br>
+
 ```
 <script setup>
 const tasks = [
