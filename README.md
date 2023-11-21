@@ -953,6 +953,7 @@ You can also bind multiple classes conditionally.Let's say you have two classes,
  };
 </script>
 
+```
 
 👉 In this example, the : class directive applies the success class when status is 'success', and the error class when status is 'error'.
 
@@ -990,8 +991,6 @@ You can also bind classes dynamically based on computed properties or methods.Le
 👉 In this example, the specialClasses computed property returns an object with the special class when isSpecial is true.If isSpecial is false, the class will not be applied.
 
 👉 These are just a few examples of how you can use class binding in Vue.js 3. With class binding, you can create dynamic and responsive UIs by applying or removing CSS classes based on your component's data.
-
-
 
 
 # ✅style binding in Vue.js 3.
