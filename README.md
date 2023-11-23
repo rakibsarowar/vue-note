@@ -1,10 +1,10 @@
-# VUE NOTE
+# 🚀 VUE NOTE
 
-### A hand note of my vue js journey.....
+**A hand note of my vue js journey.....**
 
 <br>
 
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- COMMENT -->
 
 ## Table of Contents
 
@@ -18,7 +18,6 @@
 
 **[`Back to top ⬆️`](#table-of-contents)**
 
-### Editable data grid / spreadsheet
 <br>
 
 **Need to note first**
@@ -39,7 +38,7 @@
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
-👉 Step 01. open command panel (কমান্ড প্যানেল খুলুন):
+👉 Step 01. কমান্ড প্যানেল খুলুন | open command panel:
 
 ```js
 yarn create vite project-name
@@ -48,7 +47,7 @@ npm create vite project-name
 
 ```
 
-👉 Step 02. Go to project Directory ( নিম্ন কোড দিয়ে প্রজেক্ট ডাইরেক্টরিতে যান ):
+👉 Step 02. নিম্ন কোড দিয়ে প্রজেক্ট ডাইরেক্টরিতে যান | Go to project Directory:
 
 ```
 cd project-name
