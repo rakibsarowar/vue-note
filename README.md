@@ -53,7 +53,7 @@ npm run dev
 
 ```
 
-## 05 ✅ setting up the development environment
+## 🎯 setting up the development environment
 
 <br>
 Command for creating a project through vite :
@@ -196,10 +196,10 @@ This command will start the Vite development server and display the local develo
 
 Congratulations! You have successfully set up a Vue.js 3 project with Vite.You can now start building your Vue components, styles, and application logic in the project.
 
-## ✅ 6_project_structure
+## 🎯 project structure
 
 <br>
-✅ ###Vue.js 3 application structure.
+✅ Vue.js 3 application structure.
 <br>
 Vue.js is a popular JavaScript framework for building user interfaces.It provides a structured approach to developing web applications by separating concerns into components.Here's a step-by-step guide to understanding the Vue.js 3 application structure:
 
@@ -210,7 +210,7 @@ To get started, make sure you have Node.js installed on your machine.You can the
 ```
 $ vue create my - vue - app
 ```
-This command will prompt you to select a preset for your project.You can choose the default preset or manually select features as per your requirements.
+🏷️ This command will prompt you to select a preset for your project.You can choose the default preset or manually select features as per your requirements.
 
 ## ✅ Understanding the Project Structure:
 
@@ -356,7 +356,7 @@ That's it! You now have a basic understanding of the Vue.js 3 application struct
 
 Happy coding!
 
-# Showing Data from variable to template
+# 🎯 Showing Data from variable to template
 
 - use {{ variable name/ function name }} to show data.
 - install Volor to get all extension.
@@ -385,7 +385,7 @@ function getDate(){
 
 ```
 
-# ✅ Showing data from Object
+# 🎯 Showing data from Object
 
 <br>
 👉 Must destructure the object: date=>message=>
@@ -411,7 +411,7 @@ const data = {
 
 ```
 
-## Displaying-html
+# 🎯  Displaying-html
 
 <br>
 👉 v-html can bind the html
@@ -431,7 +431,7 @@ const data = {
 
 ```
 
-## ✅ Class Binding
+# 🎯  Class Binding
 
 ```
 <script setup>
@@ -528,7 +528,7 @@ const data = {
 
 ```
 
-## ✅ Style Binding
+# 🎯  Style Binding
 
 <br>
 👉 just use :style
@@ -708,7 +708,7 @@ function getTasksInProgress(){
 <style scoped></style>
 ```
 
-# 7 vue instance and data binding
+# 🎯 vue instance and data binding
 
 <br>
 
@@ -788,7 +788,7 @@ In this example, the click event of the < button > element is bound to the sayHe
 
 These are just a few examples of data binding in Vue.Vue provides many more features and directives for handling more complex scenarios.I hope this introduction to Vue instances and data binding was helpful to you.Feel free to explore the official Vue documentation for more in -depth information and examples.Happy coding!
 
-# 8 Vue.js directives.
+# 🎯  8 Vue.js directives.
 
 <br>
 Directives are special attributes that you can use in your Vue templates to apply behavior to the DOM elements. Vue.js provides several built-in directives that you can use out of the box, and you can also create custom directives.
@@ -857,7 +857,7 @@ Remember that directives are applied to DOM elements as attributes. The v- prefi
 
 <br>
 
-# v - bind in Vue.js
+# 🎯  v - bind in Vue.js
 
 In Vue.js, v-bind is a directive used to bind data or expressions to an HTML attribute. It allows you to dynamically update the value of an attribute based on the underlying data or computed properties in your Vue component.
 
@@ -1181,7 +1181,7 @@ In Vue.js 3, you can use the v - bind directive to bind CSS styles to elements.H
 
 👉 I hope this explanation and these code examples help you understand style binding in Vue.js 3. Feel free to ask if you have any further questions!
 
-# Life cycle:
+# 🎯 Life cycle:
 
 ```
 <script setup>
