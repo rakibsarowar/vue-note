@@ -23,15 +23,15 @@
 
 **Need to note first**
 
-🎯 : Main Topic. <br>
-🟩 🟨 🟥 : Paragraph <br>
-📕 : Havey Note.  <br>
-📒 : Attention Note. <br>
-🏷️ : Regular Note <br>
-📌 : Regular Note <br>
-💎 : High Value <br>
-🧨 : High <br>
-✋ : Stop <br>
+🎯 : **Main Topic.** <br>
+🟩 🟨 🟥 : **Paragraph** <br>
+📕 : **Havey Note.**  <br>
+📒 : **Attention Note.** <br>
+🏷️ : **Regular Note** <br>
+📌 : **Regular Note** <br>
+💎 : **High Value info** <br>
+🧨 : **Carefull this** <br>
+✋ : **Stop! check the point** <br>
 
 <br>
 
