@@ -1242,7 +1242,7 @@ onMounted(() => {
 
 
 
-## Vue Router
+# Vue Router
 
 <br>
 Vue Router is a powerful routing library that allows you to build single - page applications with multiple views and handle navigation between them.Let's dive into the details and explore some code examples!
