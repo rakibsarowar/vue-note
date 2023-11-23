@@ -3,6 +3,8 @@
 ### A hand note of my vue js journey.....
 
 <br>
+[Vue Router](#vue-router)
+
 
 **Need to note first**
 
@@ -1239,7 +1241,8 @@ onMounted(() => {
 
 
 
-# Vue Router v4 in Vue.js 3.
+### Vue Router
+
 <br>
 Vue Router is a powerful routing library that allows you to build single - page applications with multiple views and handle navigation between them.Let's dive into the details and explore some code examples!
 
