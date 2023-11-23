@@ -3,7 +3,7 @@
 ### A hand note of my vue js journey.....
 
 <br>
-### Need to note first
+###Need to note first
 
 🎯 : Main Topic.
 🟩 🟨 🟥 : Paragraph
