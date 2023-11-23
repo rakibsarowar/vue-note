@@ -3,17 +3,18 @@
 ### A hand note of my vue js journey.....
 
 <br>
-###Need to note first
 
-🎯 : Main Topic.
-🟩 🟨 🟥 : Paragraph
-📕 : Havey Note.  
-📒 : Attention Note.
-🏷️ : Regular Note
-📌 : Regular Note
-💎 : High Value
-🧨 : High
-✋ : Stop
+**Need to note first**
+
+🎯 : Main Topic. <br>
+🟩 🟨 🟥 : Paragraph <br>
+📕 : Havey Note.  <br>
+📒 : Attention Note. <br>
+🏷️ : Regular Note <br>
+📌 : Regular Note <br>
+💎 : High Value <br>
+🧨 : High <br>
+✋ : Stop <br>
 
 <br>
 
