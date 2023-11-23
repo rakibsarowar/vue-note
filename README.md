@@ -36,6 +36,7 @@
 <br>
 
 ## 🎯 For setting up the project:
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 👉 Step 01. open command panel (কমান্ড প্যানেল খুলুন):
@@ -375,6 +376,7 @@ That's it! You now have a basic understanding of the Vue.js 3 application struct
 Happy coding!
 
 # 🎯 Showing Data from variable to template
+**[`Back to top ⬆️`](#table-of-contents)**
 
 - use {{ variable name/ function name }} to show data.
 - install Volor to get all extension.
@@ -404,6 +406,7 @@ function getDate(){
 ```
 
 # 🎯 Showing data from Object
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 👉 Must destructure the object: date=>message=>
@@ -430,6 +433,7 @@ const data = {
 ```
 
 # 🎯  Displaying-html
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 👉 v-html can bind the html
@@ -450,6 +454,7 @@ const data = {
 ```
 
 # 🎯  Class Binding
+**[`Back to top ⬆️`](#table-of-contents)**
 
 ```
 <script setup>
@@ -465,6 +470,7 @@ const data = {
 ```
 
 ### ✅ showing style by condition
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 
@@ -484,6 +490,7 @@ const data = {
 ```
 
 ### ✅ showing multiple condition
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 👉 use array to show multiple condition
@@ -547,6 +554,7 @@ const data = {
 ```
 
 # 🎯  Style Binding
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 👉 just use :style
@@ -727,6 +735,7 @@ function getTasksInProgress(){
 ```
 
 # 🎯 vue instance and data binding
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 
@@ -807,6 +816,7 @@ In this example, the click event of the < button > element is bound to the sayHe
 These are just a few examples of data binding in Vue.Vue provides many more features and directives for handling more complex scenarios.I hope this introduction to Vue instances and data binding was helpful to you.Feel free to explore the official Vue documentation for more in -depth information and examples.Happy coding!
 
 # 🎯  8 Vue.js directives.
+**[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
 Directives are special attributes that you can use in your Vue templates to apply behavior to the DOM elements. Vue.js provides several built-in directives that you can use out of the box, and you can also create custom directives.
@@ -876,6 +886,7 @@ Remember that directives are applied to DOM elements as attributes. The v- prefi
 <br>
 
 # 🎯  v - bind in Vue.js
+**[`Back to top ⬆️`](#table-of-contents)**
 
 In Vue.js, v-bind is a directive used to bind data or expressions to an HTML attribute. It allows you to dynamically update the value of an attribute based on the underlying data or computed properties in your Vue component.
 
@@ -1200,6 +1211,7 @@ In Vue.js 3, you can use the v - bind directive to bind CSS styles to elements.H
 👉 I hope this explanation and these code examples help you understand style binding in Vue.js 3. Feel free to ask if you have any further questions!
 
 # 🎯 Life cycle:
+**[`Back to top ⬆️`](#table-of-contents)**
 
 ```
 <script setup>
