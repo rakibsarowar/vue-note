@@ -4,8 +4,22 @@
 
 <br>
 
-[Vue Router](#vue-router)
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+## Table of Contents
+
+- [UI Components](#ui-components)
+  - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
+  - [Table](#table)
+  - [Infinite Scroll](#infinite-scroll)
+- [Vue Router](#vue-router)
+
+## UI Components
+
+**[`Back to top ⬆️`](#table-of-contents)**
+
+### Editable data grid / spreadsheet
+<br>
 
 **Need to note first**
 
