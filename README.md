@@ -13,6 +13,7 @@
   - [Table](#table)
   - [Infinite Scroll](#infinite-scroll)
 - [Vue Router](#vue-router)
+  - [Step 1: Installation and Setup](#step-1:-installation-and-setup)
 
 ## UI Components
 
