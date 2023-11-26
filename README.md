@@ -9,7 +9,7 @@
 ## Table of Contents
 
 - [UI Components](#ui-components)
-- [For setting up the project](#for-setting-up-the-project)
+- [For setting up the project](#🎯-for-setting-up-the-project)
   - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
   - [Table](#table)
   - [Infinite Scroll](#infinite-scroll)
@@ -36,7 +36,7 @@
 
 <br>
 
-## 🎯 For setting up the project
+## 🎯For setting up the project
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
