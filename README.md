@@ -13,7 +13,7 @@
   - [Table](#table)
   - [Infinite Scroll](#infinite-scroll)
 - [Vue Router](#vue-router)
-  - [Step 1: Installation and Setup](#step-1:-installation-and-setup)
+  - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
 
 ## UI Components
 
@@ -1459,7 +1459,7 @@ Now, let's create the User.vue component to display the user's profile:
 
 In the User.vue component, we access the parameter value using $route.params.id.This allows us to display the user's ID dynamically based on the URL.
 
-## ✅Step 7: Programmatic Navigation
+## Step 7: Programmatic Navigation
 <br>
 
 Besides using < router - link > for navigation, Vue Router also provides a programmatic way to navigate between routes using the $router object.
@@ -1587,7 +1587,7 @@ Here's an example of using dynamic route matching:
 
 In the code snippet above, we define a dynamic route / post /: id(\\d +) that matches only if :id is a numeric value.We also added a meta property to the route object, which can be used to add custom metadata to the route.
 
-##  ✅   Step 11: Route Transitions
+##  ✅ Step 11: Route Transitions
 <br>
 Vue Router v4 integrates seamlessly with Vue.js 3's transition system, allowing you to add transition effects when navigating between routes. You can use CSS transitions or third-party animation libraries to create visually appealing route transitions.
 
