@@ -1860,5 +1860,58 @@ Hash mode adds a hash symbol(#) to the URLs and relies on the hashchange event t
 
 These are some additional concepts and features of Vue Router v4 in Vue.js 3. I encourage you to refer to the official documentation(https://next.router.vuejs.org/) for more details and advanced usage.
 
+## Building Pagination
+
+There are 06 steps for pagination,
+
+Also need to note,
+
+``` _limit`` is How many items to return per page.
+``` _page``` is Which page to return.
+
+So, ``` API/events?_limit=2&_2page=3```
+<br>
+here ```_limit=2 ``` means 2 per page & ```_page=3``` means events on page. And overall, it's  means it will returns 2 events/ json data.
+
+ 
+### Step 01:
+Go to serves page, and added the code:
+add page variable  ``` getEvents(perPage, page) ``` | where perPage = Events to return per page & page = The page we are on  
+
+
+and  api +  ```?_limit=" + perPage + "&_page=" + page```
+<br>
+
+```
+apiClient.get("/events?_limit=" + perPage + "&_page=" + page)
+
+```
+
+```
+import axios from "axios";
+
+const apiClient = axios.create({
+  baseURL: "https://my-json-server.typicode.com/Code-Pop/Touring-Vue-Router",
+  withCredentials: false,
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+});
+
+export default {
+  getEvents(perPage, page) {
+    return apiClient.get("/events?_limit=" + perPage + "&_page=" + page);
+  },
+  getEvent(id) {
+    return apiClient.get("/events/" + id);
+  },
+};
+
+```
+
+
+
+
 
 
