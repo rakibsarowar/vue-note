@@ -16,6 +16,8 @@
   - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
+- [Building Pagination](#building-pagination)
+  -[Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)   
 
 ## UI Components
 
@@ -1918,7 +1920,8 @@ export default {
 ```
 <br>
 
-### Pagination Step 01: Parse & set the current page from the router using Funciton Mode:
+### Pagination Step 01 - Parse & set the current page from the router using Funciton Mode
+<br>
 where the URL will look like below,
 ``` https: localhost:8080/?page=2 ```
 <br>
