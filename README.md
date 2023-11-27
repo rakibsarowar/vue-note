@@ -1930,6 +1930,39 @@ const routes = [
   ]
 ```
 
+<br>
+
+### Pagination Step 02: Modify Eventlist.vue/ Home to pass on page number to Eventservice API
+<br>
+
+Go to EventList.vue:
+<br>
+1: will import computed function: ```  import { ref, onMounted, computed} from "vue"; ```
+2: will add ``` const props = defineProps (['page']) ```
+3:  then will add ``` const page = computed(() => props.page);  ```
+4. then will add parameter to getEvents function:
+   - Events per page: ``` 2 ```  | for now.
+   - for sending in current page: ```  page.value ```  
+<br>
+```
+EventService.getEvents(2, page.value)
+
+```
+<br>
+
+```
+onMounted(() => {
+  EventService.getEvents(2, page.value)
+    .then((response) => {
+      events.value = response.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
+```
+<br>
 
 
 
