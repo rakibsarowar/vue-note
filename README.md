@@ -1697,29 +1697,31 @@ In your router configuration(router.js), you can define multiple components with
 
 // ...
 
-<br>
-
 ```
 
 In the code snippet above, we define a route named 'dashboard' with multiple components assigned to different named views(default, sidebar, and header).
 
-// To render these named views in your template, use the < router - view > component with the name attribute to specify the named view outlet.
+To render these named views in your template, use the < router - view > component with the name attribute to specify the named view outlet.
+
+```
+
+     < template >
+     <div>
+         <router-view></router-view> <!-- Renders the default view -->
+         <router-view name="sidebar"></router-view> <!-- Renders the sidebar view -->
+         <router-view name="header"></router-view> <!-- Renders the header view -->
+     </div>
+   </template >
+
+```
 
 
-//     < template >
-//     <div>
-//         <router-view></router-view> <!-- Renders the default view -->
-//         <router-view name="sidebar"></router-view> <!-- Renders the sidebar view -->
-//         <router-view name="header"></router-view> <!-- Renders the header view -->
-//     </div>
-// </ >
+### ✅    Step 14: Navigation Events
+Vue Router emits various navigation events that allow you to perform actions before, during, or after navigation.You can listen to these events and execute custom logic accordingly.
 
-// ✅    Step 14: Navigation Events
-// Vue Router emits various navigation events that allow you to perform actions before, during, or after navigation.You can listen to these events and execute custom logic accordingly.
+To listen to navigation events, you can use the $router object in your components.
 
-// To listen to navigation events, you can use the $router object in your components.
-
-
+```
  export default {
      mounted() {
          this.$router.beforeEach((to, from, next) => {
