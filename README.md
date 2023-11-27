@@ -1964,6 +1964,129 @@ onMounted(() => {
 ```
 <br>
 
+### Pagination Step 03: add Pagination links to the Eventlist Template:
+Now we will update the <tempalte> by adding routerLink:
+<br>
+
+```
+<router-link
+        id="page-prev"
+        :to="{ name: 'EventList', query: { page: page - 1 } }"
+        rel="prev"
+        v-if="page != 1"
+        >&#60; Previous</router-link
+      >
+
+      <router-link
+        id="page-next"
+        :to="{ name: 'EventList', query: { page: page + 1 } }"
+        rel="next"
+        v-if="hasNextPage"
+        >Next &#62;</router-link
+      >
+```
+<br>
+But the events are not updated after clicking the next or previous button.
+Because of | OnMounted is only called on initial load, not when the component is resused (we resuse by clicking next page).
+
+So for making another API call when page is updated, we need to add another hook call "watchEffect"
+
+1. We will import the function;
+<br>
+``` import { ref, onMounted, computed, watchEffect } from "vue" ```
+
+<br>
+and will wrap the api call by this function:
+<br>
+```
+onMounted(() => {
+  watchEffect(() => {
+  
+    events.value = null;
+    EventService.getEvents(2, page.value)
+      .then((response) => {
+      events.value = response.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+    
+  });
+});
+
+```
+<br>
+
+**When reactive objects that are accessed inside this function change, run this function again.**
+
+<br>
+
+And in this code  ``` page.value ``` accessing page, is a reactive | this a reactive vaule so when it change, it will (WatchEffect) do another API call.  
+Also note, we will add ``` events.value = null; ``` | Clear out the events on the page, so our user knows the API has been called.
+
+NB: We Only show the Next page link when there is a Next page:
+for the we need to know how many total Events we have so will will add this,
+<br>
+
+```
+const totalEvents = ref(0);
+
+```
+And luckly our API call return a header that contains information,
+so will add this,
+
+```
+   totalEvents.value = response.headers["x-total-count"];
+
+```
+ - Note: when api call return it will sat the total events by this ``` ["x-total-count"] ```
+   ``` ["x-total-count"] ``` | Store the total number of events
+
+<br>
+
+```
+watchEffect(() => {
+    events.value = null;
+    EventService.getEvents(2, page.value)
+      .then((response) => {
+        events.value = response.data;
+        totalEvents.value = response.headers["x-total-count"];
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
+  
+```
+
+then we will use this information inside a compute property, that we will call 'hasNextPage'
+<br>
+
+```
+const hasNextPage = computed(() => {
+  const totalPages = Math.ceil(totalEvents.value / 2);
+  return page.value < totalPages;
+});
+
+```
+NB: ``` totalEvents.value / 2 ``` | Find the total number of pages. 
+``` page.value < totalPages  ```  | If this page is not the last page.
+
+and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to display the next page only if there has next page. 
+
+```
+<router-link
+        id="page-next"
+        :to="{ name: 'EventList', query: { page: page + 1 } }"
+        rel="next"
+        v-if="hasNextPage"
+        >Next &#62;</router-link
+      >
+      
+```
+
+
+
 
 
 
