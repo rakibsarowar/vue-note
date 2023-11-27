@@ -1909,6 +1909,26 @@ export default {
 };
 
 ```
+<br>
+
+### Pagination Step 01: Parse & set the current page from the router using Funciton Mode:
+where the URL will look like below,
+``` https: localhost:8080/?page=2 ```
+<br>
+Get the query perameter if it exists and cast it as an integer, otherwise return 1.
+we will add this ``` props: (route) => ({ page: parseInt(route.query.page) || 1 }) ``` | If page exists parse the string to an integer, otherwise return 1
+
+```
+const routes = [
+  {
+    path: "/",
+    name: "EventList",
+    component: EventList,
+    props: (route) => ({ page: parseInt(route.query.page) || 1 }),
+  }
+  
+  ]
+```
 
 
 
