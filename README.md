@@ -2086,6 +2086,43 @@ and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to dis
 ```
 
 
+### Step 06: Improve the pagenation style
+
+1. Wrap the routerLink in a div
+```
+ <div class="pagination">
+      <router-link> </router-link>      
+    </div> 
+```
+
+<br>
+
+2. give a id
+
+```
+ <router-link id="page-next"> </router-link >
+
+```
+
+3. add some style:
+<br>
+
+```
+.pagination a {
+  flex: 1;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+#page-prev {
+  text-align: left;
+}
+
+#page-next {
+  text-align: right;
+}
+
+```
 
 
 
