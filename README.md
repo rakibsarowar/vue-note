@@ -11,6 +11,7 @@
 - [For setting up the project](#for-setting-up-the-project)
 - [Setting up the development environment](#setting-up-the-development-environment)
 - [Project structure](#project-structure)
+- [Showing Data from variable to template](#showing-data-from-variable-to-template)
   - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
@@ -222,8 +223,9 @@ Congratulations! You have successfully set up a Vue.js 3 project with Vite.You c
 ✅ **Vue.js 3 application structure**
 <br>
 Vue.js is a popular JavaScript framework for building user interfaces.It provides a structured approach to developing web applications by separating concerns into components.Here's a step-by-step guide to understanding the Vue.js 3 application structure:
+<br>
 
-## ✅ Setting up a Vue.js Project:
+✅ **Setting up a Vue.js Project:**
 
 <br>
 To get started, make sure you have Node.js installed on your machine.You can then use the Vue CLI(Command Line Interface) to create a new Vue.js project.Open your terminal or command prompt and run the following command:
@@ -231,8 +233,8 @@ To get started, make sure you have Node.js installed on your machine.You can the
 $ vue create my - vue - app
 ```
 🏷️ This command will prompt you to select a preset for your project.You can choose the default preset or manually select features as per your requirements.
-
-## ✅ Understanding the Project Structure:
+<br>
+✅ **Understanding the Project Structure:**
 
 <br>
 Once the project is created, navigate into the project directory:
@@ -266,7 +268,8 @@ public / index.html: This is the main HTML file where your Vue.js application wi
 - src / App.vue: This is the root component of your application.It serves as the entry point for your entire application.
 - src / main.js: This is the JavaScript file where you'll bootstrap your Vue.js application.
 
-## ✅ Understanding the App.vue Component:
+
+✅ **Understanding the App.vue Component:**
 
 <br>
 Open the src / App.vue file.This file contains three sections: template, script, and style.
@@ -275,7 +278,8 @@ template: The template section defines the HTML structure of the component.This 
 script: The script section contains the JavaScript code for the component.This is where you define the component's data, methods, computed properties, lifecycle hooks, and more.
 style: The style section contains the CSS styles specific to the component.You can use CSS or preprocessors like Sass or Less.
 
-## ✅ Creating Vue Components:
+<br>
+✅ **Creating Vue Components:**
 
 <br>
 In the src / components directory, you can create your own Vue components.Each component should have its own.vue file, which includes the template, script, and style sections.
@@ -306,7 +310,8 @@ For example, let's create a simple "HelloWorld" component. Create a new file src
 </style>
 ```
 
-## ✅ Registering and Using Components:
+
+✅ **Registering and Using Components:**
 
 <br>
 To use a component, you need to register it in your src / App.vue file or any other component where you want to use it.In the script section of the component, import the component file and register it using the components option.
@@ -345,7 +350,7 @@ import HelloWorld from './components/HelloWorld.vue';
 
 Now, the HelloWorld component is registered and ready to be used in the App component.You can use it by simply adding < HelloWorld /> in the template section.
 
-## ✅ Bootstraping the Vue Application:
+✅ **Bootstraping the Vue Application:**
 
 <br>
 The entry point of your Vue.js application is the src / main.js file.Open it and you'll find the following code:
@@ -358,8 +363,9 @@ createApp(App).mount('#app');
 ```
 
 The createApp function creates a new Vue application instance and takes the root component(in this case, App) as an argument.Finally, the mount method is called to mount the application on the element with the id app in the public / index.html file.
+<br>
 
-## ✅ Running the Vue Application:
+✅ **Running the Vue Application:**
 
 <br>
 Now that you have set up your Vue application structure, you can run it to see the result.Open your terminal or command prompt, navigate to the project directory, and run the following command:
@@ -376,7 +382,7 @@ That's it! You now have a basic understanding of the Vue.js 3 application struct
 
 Happy coding!
 
-# 🎯 Showing Data from variable to template
+## Showing Data from variable to template
 **[`Back to top ⬆️`](#table-of-contents)**
 
 - use {{ variable name/ function name }} to show data.
