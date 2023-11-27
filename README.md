@@ -13,11 +13,11 @@
 - [Project structure](#project-structure)
 - [Showing Data from variable to template](#showing-data-from-variable-to-template)
 - [Showing data from Object](#showing-data-from-object)
-  - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
+  - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode) 
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
 - [Building Pagination](#building-pagination)
-  - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)   
+  -   
 
 ## UI Components
 
