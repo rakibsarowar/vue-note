@@ -13,11 +13,11 @@
 - [Project structure](#project-structure)
 - [Showing Data from variable to template](#showing-data-from-variable-to-template)
 - [Showing data from Object](#showing-data-from-object)
-  - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode) 
+ 
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
 - [Building Pagination](#building-pagination)
-  -   
+ - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode) 
 
 ## UI Components
 
@@ -27,7 +27,7 @@
 
 **Need to note first**
 
-🎯 : **Main Topic.** <br>
+🎯 : **Step** <br>
 🟩 🟨 🟥 : **Paragraph** <br>
 📕 : **Havey Note.**  <br>
 📒 : **Attention Note.** <br>
@@ -1883,7 +1883,7 @@ So, ``` API/events?_limit=2&_2page=3```
 here ```_limit=2 ``` means 2 per page & ```_page=3``` means events on page. And overall, it's  means it will returns 2 events/ json data.
 
  
-### Step 01:
+### 🎯 Step 01:
 Go to serves page, and added the code:
 add page variable  ``` getEvents(perPage, page) ``` | where perPage = Events to return per page & page = The page we are on  
 
@@ -1920,7 +1920,7 @@ export default {
 ```
 <br>
 
-### Pagination Step 01 - Parse & set the current page from the router using Funciton Mode
+### 🎯 Pagination Step 01 - Parse & set the current page from the router using Funciton Mode
 <br>
 where the URL will look like below,
 ``` https: localhost:8080/?page=2 ```
@@ -1942,7 +1942,7 @@ const routes = [
 
 <br>
 
-### Pagination Step 02: Modify Eventlist.vue/ Home to pass on page number to Eventservice API
+### 🎯 Pagination Step 02: Modify Eventlist.vue/ Home to pass on page number to Eventservice API
 <br>
 
 Go to EventList.vue:
@@ -1974,7 +1974,7 @@ onMounted(() => {
 ```
 <br>
 
-### Pagination Step 03: add Pagination links to the Eventlist Template:
+### 🎯 Pagination Step 03: add Pagination links to the Eventlist Template:
 Now we will update the <tempalte> by adding routerLink:
 <br>
 
@@ -2095,10 +2095,13 @@ and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to dis
       
 ```
 
+<br>
 
-### Step 06: Improve the pagenation style
+### 🎯 Step 06: Improve the pagenation style
 
 1. Wrap the routerLink in a div
+<br>
+
 ```
  <div class="pagination">
       <router-link> </router-link>      
