@@ -17,7 +17,7 @@
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
 - [Building Pagination](#building-pagination)
-  -[Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)   
+  - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)   
 
 ## UI Components
 
