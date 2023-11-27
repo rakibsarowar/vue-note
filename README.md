@@ -10,6 +10,7 @@
 
 - [UI Components](#ui-components)
 - [For setting up the project](#for-setting-up-the-project)
+- [setting up the development environment](#setting-up-the-development-environment)
   - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
   - [Table](#table)
   - [Infinite Scroll](#infinite-scroll)
@@ -73,7 +74,7 @@ npm run dev
 
 ```
 
-## 🎯 setting up the development environment
+## setting up the development environment
 
 <br>
 Command for creating a project through vite :
