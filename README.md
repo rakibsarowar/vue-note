@@ -12,6 +12,7 @@
 - [Setting up the development environment](#setting-up-the-development-environment)
 - [Project structure](#project-structure)
 - [Showing Data from variable to template](#showing-data-from-variable-to-template)
+- [Showing data from Object](#showing-data-from-object)
   - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
@@ -412,7 +413,7 @@ function getDate(){
 
 ```
 
-# 🎯 Showing data from Object
+# Showing data from Object
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
