@@ -8,12 +8,10 @@
 
 ## Table of Contents
 
-- [UI Components](#ui-components)
 - [For setting up the project](#for-setting-up-the-project)
-- [setting up the development environment](#setting-up-the-development-environment)
+- [Setting up the development environment](#setting-up-the-development-environment)
+- [Project structure](#project-structure)
   - [Editable data grid / spreadsheet](#editable-data-grid--spreadsheet)
-  - [Table](#table)
-  - [Infinite Scroll](#infinite-scroll)
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
 
@@ -146,7 +144,7 @@ npm install
 
 <br>
 
-✅Step 4: Start the development server
+👉 **Step 4: Start the development server**
 <br>
 Now that our project is set up, we can start the development server and see our Vue.js application in action.
 
@@ -217,10 +215,11 @@ This command will start the Vite development server and display the local develo
 
 Congratulations! You have successfully set up a Vue.js 3 project with Vite.You can now start building your Vue components, styles, and application logic in the project.
 
-## 🎯 project structure
+## Project structure
 
 <br>
-✅ Vue.js 3 application structure.
+
+✅ **Vue.js 3 application structure**
 <br>
 Vue.js is a popular JavaScript framework for building user interfaces.It provides a structured approach to developing web applications by separating concerns into components.Here's a step-by-step guide to understanding the Vue.js 3 application structure:
 
