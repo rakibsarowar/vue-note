@@ -1739,7 +1739,7 @@ To listen to navigation events, you can use the $router object in your component
 
 In the code snippet above, we use the $router.beforeEach() and $router.afterEach() methods to register navigation event listeners.These methods allow you to execute custom logic before and after each route navigation.
 
-## Step 15: Lazy Loading Routes
+### Step 15: Lazy Loading Routes
 
 <br>
 Lazy loading routes is a technique used to optimize the initial loading time of your application by splitting your code into smaller chunks and loading routes on - demand.
@@ -1760,6 +1760,7 @@ These are some additional concepts and features of Vue Router v4 in Vue.js 3. I 
 Let's continue exploring more features of Vue Router v4 in Vue.js 3.
 
 ## ✅Step 16: Navigation Duplicates
+
 <br>
 By default, Vue Router allows navigating to the same route multiple times consecutively.However, you can configure it to prevent navigating to the same route twice in a row by using the replace option in the router.push() method.
 
@@ -1769,13 +1770,15 @@ this.$router.push({ path: '/dashboard', replace: true });
 <br>
 In the code snippet above, the replace option is set to true when using router.push().This ensures that navigating to the same route consecutively will replace the current entry in the browser's history stack instead of creating a new entry.
 <br>
-## ✅Step 17: Scroll Behavior
+
+### ✅Step 17: Scroll Behavior
+
 <br>
 When navigating between routes, Vue Router automatically scrolls to the top of the new page.However, you can customize the scroll behavior by defining a scrollBehavior function in your router configuration.
 <br>
 
-```
 
+```
  const router = createRouter({
      history: createWebHistory(),
      routes: [
@@ -1795,6 +1798,7 @@ When navigating between routes, Vue Router automatically scrolls to the top of t
  });
 
 ```
+
 <br>
 
 In the code snippet above, the scrollBehavior function is defined to customize the scroll behavior.If there is a saved position(e.g., when using the browser's back/forward buttons), it scrolls to the saved position. Otherwise, it scrolls to the top of the page.
@@ -1840,6 +1844,7 @@ In the code snippet above, the router.onError event listener allows you to handl
 
 ## ✅    Step 19: Hash Mode
 <br>
+
 By default, Vue Router uses the HTML5 History API for clean URLs.However, if you need to support older browsers or server configurations that don't support HTML5 History API, you can switch to hash mode.
 
 To enable hash mode, update your router configuration:
@@ -1868,7 +1873,7 @@ There are 06 steps for pagination,
 
 Also need to note,
 
-``` _limit`` is How many items to return per page.
+``` _limit``` is How many items to return per page.
 ``` _page``` is Which page to return.
 
 So, ``` API/events?_limit=2&_2page=3```
