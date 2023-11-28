@@ -2229,14 +2229,101 @@ onMounted(() => {
 ## Nested Routing
 <br>
 
-How to map action to URLs with a single resource? 
-    | Resource = Event
-    | Actions = Event Details  ``` /event/2 ```
-                Register for the event  ``` /event/2/register ```
+How to map action to URLs with a single resource? <br>
+    | Resource = Event <br>
+    | Actions = Event Details  ``` /event/2 ``` <br>
+                Register for the event  ``` /event/2/register ``` <br>
                 Edit the event    ``` /event/2/edit ```
 
 <br>
 
 <img height="450"  width="100%"  
 src="./assest/nested-route-01.PNG" />
+
+<br>
+
+??? How do we create and route to these views? <br>
+    - Use Normal Routing. <br>
+    - Use Nested Routes.
+
+<br>
+Now create components for nested routing. like as product details page, edit, register etc. 
+<br>
+
+In product details page, here is the explanation:
+
+Note: 
+1. This received ID as a props. 
+
+```
+const id = computed(() => props.id); 
+
+```
+<br>
+
+2. which is uses to get the event information from the API.
+
+```
+EventService.getEvent(id.value)
+
+```
+<br>
+
+and this return event data
+
+```
+event.value = response.data;
+
+```
+<br>
+which we store in event reactive object.
+
+```
+const event = ref("");
+
+```
+<br>
+
+and this update the template to show the information
+
+```
+<h1>{{ event.title }}</h1>
+
+```
+<br>
+
+in total full page code are:
+<br>
+
+```
+<script setup>
+import EventService from "@/services/EventService.js";
+import { computed, onMounted, ref } from "vue";
+
+const props = defineProps(["id"]);
+
+const event = ref("");
+const id = computed(() => props.id);
+onMounted(() => {
+  EventService.getEvent(id.value)
+    .then((response) => {
+      event.value = response.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+</script>
+
+<template>
+  <div v-if="event">
+    <h1>{{ event.title }}</h1>
+    <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
+    <p>{{ event.description }}</p>
+  </div>
+</template>
+
+```
+<br>
+
 
