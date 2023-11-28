@@ -2480,11 +2480,13 @@ onMounted(() => {
 <br>
 
 STEP 02: <br>
+
 Receive prop in childPage. <br>
 
  ``` import { defineProps } from "vue"; ```
 
 <br>
+
 ```
 // Sample Child Page -----------------------
 
@@ -2632,5 +2634,5 @@ So the code of Layout will be:
     </div>
     <router-view :event="event" />
   </div>
-  
+
 ```
