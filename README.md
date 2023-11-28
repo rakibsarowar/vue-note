@@ -2382,17 +2382,18 @@ Step 01: Add router Link to the page children or other:
 <br>
 
 ```
- <div v-if="event">
-    <h1>{{ event.title }}</h1>
+  <div v-if="event">
     <div id="nav">
-      <router-link :to="{ name: 'EventDetails' }">Details</router-link>
+      <router-link :to="{ name: 'EventDetails', params: {id} }">Details</router-link>
       |
-      <router-link :to="{ name: 'EventRegister' }">Register</router-link>
+      <router-link :to="{ name: 'EventRegister', params: {id} }">Register</router-link>
       |
-      <router-link :to="{ name: 'EventEdit' }">Edit</router-link>
+      <router-link :to="{ name: 'EventEdit', params: {id} }">Edit</router-link>
     </div>
     <router-view :event="event" />
   </div>
+
+
 
 ```
 
@@ -2465,11 +2466,11 @@ onMounted(() => {
   <div v-if="event">
     <h1>{{ event.title }}</h1>
     <div id="nav">
-      <router-link :to="{ name: 'EventDetails' }">Details</router-link>
+      <router-link :to="{ name: 'EventDetails', params: {id} }">Details</router-link>
       |
-      <router-link :to="{ name: 'EventRegister' }">Register</router-link>
+      <router-link :to="{ name: 'EventRegister', params: {id} }">Register</router-link>
       |
-      <router-link :to="{ name: 'EventEdit' }">Edit</router-link>
+      <router-link :to="{ name: 'EventEdit', params: {id} }">Edit</router-link>
     </div>
     <router-view :event="event" />
   </div>
@@ -2604,4 +2605,32 @@ const router = createRouter({
 
 export default router;
 
+```
+<br>
+
+### Optimization:
+<br>
+<img src="./assest/nested-route-07.PNG">
+
+<br>
+<img src="./assest/nested-route-08.PNG">
+<br>
+<img src="./assest/nested-route-09.PNG">
+
+Since Id is required for each child path, If Id isn't sent in, Vue router will look and use the id perimeter that present in the URL.  
+So the code of Layout will be:
+<br>
+
+```
+ <div v-if="event">
+    <div id="nav">
+      <router-link :to="{ name: 'EventDetails' }">Details</router-link>
+      |
+      <router-link :to="{ name: 'EventRegister' }">Register</router-link>
+      |
+      <router-link :to="{ name: 'EventEdit' }">Edit</router-link>
+    </div>
+    <router-view :event="event" />
+  </div>
+  
 ```
