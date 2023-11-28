@@ -13,12 +13,13 @@
 - [Project structure](#project-structure)
 - [Showing Data from variable to template](#showing-data-from-variable-to-template)
 - [Showing data from Object](#showing-data-from-object)
- 
+
 - [Vue Router](#vue-router)
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
 - [Building Pagination](#building-pagination)
- - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode) 
+- [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
 - [Nested Routing](#nested-routing)
+
 ## UI Components
 
 **[`Back to top ⬆️`](#table-of-contents)**
@@ -29,7 +30,7 @@
 
 🎯 : **Step** <br>
 🟩 🟨 🟥 : **Paragraph** <br>
-📕 : **Havey Note.**  <br>
+📕 : **Havey Note.** <br>
 📒 : **Attention Note.** <br>
 🏷️ : **Regular Note** <br>
 📌 : **Regular Note** <br>
@@ -40,6 +41,7 @@
 <br>
 
 ## For setting up the project
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -52,6 +54,7 @@ yarn create vite project-name
 npm create vite project-name
 
 ```
+
 <br>
 
 👉 **Step 02**: নিম্ন কোড দিয়ে প্রজেক্ট ডাইরেক্টরিতে যান | Go to project Directory:
@@ -60,6 +63,7 @@ npm create vite project-name
 ```
 cd project-name
 ```
+
 <br>
 
 👉 **Step 03**: ডিপেন্ডেন্সিগুলো ইন্সটল করুন নিম্ন কোড দিয়ে | Install dependency:
@@ -71,6 +75,7 @@ yarn install
 npm install
 
 ```
+
 <br>
 
 👉 **Step 04**: এবার নিম্ন কোড দিয়ে প্রজেক্ট রান করুন | কোড রানের আগে code . দিয়ে vscode এ ফাইলটি ওপেন করতে পারেন| For running project :
@@ -82,6 +87,7 @@ yarn dev
 npm run dev
 
 ```
+
 <br>
 
 ## setting up the development environment
@@ -279,7 +285,6 @@ public / index.html: This is the main HTML file where your Vue.js application wi
 - src / App.vue: This is the root component of your application.It serves as the entry point for your entire application.
 - src / main.js: This is the JavaScript file where you'll bootstrap your Vue.js application.
 
-
 ✅ **Understanding the App.vue Component:**
 
 <br>
@@ -320,7 +325,6 @@ For example, let's create a simple "HelloWorld" component. Create a new file src
  }
 </style>
 ```
-
 
 ✅ **Registering and Using Components:**
 
@@ -394,6 +398,7 @@ That's it! You now have a basic understanding of the Vue.js 3 application struct
 Happy coding!
 
 ## Showing Data from variable to template
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 - use {{ variable name/ function name }} to show data.
@@ -424,6 +429,7 @@ function getDate(){
 ```
 
 # Showing data from Object
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -450,7 +456,8 @@ const data = {
 
 ```
 
-# 🎯  Displaying-html
+# 🎯 Displaying-html
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -471,7 +478,8 @@ const data = {
 
 ```
 
-# 🎯  Class Binding
+# 🎯 Class Binding
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 ```
@@ -488,6 +496,7 @@ const data = {
 ```
 
 ### ✅ showing style by condition
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -508,6 +517,7 @@ const data = {
 ```
 
 ### ✅ showing multiple condition
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -571,7 +581,8 @@ const data = {
 
 ```
 
-# 🎯  Style Binding
+# 🎯 Style Binding
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -753,6 +764,7 @@ function getTasksInProgress(){
 ```
 
 # 🎯 vue instance and data binding
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -833,7 +845,8 @@ In this example, the click event of the < button > element is bound to the sayHe
 
 These are just a few examples of data binding in Vue.Vue provides many more features and directives for handling more complex scenarios.I hope this introduction to Vue instances and data binding was helpful to you.Feel free to explore the official Vue documentation for more in -depth information and examples.Happy coding!
 
-# 🎯  8 Vue.js directives.
+# 🎯 8 Vue.js directives.
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 <br>
@@ -903,7 +916,8 @@ Remember that directives are applied to DOM elements as attributes. The v- prefi
 
 <br>
 
-# 🎯  v - bind in Vue.js
+# 🎯 v - bind in Vue.js
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 In Vue.js, v-bind is a directive used to bind data or expressions to an HTML attribute. It allows you to dynamically update the value of an attribute based on the underlying data or computed properties in your Vue component.
@@ -1229,6 +1243,7 @@ In Vue.js 3, you can use the v - bind directive to bind CSS styles to elements.H
 👉 I hope this explanation and these code examples help you understand style binding in Vue.js 3. Feel free to ask if you have any further questions!
 
 # 🎯 Life cycle:
+
 **[`Back to top ⬆️`](#table-of-contents)**
 
 ```
@@ -1283,18 +1298,15 @@ onMounted(() => {
 
 ```
 
-
-
-
 # Vue Router
 
 <br>
 Vue Router is a powerful routing library that allows you to build single - page applications with multiple views and handle navigation between them.Let's dive into the details and explore some code examples!
 
 ## 👉 Step 1: Installation and Setup
+
 <br>
 To start, make sure you have Vue.js 3 installed in your project.You can create a new Vue.js project or use an existing one.Once you have Vue.js set up, you can install Vue Router v4 using npm or yarn:
-
 
 **Using npm/ Using yarn**
 
@@ -1305,6 +1317,7 @@ yarn add vue - router@next
 ```
 
 ## 👉 Step 2: Configuration
+
 <br> 
 Once you've installed Vue Router, you need to configure it in your Vue.js application. Create a new file called router.js (or any other name you prefer) in your project's root directory.In this file, we'll define our routes and configure the router.
 
@@ -1343,11 +1356,13 @@ const router = createRouter({
 export default router;
 
 ```
+
 <br>
 
 In the code snippet above, we import the necessary modules from vue - router.Then we import the components that we want to use as routes, such as Home, About, and Contact.We create a new router instance using createRouter() and provide the routes array.Each route is defined with a path, a unique name, and the corresponding component to render when the route is visited.
 
 ## ✅ Step 3: Integrate the Router in your main Vue instance
+
 <br> 
 To integrate the router into your main Vue instance, open your main.js(or equivalent) file and import the router we just created.Then use the router instance in the Vue app.
 <br>
@@ -1390,6 +1405,7 @@ Now let's create the components for the routes we defined earlier. For example, 
      </script>
 
 ```
+
 <br>
 Similarly, create About.vue and Contact.vue files with their respective content.
 <br>
@@ -1399,35 +1415,37 @@ Similarly, create About.vue and Contact.vue files with their respective content.
 To navigate between routes, you can use the < router - link > component provided by Vue Router.This component renders an anchor tag that automatically updates the URL and triggers the corresponding route.
 <br>
 
- ```
-     < template >
-     <div>
-         <h1>My Website</h1>
-         <nav>
-           
-             <router-link to="/">Home</router-link>
-             <router-link to="/about">About</router-link>
-             <router-link to="/contact">Contact</router-link>
-         </nav>
+```
+    < template >
+    <div>
+        <h1>My Website</h1>
+        <nav>
 
-         <router-view></router-view>
-     </div>
-     </template >
+            <router-link to="/">Home</router-link>
+            <router-link to="/about">About</router-link>
+            <router-link to="/contact">Contact</router-link>
+        </nav>
 
-     <script>
-         export default {
-            // Component options here
-         }
-     </script>
+        <router-view></router-view>
+    </div>
+    </template >
+
+    <script>
+        export default {
+           // Component options here
+        }
+    </script>
 
 ```
+
 <br>
 
- In the code snippet above, we've added the <router-link> components to create navigation links for the Home, About, and Contact routes. The to attribute specifies the path to navigate to when the link is clicked.
+In the code snippet above, we've added the <router-link> components to create navigation links for the Home, About, and Contact routes. The to attribute specifies the path to navigate to when the link is clicked.
 <br>
 Additionally, we've added the <router-view> component, which acts as a placeholder for the content of the currently active route. When a user navigates to a specific route, the component associated with that route will be rendered inside the <router-view>.
 
 ## ✅ Step 6: Route Parameters and Dynamic Routes
+
 <br>
 Vue Router allows you to define dynamic routes that can accept parameters.For example, let's say we want to create a route for displaying a user's profile.Modify the router.js file to include a dynamic route:
 
@@ -1473,11 +1491,13 @@ Now, let's create the User.vue component to display the user's profile:
          }
      </script>
 ```
+
 <br>
 
 In the User.vue component, we access the parameter value using $route.params.id.This allows us to display the user's ID dynamically based on the URL.
 
 ## Step 7: Programmatic Navigation
+
 <br>
 
 Besides using < router - link > for navigation, Vue Router also provides a programmatic way to navigate between routes using the $router object.
@@ -1493,17 +1513,17 @@ For example, to navigate to the / about route programmatically, you can use the 
      }
  }
 ```
+
 <br>
 
 In this code snippet, the navigateToAbout method is called when a button or a specific event is triggered, and it uses $router.push() to navigate to the / about route.
 
 These are the basic steps to get started with Vue Router v4 in Vue.js 3. You can explore more advanced features and concepts in the official Vue Router documentation(https://next.router.vuejs.org/). Remember to customize and extend the code examples based on your specific application requirements.
 
-
-
 Let's continue exploring more features of Vue Router v4 in Vue.js 3.
 
 ## ✅Step 8: Nested Routes
+
 <br>
 Vue Router allows you to create nested routes, which are useful for building complex application layouts.You can nest routes inside other routes by using the children property.
 
@@ -1542,6 +1562,7 @@ Modify the router.js file to include a nested route for a user's settings:
 In the code snippet above, we added a nested route for the user's settings under the /user/:id route. The UserSettings component will be rendered when the /user/:id/settings path is accessed.
 
 ## ✅Step 9: Route Guards
+
 <br>
 Route guards are functions that can be used to control navigation behavior.They allow you to implement authentication, authorization, and other custom logic before navigating to a route.
 
@@ -1553,17 +1574,17 @@ Vue Router provides three types of route guards: beforeEach, beforeResolve, and 
 
 // ...
 
- router.beforeEach((to, from, next) => {
-     const isAuthenticated = // Check if user is authenticated
-  
-   if (to.name === 'admin' && !isAuthenticated) {
-         // Redirect to login page if user is not authenticated
-         next({ name: 'login' });
-     } else {
-         // Allow access to the requested route
-         next();
-     }
- });
+router.beforeEach((to, from, next) => {
+const isAuthenticated = // Check if user is authenticated
+
+if (to.name === 'admin' && !isAuthenticated) {
+// Redirect to login page if user is not authenticated
+next({ name: 'login' });
+} else {
+// Allow access to the requested route
+next();
+}
+});
 
 // ...
 
@@ -1571,7 +1592,8 @@ Vue Router provides three types of route guards: beforeEach, beforeResolve, and 
 
 In the code snippet above, we use the beforeEach guard to check if the user is authenticated before accessing a route.If the user is not authenticated and the requested route is 'admin', we redirect them to the 'login' route.Otherwise, we allow access to the requested route.
 
-##  ✅   Step 10: Dynamic Route Matching
+## ✅ Step 10: Dynamic Route Matching
+
 <br>
 Vue Router v4 introduced a new feature called dynamic route matching, which allows you to match routes based on dynamic conditions.This feature is useful when you want to conditionally load different components or layouts based on specific criteria.
 
@@ -1600,12 +1622,13 @@ Here's an example of using dynamic route matching:
 
 // ...
 ```
-<br>
 
+<br>
 
 In the code snippet above, we define a dynamic route / post /: id(\\d +) that matches only if :id is a numeric value.We also added a meta property to the route object, which can be used to add custom metadata to the route.
 
-##  ✅ Step 11: Route Transitions
+## ✅ Step 11: Route Transitions
+
 <br>
 Vue Router v4 integrates seamlessly with Vue.js 3's transition system, allowing you to add transition effects when navigating between routes. You can use CSS transitions or third-party animation libraries to create visually appealing route transitions.
 
@@ -1625,22 +1648,24 @@ Here's an example of adding a fade transition when navigating between routes:
              transition: opacity 0.5s;
  }
 
-       
+
          .fade-enter, .fade-leave-to {
              opacity: 0;
  }
      </style>
 
 ```
+
 <br>
 
 In the code snippet above, we wrap the < router - view > component with a < transition > component.The name attribute specifies the name of the transition, which in this case is "fade".We also define the CSS classes for the fade transition effect.During the enter and leave phases, the opacity is gradually adjusted to create a smooth fade effect.
 
-##  ✅   Step 12: Navigation Guards in Component Options
+## ✅ Step 12: Navigation Guards in Component Options
+
 <br>
 Apart from using global route guards, you can also define navigation guards at the component level.This allows you to apply specific guards only to certain components.
 
-In a Vue component, you can define the beforeRouteEnter, beforeRouteUpdate, and beforeRouteLeave methods to handle navigation guards. 
+In a Vue component, you can define the beforeRouteEnter, beforeRouteUpdate, and beforeRouteLeave methods to handle navigation guards.
 Here's an example of using the beforeRouteEnter guard to fetch data before entering a component:
 <br>
 
@@ -1659,18 +1684,17 @@ Here's an example of using the beforeRouteEnter guard to fetch data before enter
      }
  }
 ```
+
 <br>
 
 In the code snippet above, the beforeRouteEnter guard is used to fetch data from an API before entering the component.Once the data is fetched, it is passed to the next() function using a callback.The callback receives the component instance(vm) and allows you to access and set component data.
 
 These are some additional concepts and features of Vue Router v4 in Vue.js 3. As you continue working with Vue Router, I recommend referring to the official documentation(https://next.router.vuejs.org/) for more details and advanced usage.
 
-
-
-
 Let's continue exploring more features of Vue Router v4 in Vue.js 3.
 
 ## ✅Step 13: Named Views
+
 <br>
 Vue Router allows you to define multiple named views within a single route, allowing you to render different components in different named view outlets.
 
@@ -1717,8 +1741,8 @@ To render these named views in your template, use the < router - view > componen
 
 ```
 
+### ✅ Step 14: Navigation Events
 
-### ✅    Step 14: Navigation Events
 Vue Router emits various navigation events that allow you to perform actions before, during, or after navigation.You can listen to these events and execute custom logic accordingly.
 
 To listen to navigation events, you can use the $router object in your components.
@@ -1737,6 +1761,7 @@ To listen to navigation events, you can use the $router object in your component
 }
 
 ```
+
 <br>
 
 In the code snippet above, we use the $router.beforeEach() and $router.afterEach() methods to register navigation event listeners.These methods allow you to execute custom logic before and after each route navigation.
@@ -1769,6 +1794,7 @@ By default, Vue Router allows navigating to the same route multiple times consec
 ```
 this.$router.push({ path: '/dashboard', replace: true });
 ```
+
 <br>
 In the code snippet above, the replace option is set to true when using router.push().This ensures that navigating to the same route consecutively will replace the current entry in the browser's history stack instead of creating a new entry.
 <br>
@@ -1779,14 +1805,13 @@ In the code snippet above, the replace option is set to true when using router.p
 When navigating between routes, Vue Router automatically scrolls to the top of the new page.However, you can customize the scroll behavior by defining a scrollBehavior function in your router configuration.
 <br>
 
-
 ```
  const router = createRouter({
      history: createWebHistory(),
      routes: [
 
 // ...
-     
+
      ],
      scrollBehavior(to, from, savedPosition) {
          if (savedPosition) {
@@ -1808,6 +1833,7 @@ In the code snippet above, the scrollBehavior function is defined to customize t
 <br>
 
 ## ✅ Step 18: Error Handling
+
 Vue Router provides error handling capabilities, allowing you to handle specific routing errors or global errors that occur during navigation.
 
 To handle specific errors, you can use the beforeEach guard and call the next function with an error parameter.
@@ -1823,9 +1849,10 @@ To handle specific errors, you can use the beforeEach guard and call the next fu
  });
 
 ```
+
 <br>
 
- In the code snippet above, if a user tries to access a route that requires authentication but is not authenticated, we redirect them to the login page with the original route as a parameter(redirect) and replace the current history entry.
+In the code snippet above, if a user tries to access a route that requires authentication but is not authenticated, we redirect them to the login page with the original route as a parameter(redirect) and replace the current history entry.
 
 To handle global errors during navigation, you can listen to the router.onError event.
 
@@ -1844,7 +1871,8 @@ In the code snippet above, the router.onError event listener allows you to handl
 
 <br>
 
-## ✅    Step 19: Hash Mode
+## ✅ Step 19: Hash Mode
+
 <br>
 
 By default, Vue Router uses the HTML5 History API for clean URLs.However, if you need to support older browsers or server configurations that don't support HTML5 History API, you can switch to hash mode.
@@ -1861,6 +1889,7 @@ To enable hash mode, update your router configuration:
  });
 
 ```
+
 <br>
 
 In the code snippet above, we use createWebHashHistory() instead of createWebHistory() to enable hash mode.
@@ -1875,20 +1904,19 @@ There are 06 steps for pagination,
 
 Also need to note,
 
-``` _limit``` is How many items to return per page.
-``` _page``` is Which page to return.
+` _limit` is How many items to return per page.
+` _page` is Which page to return.
 
-So, ``` API/events?_limit=2&_2page=3```
+So, ` API/events?_limit=2&_2page=3`
 <br>
-here ```_limit=2 ``` means 2 per page & ```_page=3``` means events on page. And overall, it's  means it will returns 2 events/ json data.
+here `_limit=2 ` means 2 per page & `_page=3` means events on page. And overall, it's means it will returns 2 events/ json data.
 
- 
 ### 🎯 Step 01:
+
 Go to serves page, and added the code:
-add page variable  ``` getEvents(perPage, page) ``` | where perPage = Events to return per page & page = The page we are on  
+add page variable `getEvents(perPage, page)` | where perPage = Events to return per page & page = The page we are on
 
-
-and  api +  ```?_limit=" + perPage + "&_page=" + page```
+and api + `?_limit=" + perPage + "&_page=" + page`
 <br>
 
 ```
@@ -1918,9 +1946,11 @@ export default {
 };
 
 ```
+
 <br>
 
 ### 🎯 Pagination Step 01 - Parse & set the current page from the router using Funciton Mode
+
 <br>
 where the URL will look like below,
 ``` https: localhost:8080/?page=2 ```
@@ -1936,28 +1966,31 @@ const routes = [
     component: EventList,
     props: (route) => ({ page: parseInt(route.query.page) || 1 }),
   }
-  
+
   ]
 ```
 
 <br>
 
 ### 🎯 Pagination Step 02: Modify Eventlist.vue/ Home to pass on page number to Eventservice API
+
 <br>
 
 Go to EventList.vue:
 <br>
-1: will import computed function: ```  import { ref, onMounted, computed} from "vue"; ```
-2: will add ``` const props = defineProps (['page']) ```
-3:  then will add ``` const page = computed(() => props.page);  ```
-4. then will add parameter to getEvents function:
-   - Events per page: ``` 2 ```  | for now.
-   - for sending in current page: ```  page.value ```  
-<br>
+1: will import computed function: ` import { ref, onMounted, computed} from "vue";`
+2: will add `const props = defineProps (['page'])`
+3: then will add `const page = computed(() => props.page); ` 4. then will add parameter to getEvents function:
+
+- Events per page: `2` | for now.
+- for sending in current page: ` page.value`  
+  <br>
+
 ```
 EventService.getEvents(2, page.value)
 
 ```
+
 <br>
 
 ```
@@ -1972,9 +2005,11 @@ onMounted(() => {
 });
 
 ```
+
 <br>
 
 ### 🎯 Pagination Step 03: add Pagination links to the Eventlist Template:
+
 Now we will update the <tempalte> by adding routerLink:
 <br>
 
@@ -1995,6 +2030,7 @@ Now we will update the <tempalte> by adding routerLink:
         >Next &#62;</router-link
       >
 ```
+
 <br>
 But the events are not updated after clicking the next or previous button.
 Because of | OnMounted is only called on initial load, not when the component is resused (we resuse by clicking next page).
@@ -2002,8 +2038,8 @@ Because of | OnMounted is only called on initial load, not when the component is
 So for making another API call when page is updated, we need to add another hook call "watchEffect"
 
 1. We will import the function;
-<br>
-``` import { ref, onMounted, computed, watchEffect } from "vue" ```
+   <br>
+   `import { ref, onMounted, computed, watchEffect } from "vue"`
 
 <br>
 and will wrap the api call by this function:
@@ -2024,21 +2060,22 @@ onMounted(() => {
   });
 });
 
-```
+````
 <br>
 
 **When reactive objects that are accessed inside this function change, run this function again.**
 
 <br>
 
-And in this code  ``` page.value ``` accessing page, is a reactive | this a reactive vaule so when it change, it will (WatchEffect) do another API call.  
+And in this code  ``` page.value ``` accessing page, is a reactive | this a reactive vaule so when it change, it will (WatchEffect) do another API call.
 Also note, we will add ``` events.value = null; ``` | Clear out the events on the page, so our user knows the API has been called.
 
 NB: We Only show the Next page link when there is a Next page:
 for the we need to know how many total Events we have so will will add this,
 <br>
 
-```
+````
+
 const totalEvents = ref(0);
 
 ```
@@ -2046,45 +2083,49 @@ And luckly our API call return a header that contains information,
 so will add this,
 
 ```
-   totalEvents.value = response.headers["x-total-count"];
 
-```
+totalEvents.value = response.headers["x-total-count"];
+
+````
  - Note: when api call return it will sat the total events by this ``` ["x-total-count"] ```
    ``` ["x-total-count"] ``` | Store the total number of events
 
 <br>
 
-```
+````
+
 watchEffect(() => {
-    events.value = null;
-    EventService.getEvents(2, page.value)
-      .then((response) => {
-        events.value = response.data;
-        totalEvents.value = response.headers["x-total-count"];
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  });
-  
+events.value = null;
+EventService.getEvents(2, page.value)
+.then((response) => {
+events.value = response.data;
+totalEvents.value = response.headers["x-total-count"];
+})
+.catch((error) => {
+console.log(error);
+});
+});
+
 ```
 
 then we will use this information inside a compute property, that we will call 'hasNextPage'
 <br>
 
 ```
+
 const hasNextPage = computed(() => {
-  const totalPages = Math.ceil(totalEvents.value / 2);
-  return page.value < totalPages;
+const totalPages = Math.ceil(totalEvents.value / 2);
+return page.value < totalPages;
 });
 
-```
-NB: ``` totalEvents.value / 2 ``` | Find the total number of pages. 
+````
+NB: ``` totalEvents.value / 2 ``` | Find the total number of pages.
 ``` page.value < totalPages  ```  | If this page is not the last page.
 
-and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to display the next page only if there has next page. 
+and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to display the next page only if there has next page.
 
-```
+````
+
 <router-link
         id="page-next"
         :to="{ name: 'EventList', query: { page: page + 1 } }"
@@ -2092,7 +2133,7 @@ and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to dis
         v-if="hasNextPage"
         >Next &#62;</router-link
       >
-      
+
 ```
 
 <br>
@@ -2103,6 +2144,7 @@ and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to dis
 <br>
 
 ```
+
  <div class="pagination">
       <router-link> </router-link>      
     </div> 
@@ -2118,7 +2160,7 @@ and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to dis
 ```
 
 3. add some style:
-<br>
+   <br>
 
 ```
 .pagination a {
@@ -2136,6 +2178,7 @@ and also in <template> we will add ```  v-if="hasNextPage"  ``` | we want to dis
 }
 
 ```
+
 <br>
 So in the last the whole code of pagination is as below,
 <br>
@@ -2224,16 +2267,18 @@ onMounted(() => {
 </style>
 
 ```
+
 <br>
 
 ## Nested Routing
+
 <br>
 
 How to map action to URLs with a single resource? <br>
-    | Resource = Event <br>
-    | Actions = Event Details  ``` /event/2 ``` <br>
-                Register for the event  ``` /event/2/register ``` <br>
-                Edit the event    ``` /event/2/edit ```
+| Resource = Event <br>
+| Actions = Event Details `/event/2` <br>
+Register for the event `/event/2/register` <br>
+Edit the event `/event/2/edit`
 
 <br>
 
@@ -2242,9 +2287,7 @@ src="./assest/nested-route-01.PNG" />
 
 <br>
 
-??? How do we create and route to these views? <br>
-    - Use Normal Routing. <br>
-    - Use Nested Routes.
+??? How do we create and route to these views? <br> - Use Normal Routing. <br> - Use Nested Routes.
 
 <br>
 Now create components for nested routing. like as product details page, edit, register etc. 
@@ -2252,13 +2295,15 @@ Now create components for nested routing. like as product details page, edit, re
 
 In product details page, here is the explanation:
 
-Note: 
-1. This received ID as a props. 
+Note:
+
+1. This received ID as a props.
 
 ```
-const id = computed(() => props.id); 
+const id = computed(() => props.id);
 
 ```
+
 <br>
 
 2. which is uses to get the event information from the API.
@@ -2267,6 +2312,7 @@ const id = computed(() => props.id);
 EventService.getEvent(id.value)
 
 ```
+
 <br>
 
 and this return event data
@@ -2275,6 +2321,7 @@ and this return event data
 event.value = response.data;
 
 ```
+
 <br>
 which we store in event reactive object.
 
@@ -2282,6 +2329,7 @@ which we store in event reactive object.
 const event = ref("");
 
 ```
+
 <br>
 
 and this update the template to show the information
@@ -2290,6 +2338,7 @@ and this update the template to show the information
 <h1>{{ event.title }}</h1>
 
 ```
+
 <br>
 
 in total full page code are:
@@ -2324,6 +2373,173 @@ onMounted(() => {
 </template>
 
 ```
+
+<br>
+
+### Normal routing detail:
+
+Step 01: Add router Link to the page children or other:
+<br>
+
+```
+ <div v-if="event">
+    <h1>{{ event.title }}</h1>
+    <div id="nav">
+      <router-link :to="{ name: 'EventDetails' }">Details</router-link>
+      |
+      <router-link :to="{ name: 'EventRegister' }">Register</router-link>
+      |
+      <router-link :to="{ name: 'EventEdit' }">Edit</router-link>
+    </div>
+    <router-view :event="event" />
+  </div>
+
+```
+
+<br>
+Step 02: add line in router. Make then a children route. 
+<br>
+
+```
+  {
+    path: "/event/:id",
+    name: "EventDetails",
+    props: true,
+    component: EventDetails,
+  },
+
+  {
+    path: "/event/:id/edit",
+    name: "EventEdit",
+    props: true,
+    component: EventEdit,
+  },
+  {
+    path: "/event/:id/register",
+    name: "EventRegister",
+    props: true,
+    component: EventRegister,
+  },
+
+```
+<br>
+
+-----------------------------------------------------------------
+<br>
+
+### Nested Routing:
+<br>
+
+But in normal routing, there are lots of duplicated code. Like use router in all page. 
+
+STEP 01: <br>
+So we will make a common Layout to keep the routerLink and them to children page as props. ``` <router-view :event="event" /> ```
+<br>
+<img src="./assest/nested-route-04.PNG">
+<br>
+
+```
+<!-- LayoutPage.vue -->
+
+<script setup>
+import { onMounted, ref, defineProps, computed } from "vue";
+import EventService from "@/services/EventService.js";
+
+const props = defineProps(["id"]);
+
+const id = computed(() => props.id);
+
+const event = ref(null);
+onMounted(() => {
+  EventService.getEvent(id.value)
+    .then((response) => {
+      event.value = response.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+</script>
+
+<template>
+  <div v-if="event">
+    <h1>{{ event.title }}</h1>
+    <div id="nav">
+      <router-link :to="{ name: 'EventDetails' }">Details</router-link>
+      |
+      <router-link :to="{ name: 'EventRegister' }">Register</router-link>
+      |
+      <router-link :to="{ name: 'EventEdit' }">Edit</router-link>
+    </div>
+    <router-view :event="event" />
+  </div>
+</template>
+
+```
+<br>
+
+STEP 02: <br>
+Receive prop in childPage. <br>
+
+ ``` import { defineProps } from "vue"; ```
+
+<br>
+```
+// Sample Child Page -----------------------
+
+<script setup>
+import { defineProps } from "vue";
+
+defineProps(["event"]);
+</script>
+
+<template>
+  <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
+  <p>{{ event.description }}</p>
+</template>
+
+```
+<br>
+
+<img src="./assest/nested-route-05.PNG">
+
 <br>
 
 
+
+
+
+```
+const routes = [
+  {
+    path: "/",
+    name: "EventList",
+    component: EventList,
+    props: (route) => ({ page: parseInt(route.query.page) || 1 }),
+  },
+  {
+    path: "/event/:id",
+    name: "EventLayout",
+    props: true,
+    component: EventLayout,
+    children: [
+      {
+        path: "",
+        name: "EventDetails",
+        component: EventDetails,
+      },
+      {
+        path: "register",
+        name: "EventRegister",
+        component: EventRegister,
+      },
+      {
+        path: "edit",
+        name: "EventEdit",
+        component: EventEdit,
+      },
+    ],
+  },
+];
+
+```
