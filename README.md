@@ -18,7 +18,7 @@
   - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
 - [Building Pagination](#building-pagination)
  - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode) 
-
+- [Nested Routing](#nested-routing)
 ## UI Components
 
 **[`Back to top ⬆️`](#table-of-contents)**
@@ -2224,6 +2224,13 @@ onMounted(() => {
 </style>
 
 ```
+<br>
 
+## Nested Routing
+How to map action to URLs with a single resource? 
+    | Resource = Event
+    | Actions = Event Details  ``` /event/2 ```
+                Register for the event  ``` /event/2/register ```
+                Edit the event    ``` /event/2/edit ```
 
 
