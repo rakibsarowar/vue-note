@@ -2227,10 +2227,16 @@ onMounted(() => {
 <br>
 
 ## Nested Routing
+<br>
+
 How to map action to URLs with a single resource? 
     | Resource = Event
     | Actions = Event Details  ``` /event/2 ```
                 Register for the event  ``` /event/2/register ```
                 Edit the event    ``` /event/2/edit ```
 
+<br>
+
+<img height="450"  width="100%"  
+src="./assest/nested-route-01.PNG" />
 
