@@ -17,18 +17,26 @@
 * ✋ : **Stop! check the point** <br>
 * 🎯 : **Focus** <br>
 
-| Emoji | Description         |
-|-------|---------------------|
-| 🌴    | **Main Topic**      |
-| 🌿    | **Paragraph**       |
-| 📕    | **Heavy Note**      |
-| 🍂    | **Attention Note**  |
-| 🏷️   | **Regular Note**    |
-| 📌    | **Regular Note**    |
-| 💎    | **High Value info** |
-| 🧨    | **Careful this**    |
-| ✋    | **Stop! check the point** |
-| 🎯    | **Focus**           |
+
+| Emoji | Description         | Emoji | Description           |
+|-------|---------------------|-------|-----------------------|
+| 🌴    | **Main Topic**      | 📌    | **Regular Note**      |
+| 🌿    | **Paragraph**       | 💎    | **High Value info**   |
+| 📕    | **Heavy Note**      | 🧨    | **Careful this**      |
+| 🍂    | **Attention Note**  | ✋    | **Stop! check the point** |
+| 🏷️   | **Regular Note**    | 🎯    | **Focus**             |
+        |
+
+| Key Note                                                                                      |
+|------------------------------|----------------------|----------------|------------------------|
+| Emoji                         | Description          | Emoji          | Description           |
+|-------------------------------|----------------------|----------------|-----------------------|
+| 🌴                            | **Main Topic**       | 📌             | **Regular Note**      |
+| 🌿                            | **Paragraph**        | 💎             | **High Value info**   |
+| 📕                            | **Heavy Note**       | 🧨             | **Careful this**      |
+| 🍂                            | **Attention Note**   | ✋             | **Stop! check the point** |
+| 🏷️                           | **Regular Note**     | 🎯             | **Focus**             |
+
 
 
 <!-- NO COMMENT -->
