@@ -1369,20 +1369,20 @@ To integrate the router into your main Vue instance, open your main.js(or equiva
 
 ```
 // Import Vue and the router
-import { createApp } from 'vue';
-import router from './router';
+import { createApp } from 'vue'
 
 // Import the root component
-import App from './App.vue';
+import App from './App.vue'
 
-// Create the Vue app
-const app = createApp(App);
+// Import the router
+import router from "./components/router/router";
 
-// Use the router
-app.use(router);
 
-// Mount the app to the DOM
-app.mount('#app');
+// Create the Vue app & Use the router & Mount the app to the DOM
+createApp(App)
+.use(router)
+.mount('#app')
+
 ```
 
 ## ✅ Step 4: Creating Route Components
