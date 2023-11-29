@@ -4,7 +4,7 @@
 <br>
 <br>
 
-<img src="./assest/main cover photo.JPG">
+<img src="./assest/main cover photo.JPG"/>
 <br>
 
 <!-- COMMENT -->
