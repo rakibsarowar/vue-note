@@ -27,12 +27,6 @@
 - [Showing data from Object](#showing-data-from-object)
 
 - [Vue Router](#vue-router)
-  - [Step 1: Installation and Setup](#step-7:-programmatic-navigation)
-- [Building Pagination](#building-pagination)
-- [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
-- [Nested Routing](#nested-routing)
-
-- [Vue Router](#vue-router)
   - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
   - [👉 Step 2: Configuration](#-step-2-configuration)
   - [👉 Step 3: Integrate the Router in your main Vue instance](#-step-3-integrate-the-router-in-your-main-vue-instance)
@@ -52,12 +46,13 @@
   - [👉 Step 17: Scroll Behavior](#-step-17-scroll-behavior)
   - [👉 Step 18: Error Handling](#-step-18-error-handling)
   - [👉 Step 19: Hash Mode](#-step-19-hash-mode)
+
+  
+- [Building Pagination](#building-pagination)
+- [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
+- [Nested Routing](#nested-routing)
+
     
-- [Vue Router](#vue-router)
-  - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
-  - [👉 Step 2: Configuration](#-step-2-configuration)
-  <!--- Link to Gist: -->
-  - For more detailed steps, refer to [this Gist](https://gist.github.com/rakibsarowar/0a9e02e48163070a2e5a8c3b85f6d597).
 
 
 <br>
