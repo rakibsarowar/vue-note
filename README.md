@@ -9,7 +9,7 @@
 
 | Key Note                    |                      |                |                       |
 |-----------------------------|----------------------|----------------|-----------------------|
-| Emoji                        | Description          | Emoji          | Description           |
+| **Emoji**                    | **Description**          | **Emoji**   | **Description**       |
 | 🌴                           | **Main Topic**       | 📌             | **Regular Note**      |
 | 🌿                           | **Paragraph**        | 💎             | **High Value info**   |
 | 📕                           | **Heavy Note**       | 🧨             | **Careful this**      |
@@ -27,7 +27,7 @@
 - [🌴 Showing Data from variable to template](#-showing-data-from-variable-to-template)
 - [🌴 Showing data from Object](#-showing-data-from-object)
 
-- [Vue Router](#vue-router)
+- [🌴 Vue Router](#-vue-router)
   - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
   - [👉 Step 2: Configuration](#-step-2-configuration)
   - [👉 Step 3: Integrate the Router in your main Vue instance](#-step-3-integrate-the-router-in-your-main-vue-instance)
