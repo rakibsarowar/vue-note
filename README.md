@@ -1,10 +1,10 @@
+<div align=center>
 # 🚀 VUE NOTE
-
 **A hand note of my vue js journey.....**
-<br>
+</div>
 <br>
 
-<img height="450" width="100%" src="./assest/main cover photo.JPG"/>
+<img height="300" width="100%" src="./assest/main cover photo.JPG"/>
 <br>
 
 <!-- COMMENT -->
