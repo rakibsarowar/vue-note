@@ -20,6 +20,10 @@
 - [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
 - [Nested Routing](#nested-routing)
 
+- [Vue Router](#vue-router)
+  - [Step 1: Installation and Setup](#step-1-installation-and-setup)
+
+
 ## UI Components
 
 **[`Back to top ⬆️`](#table-of-contents)**
