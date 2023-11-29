@@ -47,6 +47,7 @@
   - [👉 Step 17: Scroll Behavior](#-step-17-scroll-behavior)
   - [👉 Step 18: Error Handling](#-step-18-error-handling)
   - [👉 Step 19: Hash Mode](#-step-19-hash-mode)
+  - [🌿 Nested Routing [From My Learning....]](#-nested-routing-from-my-learning)
 
   
 - [🌴 Building Pagination](#-building-pagination)
