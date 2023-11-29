@@ -7,8 +7,6 @@
 
 <br>
 
-**Key Note:**
-
 
 | **Emoji**                    | **Description**          | **Emoji**   | **Description**       |
 | 🌴                           | **Main Topic**       | 📌             | **Regular Note**      |
