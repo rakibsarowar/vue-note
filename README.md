@@ -1,7 +1,8 @@
 # 🚀 VUE NOTE
 
 **A hand note of my vue js journey.....**
-
+<br>
+<img src="./assest/cover photo.JPG">
 <br>
 
 <!-- COMMENT -->
@@ -23,8 +24,7 @@
 - [Vue Router](#vue-router)
   - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
   - [👉 Step 2: Configuration](#-step-2-configuration)
-  - [👉 Step 3: Integrate the Router in your main Vue instance
-](#-step-3-integrate-the-router-in-your-main-vue-instance)
+  - [👉 Step 3: Integrate the Router in your main Vue instance](#-step-3-integrate-the-router-in-your-main-vue-instance)
   - [👉 Step 4: Creating Route Components](#-step-4-creating-route-components)
   - [👉 Step 5: Navigating between Routes](#-step-5-navigating-between-routes)
   - [👉 Step 6: Route Parameters and Dynamic Routes](#-step-6-route-parameters-and-dynamic-routes)
