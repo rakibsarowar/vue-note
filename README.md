@@ -1,13 +1,22 @@
-<div align=center>
-<h1> 🚀 VUE NOTE 🚀</h1>
-<p> A hand note of my vue js journey..... </p>
-</div>
-<br>
 
 <img height="300" width="100%" src="./assest/main cover photo.JPG"/>
-<br>
 
-<!-- COMMENT -->
+# VUE NOTE 🚀
+
+> A hand note of my vue js journey.....
+
+* 🎯 : **Step** <br>
+* 🟩 🟨 🟥 : **Paragraph** <br>
+* 📕 : **Havey Note.** <br>
+* 📒 : **Attention Note.** <br>
+* 🏷️ : **Regular Note** <br>
+* 📌 : **Regular Note** <br>
+* 💎 : **High Value info** <br>
+* 🧨 : **Carefull this** <br>
+* ✋ : **Stop! check the point** <br>
+
+
+<!-- NO COMMENT -->
 
 ## Table of Contents
 
@@ -45,25 +54,6 @@
   - [👉 Step 19: Hash Mode](#-step-19-hash-mode)
     
 
-
-
-## UI Components
-
-**[`Back to top ⬆️`](#table-of-contents)**
-
-<br>
-
-**Need to note first**
-
-🎯 : **Step** <br>
-🟩 🟨 🟥 : **Paragraph** <br>
-📕 : **Havey Note.** <br>
-📒 : **Attention Note.** <br>
-🏷️ : **Regular Note** <br>
-📌 : **Regular Note** <br>
-💎 : **High Value info** <br>
-🧨 : **Carefull this** <br>
-✋ : **Stop! check the point** <br>
 
 <br>
 
