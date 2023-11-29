@@ -5,6 +5,7 @@
 
 > A hand note of my vue js journey.....
 
+<h1> First Note </h1>
 * 🌴 : **Main Topic** <br>
 * 🌿 : **Paragraph** <br>
 * 📕 : **Havey Note.** <br>
@@ -15,6 +16,19 @@
 * 🧨 : **Carefull this** <br>
 * ✋ : **Stop! check the point** <br>
 * 🎯 : **Focus** <br>
+
+| Emoji | Description         |
+|-------|---------------------|
+| 🌴    | **Main Topic**      |
+| 🌿    | **Paragraph**       |
+| 📕    | **Heavy Note**      |
+| 🍂    | **Attention Note**  |
+| 🏷️   | **Regular Note**    |
+| 📌    | **Regular Note**    |
+| 💎    | **High Value info** |
+| 🧨    | **Careful this**    |
+| ✋    | **Stop! check the point** |
+| 🎯    | **Focus**           |
 
 
 <!-- NO COMMENT -->
