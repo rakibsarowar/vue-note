@@ -55,14 +55,9 @@
     
 - [Vue Router](#vue-router)
   - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
-  <!-- START_SECTION: Installation and Setup Details -->
-  - Details go here...
-  <!-- END_SECTION: Installation and Setup Details -->
-  
   - [👉 Step 2: Configuration](#-step-2-configuration)
-  <!-- START_SECTION: Configuration Details -->
-  - Details go here...
-  <!-- END_SECTION: Configuration Details -->
+  <!--- Link to Gist: -->
+  - For more detailed steps, refer to [this Gist](https://gist.github.com/rakibsarowar/0a9e02e48163070a2e5a8c3b85f6d597).
 
 
 <br>
