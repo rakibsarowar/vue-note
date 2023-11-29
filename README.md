@@ -27,7 +27,7 @@
 ](#-step-3-integrate-the-router-in-your-main-vue-instance)
   - [👉 Step 4: Creating Route Components](#-step-4-creating-route-components)
   - [👉 Step 5: Navigating between Routes](#-step-5-navigating-between-routes)
-  - [ Step 6: Route Parameters and Dynamic Routes](#-step-6-route-parameters-and-dynamic-routes)
+  - [👉 Step 6: Route Parameters and Dynamic Routes](#-step-6-route-parameters-and-dynamic-routes)
   - [👉 Step 7: Programmatic Navigation](#-step-7-programmatic-navigation)
   - [👉 Step 8: Nested Routes](#-step-8-nested-routes)
   - [👉 Step 9: Route Guards](#-step-9-route-guards)
@@ -38,6 +38,10 @@
   - [👉 Step 14: Navigation Events](#-step-14-navigation-events)
   - [👉 Step 15: Lazy Loading Routes](#-step-15-lazy-loading-routes)
   - [👉 Step 16: Navigation Duplicates](#-step-16-navigation-duplicates)
+  - [👉 Step 17: Scroll Behavior](#-step-17-scroll-behavior)
+  - [👉 Step 18: Error Handling](#-step-18-error-handling)
+  - [👉 Step 19: Hash Mode](#-step-19-hash-mode)
+    
 
 
 
@@ -1382,7 +1386,7 @@ export default router;
 
 In the code snippet above, we import the necessary modules from vue - router.Then we import the components that we want to use as routes, such as Home, About, and Contact.We create a new router instance using createRouter() and provide the routes array.Each route is defined with a path, a unique name, and the corresponding component to render when the route is visited.
 
-## ✅ Step 3: Integrate the Router in your main Vue instance
+## 👉 Step 3: Integrate the Router in your main Vue instance
 
 <br> 
 To integrate the router into your main Vue instance, open your main.js(or equivalent) file and import the router we just created.Then use the router instance in the Vue app.
@@ -1406,7 +1410,7 @@ createApp(App)
 
 ```
 
-## ✅ Step 4: Creating Route Components
+## 👉 Step 4: Creating Route Components
 
 Now let's create the components for the routes we defined earlier. For example, create a file called Home.vue and add the following code:
 
@@ -1431,7 +1435,7 @@ Now let's create the components for the routes we defined earlier. For example, 
 Similarly, create About.vue and Contact.vue files with their respective content.
 <br>
 
-## ✅ Step 5: Navigating between Routes
+## 👉 Step 5: Navigating between Routes
 
 To navigate between routes, you can use the < router - link > component provided by Vue Router.This component renders an anchor tag that automatically updates the URL and triggers the corresponding route.
 <br>
@@ -1465,7 +1469,7 @@ In the code snippet above, we've added the <router-link> components to create na
 <br>
 Additionally, we've added the <router-view> component, which acts as a placeholder for the content of the currently active route. When a user navigates to a specific route, the component associated with that route will be rendered inside the <router-view>.
 
-## ✅ Step 6: Route Parameters and Dynamic Routes
+## 👉 Step 6: Route Parameters and Dynamic Routes
 
 <br>
 Vue Router allows you to define dynamic routes that can accept parameters.For example, let's say we want to create a route for displaying a user's profile.Modify the router.js file to include a dynamic route:
@@ -1517,7 +1521,7 @@ Now, let's create the User.vue component to display the user's profile:
 
 In the User.vue component, we access the parameter value using $route.params.id.This allows us to display the user's ID dynamically based on the URL.
 
-## Step 7: Programmatic Navigation
+## 👉 Step 7: Programmatic Navigation
 
 <br>
 
@@ -1543,7 +1547,7 @@ These are the basic steps to get started with Vue Router v4 in Vue.js 3. You can
 
 Let's continue exploring more features of Vue Router v4 in Vue.js 3.
 
-## ✅Step 8: Nested Routes
+## 👉 Step 8: Nested Routes
 
 <br>
 Vue Router allows you to create nested routes, which are useful for building complex application layouts.You can nest routes inside other routes by using the children property.
@@ -1582,7 +1586,7 @@ Modify the router.js file to include a nested route for a user's settings:
 
 In the code snippet above, we added a nested route for the user's settings under the /user/:id route. The UserSettings component will be rendered when the /user/:id/settings path is accessed.
 
-## ✅Step 9: Route Guards
+## 👉 Step 9: Route Guards
 
 <br>
 Route guards are functions that can be used to control navigation behavior.They allow you to implement authentication, authorization, and other custom logic before navigating to a route.
@@ -1613,7 +1617,7 @@ next();
 
 In the code snippet above, we use the beforeEach guard to check if the user is authenticated before accessing a route.If the user is not authenticated and the requested route is 'admin', we redirect them to the 'login' route.Otherwise, we allow access to the requested route.
 
-## ✅ Step 10: Dynamic Route Matching
+## 👉 Step 10: Dynamic Route Matching
 
 <br>
 Vue Router v4 introduced a new feature called dynamic route matching, which allows you to match routes based on dynamic conditions.This feature is useful when you want to conditionally load different components or layouts based on specific criteria.
@@ -1648,7 +1652,7 @@ Here's an example of using dynamic route matching:
 
 In the code snippet above, we define a dynamic route / post /: id(\\d +) that matches only if :id is a numeric value.We also added a meta property to the route object, which can be used to add custom metadata to the route.
 
-## ✅ Step 11: Route Transitions
+## 👉 Step 11: Route Transitions
 
 <br>
 Vue Router v4 integrates seamlessly with Vue.js 3's transition system, allowing you to add transition effects when navigating between routes. You can use CSS transitions or third-party animation libraries to create visually appealing route transitions.
@@ -1681,7 +1685,7 @@ Here's an example of adding a fade transition when navigating between routes:
 
 In the code snippet above, we wrap the < router - view > component with a < transition > component.The name attribute specifies the name of the transition, which in this case is "fade".We also define the CSS classes for the fade transition effect.During the enter and leave phases, the opacity is gradually adjusted to create a smooth fade effect.
 
-## ✅ Step 12: Navigation Guards in Component Options
+## 👉 Step 12: Navigation Guards in Component Options
 
 <br>
 Apart from using global route guards, you can also define navigation guards at the component level.This allows you to apply specific guards only to certain components.
@@ -1714,7 +1718,7 @@ These are some additional concepts and features of Vue Router v4 in Vue.js 3. As
 
 Let's continue exploring more features of Vue Router v4 in Vue.js 3.
 
-## ✅Step 13: Named Views
+## 👉 Step 13: Named Views
 
 <br>
 Vue Router allows you to define multiple named views within a single route, allowing you to render different components in different named view outlets.
@@ -1762,7 +1766,7 @@ To render these named views in your template, use the < router - view > componen
 
 ```
 
-### ✅ Step 14: Navigation Events
+### 👉 Step 14: Navigation Events
 
 Vue Router emits various navigation events that allow you to perform actions before, during, or after navigation.You can listen to these events and execute custom logic accordingly.
 
@@ -1787,7 +1791,7 @@ To listen to navigation events, you can use the $router object in your component
 
 In the code snippet above, we use the $router.beforeEach() and $router.afterEach() methods to register navigation event listeners.These methods allow you to execute custom logic before and after each route navigation.
 
-### Step 15: Lazy Loading Routes
+### 👉 Step 15: Lazy Loading Routes
 
 <br>
 Lazy loading routes is a technique used to optimize the initial loading time of your application by splitting your code into smaller chunks and loading routes on - demand.
@@ -1807,7 +1811,7 @@ These are some additional concepts and features of Vue Router v4 in Vue.js 3. I 
 
 Let's continue exploring more features of Vue Router v4 in Vue.js 3.
 
-## ✅Step 16: Navigation Duplicates
+## 👉 Step 16: Navigation Duplicates
 
 <br>
 By default, Vue Router allows navigating to the same route multiple times consecutively.However, you can configure it to prevent navigating to the same route twice in a row by using the replace option in the router.push() method.
@@ -1820,7 +1824,7 @@ this.$router.push({ path: '/dashboard', replace: true });
 In the code snippet above, the replace option is set to true when using router.push().This ensures that navigating to the same route consecutively will replace the current entry in the browser's history stack instead of creating a new entry.
 <br>
 
-### ✅Step 17: Scroll Behavior
+### 👉 Step 17: Scroll Behavior
 
 <br>
 When navigating between routes, Vue Router automatically scrolls to the top of the new page.However, you can customize the scroll behavior by defining a scrollBehavior function in your router configuration.
@@ -1853,7 +1857,7 @@ In the code snippet above, the scrollBehavior function is defined to customize t
 
 <br>
 
-## ✅ Step 18: Error Handling
+## 👉 Step 18: Error Handling
 
 Vue Router provides error handling capabilities, allowing you to handle specific routing errors or global errors that occur during navigation.
 
@@ -1892,7 +1896,7 @@ In the code snippet above, the router.onError event listener allows you to handl
 
 <br>
 
-## ✅ Step 19: Hash Mode
+## 👉 Step 19: Hash Mode
 
 <br>
 
