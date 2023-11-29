@@ -22,6 +22,22 @@
 
 - [Vue Router](#vue-router)
   - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
+  - [👉 Step 2: Configuration](#-step-2-configuration)
+  - [👉 Step 3: Integrate the Router in your main Vue instance
+](#-step-3-integrate-the-router-in-your-main-vue-instance)
+  - [👉 Step 4: Creating Route Components](#-step-4-creating-route-components)
+  - [👉 Step 5: Navigating between Routes](#-step-5-navigating-between-routes)
+  - [ Step 6: Route Parameters and Dynamic Routes](#-step-6-route-parameters-and-dynamic-routes)
+  - [👉 Step 7: Programmatic Navigation](#-step-7-programmatic-navigation)
+  - [👉 Step 8: Nested Routes](#-step-8-nested-routes)
+  - [👉 Step 9: Route Guards](#-step-9-route-guards)
+  - [👉 Step 10: Dynamic Route Matching](#-step-10-dynamic-route-matching)
+  - [👉 Step 11: Route Transitions](#-step-11-route-transitions)
+  - [👉 Step 12: Navigation Guards in Component Options](#-step-12-navigation-guards-in-component-options)
+  - [👉 Step 13: Named Views](#-step-13-named-views)
+  - [👉 Step 14: Navigation Events](#-step-14-navigation-events)
+  - [👉 Step 15: Lazy Loading Routes](#-step-15-lazy-loading-routes)
+  - [👉 Step 16: Navigation Duplicates](#-step-16-navigation-duplicates)
 
 
 
