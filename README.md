@@ -53,7 +53,17 @@
   - [👉 Step 18: Error Handling](#-step-18-error-handling)
   - [👉 Step 19: Hash Mode](#-step-19-hash-mode)
     
-<script src="https://gist.github.com/rakibsarowar/0a9e02e48163070a2e5a8c3b85f6d597.js"></script>
+- [Vue Router](#vue-router)
+  - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
+  <!-- START_SECTION: Installation and Setup Details -->
+  - Details go here...
+  <!-- END_SECTION: Installation and Setup Details -->
+  
+  - [👉 Step 2: Configuration](#-step-2-configuration)
+  <!-- START_SECTION: Configuration Details -->
+  - Details go here...
+  <!-- END_SECTION: Configuration Details -->
+
 
 <br>
 
