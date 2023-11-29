@@ -2669,3 +2669,106 @@ cz same content in two places and google don't like it.
 <img src="./assest/redirect and Alias-04.PNG" />
 <img src="./assest/redirect and Alias-05.PNG" />
 <img src="./assest/redirect and Alias-06.PNG" />
+
+Step 01:
+change the route form route of the selected route:
+
+```
+ {
+    path: "/events/:id",
+    name: "EventLayout",
+    props: true,
+    component: EventLayout,
+    children: [{}]
+
+ }
+
+```
+Step 02: 
+Now we need to create redirect:
+
+```
+path: '/event/:id',
+redirect: to=> {
+  return { name: 'ComponentName', params: { id: to.params.id} }
+}
+
+```
+<br>
+
+<img src="./assest/redirect and Alias-07.PNG" />
+
+but we don't need that params cz id is automatic pass through because its same parameter name.
+<br>
+<img src="./assest/redirect and Alias-08.PNG" />
+
+And we can do it by anonyms function, So final codes are:
+
+```
+{
+ path: '/event/:id',
+ redirect: () => { { name: 'ComponentName'} 
+  },
+},
+```
+But nested route is not work for that,
+Step 03: 
+Redirect the nested route. And we can do it by two way,
+1st way:
+<br>
+<img src="./assest/redirect and Alias-09.PNG" />
+
+2nd way:
+Using afterEvent,
+And this will match on Event, Capture everything else in afterEvent.
+<br>
+<img src="./assest/redirect and Alias-10.PNG" />
+<br>
+So final code of router are:
+
+```
+
+const routes = [
+  {
+    path: "/",
+    name: "EventList",
+    component: EventList,
+    props: (route) => ({ page: parseInt(route.query.page) || 1 }),
+  },
+  {
+    path: "/events/:id",
+    name: "EventLayout",
+    props: true,
+    component: EventLayout,
+    children: [
+      {
+        path: "",
+        name: "EventDetails",
+        component: EventDetails,
+      },
+      {
+        path: "register",
+        name: "EventRegister",
+        component: EventRegister,
+      },
+      {
+        path: "edit",
+        name: "EventEdit",
+        component: EventEdit,
+      },
+    ],
+  },
+  {
+    path: "/event/:afterEvent(.*)",
+    redirect: (to) => {
+      return { path: "/events/" + to.params.afterEvent };
+    },
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: About,
+  },
+];
+
+```
