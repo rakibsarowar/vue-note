@@ -5,23 +5,11 @@
 
 > A hand note of my vue js journey.....
 
-<h1> First Note </h1>
-* 🌴 : **Main Topic** <br>
-* 🌿 : **Paragraph** <br>
-* 📕 : **Havey Note.** <br>
-* 🍂 : **Attention Note.** <br>
-* 🏷️ : **Regular Note** <br>
-* 📌 : **Regular Note** <br>
-* 💎 : **High Value info** <br>
-* 🧨 : **Carefull this** <br>
-* ✋ : **Stop! check the point** <br>
-* 🎯 : **Focus** <br>
-
+<br>
 
 | Key Note                    |                      |                |                       |
 |-----------------------------|----------------------|----------------|-----------------------|
 | Emoji                        | Description          | Emoji          | Description           |
-|-----------------------------|----------------------|----------------|-----------------------|
 | 🌴                           | **Main Topic**       | 📌             | **Regular Note**      |
 | 🌿                           | **Paragraph**        | 💎             | **High Value info**   |
 | 📕                           | **Heavy Note**       | 🧨             | **Careful this**      |
