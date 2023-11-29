@@ -2772,3 +2772,270 @@ const routes = [
 ];
 
 ```
+<br>
+## Programmatic Navigation
+its just like if anyone click a button, he will go to another page.
+
+<img src="./assest/Programmatic Navigation-01.PNG" />
+
+<img src="./assest/Programmatic Navigation-02.PNG" />
+ 
+ Step: 01
+ First import {useRouter} in selected component.
+ <br>
+
+ ```
+ import { useRouter } from "vue-router";
+
+ ```
+ Step: 02
+ Then we will declare a router constant;
+ <br>
+
+ ```
+ import { defineProps } from "vue";
+
+ ```
+ Step: 03
+ We will create function call register and and use router.push({}) this will naviggate the user where we want to specify. And we will use the specific router name.
+
+ ```
+ const register = () => {
+  // Call to API
+  // If registered then redirect to event details
+  router.push({
+    
+  });
+};
+
+ ```
+ <br>
+ <img src="./assest/Programmatic Navigation-03.PNG" />
+
+ So final code:
+ <br>
+
+ ```
+<script setup>
+import { useRouter } from "vue-router";
+import { defineProps } from "vue";
+
+defineProps(["event"]);
+const router = useRouter();
+
+const register = () => {
+  // Call to API
+  // If registered then redirect to event details
+  router.push({
+    name: "EventDetails",
+  });
+};
+</script>
+
+ ```
+ <br>
+ Note:
+<img src="./assest/Programmatic Navigation-04.PNG" />
+<br>
+<img src="./assest/Programmatic Navigation-05.PNG" />
+<br>
+This could be useful if you have a complex form, don't want to allow your use to go back to so you could use replace. 
+<img src="./assest/Programmatic Navigation-06.PNG" />
+<br>
+
+## Error Handling:
+<img src="./assest/Error Handle-01.PNG" />
+<br>
+<img src="./assest/Error Handle-02.PNG" />
+<br>
+<img src="./assest/Error Handle-03.PNG" />
+<br>
+
+## Common Error 01:
+
+**When user tries to navigate to a page that doesn't exit.**
+
+<br>
+Step 01:
+Create a 404 page.
+<br>
+
+```
+<script setup>
+</script>
+<template>
+  <h1>Oops!</h1>
+  <h3>The {{ resource }} you're looking for is not here.</h3>
+  <router-link :to="{ name: 'EventList' }">Back to the home page</router-link>
+</template>
+
+```
+<br>
+STEP 02:
+Go to router page and add the router of 404 page.
+but 
+add ``` path:'/:catchAll(.*)' ```
+<br>
+<img src="./assest/Error Handle-04.PNG" />
+<br>
+
+## Common Error 02: 
+**When user navigates to a resource that doesn't exit.**
+<br>
+<img src="./assest/Error Handle-05.PNG" />
+<br>
+STEP 01:
+
+We will update our 404 page by adding ``` {resource} ```
+which could be page or event.
+<br>
+
+```
+<script setup>
+import { defineProps } from "vue";
+
+defineProps({
+  resource: {
+    type: String,
+    required: true,
+    default: "page",
+  },
+});
+</script>
+<template>
+  <h1>Oops!</h1>
+  <h3>The {{ resource }} you're looking for is not here.</h3>
+  <router-link :to="{ name: 'EventList' }">Back to the home page</router-link>
+</template>
+
+```
+<br>
+STEP 02:
+add new router in router page:
+<br>
+
+```
+  {
+    path: "/404/:resource",
+    name: "404Resource",
+    component: NotFound,
+    props: true,
+  },
+
+```
+STEP 03:
+And in new route, we need to push that when API called failed. 
+So go to API call component, in here its Layout.Vue. 
+<br>
+
+```
+onMounted(() => {
+  EventService.getEvent(id.value)
+    .then((response) => {
+      event.value = response.data;
+    })
+    .catch((error) => {
+      if (error.response && error.response.status == 404) {
+        router.push({
+          name: "404Resource",
+          params: { resource: "event" },
+        });
+      } else {
+        router.push({ name: "NetworkError" });
+      }
+    });
+});
+
+```
+<br>
+push the router with params of "event" | So the message will be "There are no longer event page you are looking for"
+<br>
+
+## Common Error 03: 
+**When user's network connectivity fails**
+<br>
+<img src="./assest/Error Handle-06.PNG" />
+<br>
+STEP 01:
+create a new component.
+<br>
+
+```
+<template>
+  <div class="networkError">
+    <h1>Uh-Oh!</h1>
+
+    <h3>
+      It looks like you're experiencing some network issues, please take a
+      breath and <a href="#" @click="$router.go(-1)">click here</a> to try
+      again.
+    </h3>
+  </div>
+</template>
+
+```
+<br>
+Here ``` $router.go(-1) ``` is navigate to the previous route. 
+<br>
+STEP 02:
+Go to router component and added new route.
+<br>
+
+```
+  {
+    path: "/network-error",
+    name: "NetworkError",
+    component: NetworkError,
+  }
+
+```
+<br>
+STEP 03:
+then again go to API called page.
+<br>
+<img src="./assest/Error Handle-07.PNG" />
+<br>
+
+```
+onMounted(() => {
+  EventService.getEvent(id.value)
+    .then((response) => {
+      event.value = response.data;
+    })
+    .catch((error) => {
+      if (error.response && error.response.status == 404) {
+        router.push({
+          name: "404Resource",
+          params: { resource: "event" },
+        });
+      } else {
+        router.push({ name: "NetworkError" });
+      }
+    });
+});
+
+```
+<br>
+STEP 04:
+then again go to API called page.Link in our EventList.vue
+<br>
+
+```
+import { useRouter } from "vue-router";
+const router = useRouter();
+
+onMounted(() => {
+  watchEffect(() => {
+    events.value = null;
+    EventService.getEvents(2, page.value)
+      .then((response) => {
+        events.value = response.data;
+        totalEvents.value = response.headers["x-total-count"];
+      })
+      .catch(() => {
+        router.push({ name: "NetworkError" });
+      });
+  });
+});
+
+```
