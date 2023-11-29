@@ -2,6 +2,8 @@
 
 **A hand note of my vue js journey.....**
 <br>
+<br>
+
 <img src="./assest/cover photo.JPG">
 <br>
 
