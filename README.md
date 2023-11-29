@@ -17,18 +17,8 @@
 * ✋ : **Stop! check the point** <br>
 * 🎯 : **Focus** <br>
 
-
-| Emoji | Description         | Emoji | Description           |
-|-------|---------------------|-------|-----------------------|
-| 🌴    | **Main Topic**      | 📌    | **Regular Note**      |
-| 🌿    | **Paragraph**       | 💎    | **High Value info**   |
-| 📕    | **Heavy Note**      | 🧨    | **Careful this**      |
-| 🍂    | **Attention Note**  | ✋    | **Stop! check the point** |
-| 🏷️   | **Regular Note**    | 🎯    | **Focus**             |
-        |
-
 | Key Note                                                                                      |
-|------------------------------|----------------------|----------------|------------------------|
+|------------------------------|----------------------|----------------|-----------------------|
 | Emoji                         | Description          | Emoji          | Description           |
 |-------------------------------|----------------------|----------------|-----------------------|
 | 🌴                            | **Main Topic**       | 📌             | **Regular Note**      |
@@ -36,7 +26,6 @@
 | 📕                            | **Heavy Note**       | 🧨             | **Careful this**      |
 | 🍂                            | **Attention Note**   | ✋             | **Stop! check the point** |
 | 🏷️                           | **Regular Note**     | 🎯             | **Focus**             |
-
 
 
 <!-- NO COMMENT -->
