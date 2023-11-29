@@ -21,7 +21,8 @@
 - [Nested Routing](#nested-routing)
 
 - [Vue Router](#vue-router)
-  - [Step 1: Installation and Setup](#step-1-installation-and-setup)
+  - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
+
 
 
 ## UI Components
