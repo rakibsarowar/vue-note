@@ -5,7 +5,7 @@
 
 > A hand note of my vue js journey.....
 
-* 🎯 : **Step** <br>
+* 🎯 : **Main Topic** <br>
 * 🟩 🟨 🟥 : **Paragraph** <br>
 * 📕 : **Havey Note.** <br>
 * 📒 : **Attention Note.** <br>
@@ -53,7 +53,7 @@
   - [👉 Step 18: Error Handling](#-step-18-error-handling)
   - [👉 Step 19: Hash Mode](#-step-19-hash-mode)
     
-
+<script src="https://gist.github.com/rakibsarowar/0a9e02e48163070a2e5a8c3b85f6d597.js"></script>
 
 <br>
 
