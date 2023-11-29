@@ -6,9 +6,9 @@
 > A hand note of my vue js journey.....
 
 * 🌴 : **Main Topic** <br>
-* 🟩 🟨 🟥 : **Paragraph** <br>
+* 🌿 : **Paragraph** <br>
 * 📕 : **Havey Note.** <br>
-* 📒 : **Attention Note.** <br>
+* 🍂 : **Attention Note.** <br>
 * 🏷️ : **Regular Note** <br>
 * 📌 : **Regular Note** <br>
 * 💎 : **High Value info** <br>
@@ -166,10 +166,10 @@ The dot at the end of the command specifies the current directory as the project
 - Vue CLI will ask whether you want to use history mode for the router.If you're unsure, you can choose the default option (Yes) by pressing Enter.
 
 - Finally, Vue CLI will ask whether you want to save this as a preset for future projects.You can choose Yes or No based on your preference.
-  <br>
-  👉 **Step 3: Install project dependencies**
-  <br>
-  After creating the Vue.js project, we need to install the project dependencies defined in the package.json file.
+<br>
+👉 **Step 3: Install project dependencies**
+<br>
+After creating the Vue.js project, we need to install the project dependencies defined in the package.json file.
 
 In the terminal or command prompt, navigate to the project directory(if you're not already in it).
 👉 Run the following command to install the project dependencies:
@@ -255,12 +255,12 @@ Congratulations! You have successfully set up a Vue.js 3 project with Vite.You c
 
 <br>
 
-✅ **Vue.js 3 application structure**
+🌿 **Vue.js 3 application structure**
 <br>
 Vue.js is a popular JavaScript framework for building user interfaces.It provides a structured approach to developing web applications by separating concerns into components.Here's a step-by-step guide to understanding the Vue.js 3 application structure:
 <br>
 
-✅ **Setting up a Vue.js Project:**
+🌿 **Setting up a Vue.js Project:**
 
 <br>
 To get started, make sure you have Node.js installed on your machine.You can then use the Vue CLI(Command Line Interface) to create a new Vue.js project.Open your terminal or command prompt and run the following command:
@@ -269,7 +269,7 @@ $ vue create my - vue - app
 ```
 🏷️ This command will prompt you to select a preset for your project.You can choose the default preset or manually select features as per your requirements.
 <br>
-✅ **Understanding the Project Structure:**
+🌿 **Understanding the Project Structure:**
 
 <br>
 Once the project is created, navigate into the project directory:
@@ -303,7 +303,7 @@ public / index.html: This is the main HTML file where your Vue.js application wi
 - src / App.vue: This is the root component of your application.It serves as the entry point for your entire application.
 - src / main.js: This is the JavaScript file where you'll bootstrap your Vue.js application.
 
-✅ **Understanding the App.vue Component:**
+🌿 **Understanding the App.vue Component:**
 
 <br>
 Open the src / App.vue file.This file contains three sections: template, script, and style.
@@ -313,7 +313,7 @@ script: The script section contains the JavaScript code for the component.This i
 style: The style section contains the CSS styles specific to the component.You can use CSS or preprocessors like Sass or Less.
 
 <br>
-✅ **Creating Vue Components:**
+🌿 **Creating Vue Components:**
 
 <br>
 In the src / components directory, you can create your own Vue components.Each component should have its own.vue file, which includes the template, script, and style sections.
@@ -344,7 +344,7 @@ For example, let's create a simple "HelloWorld" component. Create a new file src
 </style>
 ```
 
-✅ **Registering and Using Components:**
+🌿 **Registering and Using Components:**
 
 <br>
 To use a component, you need to register it in your src / App.vue file or any other component where you want to use it.In the script section of the component, import the component file and register it using the components option.
@@ -383,7 +383,7 @@ import HelloWorld from './components/HelloWorld.vue';
 
 Now, the HelloWorld component is registered and ready to be used in the App component.You can use it by simply adding < HelloWorld /> in the template section.
 
-✅ **Bootstraping the Vue Application:**
+🌿 **Bootstraping the Vue Application:**
 
 <br>
 The entry point of your Vue.js application is the src / main.js file.Open it and you'll find the following code:
@@ -398,7 +398,7 @@ createApp(App).mount('#app');
 The createApp function creates a new Vue application instance and takes the root component(in this case, App) as an argument.Finally, the mount method is called to mount the application on the element with the id app in the public / index.html file.
 <br>
 
-✅ **Running the Vue Application:**
+🌿 **Running the Vue Application:**
 
 <br>
 Now that you have set up your Vue application structure, you can run it to see the result.Open your terminal or command prompt, navigate to the project directory, and run the following command:
