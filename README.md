@@ -1,6 +1,6 @@
 <div align=center>
-# 🚀 VUE NOTE
-**A hand note of my vue js journey.....**
+<h1> 🚀 VUE NOTE 🚀</h1>
+<p> A hand note of my vue js journey..... </p>
 </div>
 <br>
 
