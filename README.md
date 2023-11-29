@@ -16,7 +16,16 @@
 | 🍂                           | **Attention Note**   | ✋             | **Stop! check the point** |
 | 🏷️                          | **Regular Note**     | 🎯             | **Focus**             |
 
-
+| Key Note                                      |
+|-----------------------------------------------|
+| <th colspan="4">Emoji Description</th>        |
+| <td>Emoji</td> | <td>Description</td> | <td>Emoji</td> | <td>Description</td> |
+|----------------|---------------------|----------------|-----------------------|
+| 🌴             | **Main Topic**      | 📌             | **Regular Note**      |
+| 🌿             | **Paragraph**       | 💎             | **High Value info**   |
+| 📕             | **Heavy Note**      | 🧨             | **Careful this**      |
+| 🍂             | **Attention Note**  | ✋             | **Stop! check the point** |
+| 🏷️            | **Regular Note**    | 🎯             | **Focus**             |
 
 
 <!-- NO COMMENT -->
