@@ -2657,3 +2657,15 @@ So the code of Layout will be:
 
 ```
 **[`Back to top ⬆️`](#table-of-contents)**
+
+## Redirect & Alis:
+<img src="./assest/redirect and Alias-01.PNG" />
+<br>
+if we want to care about seo, we should not use this.
+cz same content in two places and google don't like it.
+<br>
+<img src="./assest/redirect and Alias-02.PNG" />
+<img src="./assest/redirect and Alias-03.PNG" />
+<img src="./assest/redirect and Alias-04.PNG" />
+<img src="./assest/redirect and Alias-05.PNG" />
+<img src="./assest/redirect and Alias-06.PNG" />
