@@ -5,7 +5,7 @@
 
 > A hand note of my vue js journey.....
 
-* 🎯 : **Main Topic** <br>
+* 🌴 : **Main Topic** <br>
 * 🟩 🟨 🟥 : **Paragraph** <br>
 * 📕 : **Havey Note.** <br>
 * 📒 : **Attention Note.** <br>
@@ -14,17 +14,18 @@
 * 💎 : **High Value info** <br>
 * 🧨 : **Carefull this** <br>
 * ✋ : **Stop! check the point** <br>
+* 🎯 : **Focus** <br>
 
 
 <!-- NO COMMENT -->
 
 ## Table of Contents
 
-- [For setting up the project](#for-setting-up-the-project)
-- [Setting up the development environment](#setting-up-the-development-environment)
-- [Project structure](#project-structure)
-- [Showing Data from variable to template](#showing-data-from-variable-to-template)
-- [Showing data from Object](#showing-data-from-object)
+- [🌴 For setting up the project](#-for-setting-up-the-project)
+- [🌴 Setting up the development environment](#-setting-up-the-development-environment)
+- [🌴 Project structure](#-project-structure)
+- [🌴 Showing Data from variable to template](#-showing-data-from-variable-to-template)
+- [🌴 Showing data from Object](#-showing-data-from-object)
 
 - [Vue Router](#vue-router)
   - [👉 Step 1: Installation and Setup](#-step-1-installation-and-setup)
@@ -48,9 +49,9 @@
   - [👉 Step 19: Hash Mode](#-step-19-hash-mode)
 
   
-- [Building Pagination](#building-pagination)
-- [Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
-- [Nested Routing](#nested-routing)
+- [🌴 Building Pagination](#-building-pagination)
+- [🌴 Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#-Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
+- [🌴 Nested Routing](#-nested-routing)
 
     
 
