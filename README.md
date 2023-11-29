@@ -51,7 +51,7 @@
   
 - [🌴 Building Pagination](#-building-pagination)
 - [🌴 Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#-Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
-- [🌴 Nested Routing](#-nested-routing)
+- [🌿 Nested Routing](#-nested-routing)
 
     
 
@@ -2288,7 +2288,7 @@ onMounted(() => {
 
 <br>
 
-## Nested Routing
+## 🌿 Nested Routing [From My Learning....]
 
 <br>
 
@@ -2446,7 +2446,7 @@ Step 02: add line in router. Make then a children route.
 -----------------------------------------------------------------
 <br>
 
-## 🌿 Nested Routing: [From My Learning....]
+## 🌿 Nested Routing Detail:  
 **[`Back to top ⬆️`](#table-of-contents)**
 <br>
 
