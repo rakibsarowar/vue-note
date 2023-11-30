@@ -3039,3 +3039,138 @@ onMounted(() => {
 });
 
 ```
+
+<br>
+
+## Flash Message:
+For that we need to use global state. And We can create a reactive objuect to use as Global Storage, and share that object across our app. 
+<br>
+> REACTIVE means that when the object is updated, any Component that uses the object is re-renderd. 
+
+STEP 01:
+Go the main.js and create a object. 
+<br>
+
+```
+import {reactive } from "vue";
+
+const GStore = reactive({ flashMessage: "" });
+
+app.use(router).provide("GStore", GStore);
+
+```
+<br>
+Final code of Main.js
+<br>
+
+```
+import { createApp, reactive } from "vue";
+import App from "./App.vue";
+import router from "./router";
+const GStore = reactive({ flashMessage: "" });
+
+const app = createApp(App);
+
+app.use(router).provide("GStore", GStore);
+
+app.mount("#app");
+
+```
+<br>
+STEP 02:
+Go to selected component and inject the store: 
+<br>
+
+```
+import { inject } from "vue";
+
+const GStore = inject("GStore");
+
+```
+then use SetTimeOut function:
+<br>
+
+```
+const register = () => {
+  // Call to API
+  // If registered then redirect to event details
+  GStore.flashMessage =
+    "You are successfully registered for " + props.event.title;
+  setTimeout(() => {
+    GStore.flashMessage = "";
+  }, 3000);
+  router.push({
+    name: "EventDetails",
+  });
+};
+
+```
+
+So final code of this comonents are: 
+<br>
+
+```
+<script setup>
+import { defineProps } from "vue";
+import { useRouter } from "vue-router";
+import { inject } from "vue";
+
+const props = defineProps(["event"]);
+const router = useRouter();
+const GStore = inject("GStore");
+
+const register = () => {
+  // Call to API
+  // If registered then redirect to event details
+  GStore.flashMessage =
+    "You are successfully registered for " + props.event.title;
+  setTimeout(() => {
+    GStore.flashMessage = "";
+  }, 3000);
+  router.push({
+    name: "EventDetails",
+  });
+};
+</script>
+<template>
+  <p>Register for the event here</p>
+  <button @click="register">Register Me</button>
+</template>
+
+```
+<br>
+STEP03:
+GO to app.vue: 
+Add inject the store and display the message from here too. 
+<br>
+
+```
+<script setup>
+import { inject } from "vue";
+
+const GStore = inject("GStore");
+</script>
+
+<template>
+ <div id="app">
+    <div id="flashMessage" v-if="GStore?.flashMessage">
+      {{ GStore.flashMessage }}
+    </div>
+  <div>
+<template/>
+<style>
+@keyframes yellowfade {
+  from {
+    background: yellow;
+  }
+  to {
+    background: transparent;
+  }
+}
+<style/>
+
+```
+<br>
+
+
+```
