@@ -3043,12 +3043,16 @@ onMounted(() => {
 <br>
 
 ## Flash Message:
+<img src="./assest/Flash-message-01.JPG" />
 For that we need to use global state. And We can create a reactive objuect to use as Global Storage, and share that object across our app. 
 <br>
 > REACTIVE means that when the object is updated, any Component that uses the object is re-renderd. 
+<img src="./assest/Flash-message-02.JPG" />
+<img src="./assest/Flash-message-03.JPG" />
 
 STEP 01:
 Go the main.js and create a object. 
+<img src="./assest/Flash-message-04.JPG" />
 <br>
 
 ```
@@ -3079,6 +3083,7 @@ app.mount("#app");
 <br>
 STEP 02:
 Go to selected component and inject the store: 
+<img src="./assest/Flash-message-05.JPG" />
 <br>
 
 ```
@@ -3142,6 +3147,7 @@ const register = () => {
 STEP03:
 GO to app.vue: 
 Add inject the store and display the message from here too. 
+<img src="./assest/Flash-message-06.JPG" />
 <br>
 
 ```
