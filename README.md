@@ -20,7 +20,8 @@
 <!-- NO COMMENT -->
 
 ## Table of Contents
-
+- [🌴 Vue.js Core Concepts](#-vue.js-core-concepts)
+  - [🌿 Vue Instance](#-vue-instance)
 - [🌴 For setting up the project](#-for-setting-up-the-project)
 - [🌴 Setting up the development environment](#-setting-up-the-development-environment)
 - [🌴 Project structure](#-project-structure)
@@ -58,6 +59,22 @@
 
 
 <br>
+
+## 🌴 Vue.js Core Concepts
+## 🌿 Vue Instance: 
+Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks. <br>
+The Vue instance is at the core of Vue.js and serves as the root of every Vue application. It's responsible for managing the data, methods, computed properties, and lifecycle hooks of your Vue components.<br>
+
+## Vue Instance Creation:
+To create a Vue instance, you typically initialize it with a configuration object using the ``` new Vue() ``` constructor. <br>
+
+```
+var app = new Vue({
+  // Options
+});
+
+```
+
 
 ## For setting up the project
 
