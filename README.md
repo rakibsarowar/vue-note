@@ -1,7 +1,7 @@
 
 <img height="300" width="100%" src="./assest/main cover photo.JPG"/>
 
-# VUE NOTE 🚀
+# VUE HAND NOTE 🚀
 
 > A hand note of my vue js journey.....
 
