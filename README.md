@@ -20,8 +20,14 @@
 <!-- NO COMMENT -->
 
 ## Table of Contents
-- [🌴 Vue.js Core Concepts](#-vue.js-core-concepts)
-  - [🌿 Vue Instance](#-vue-instance)
+[🌴 Vue.js Core Concepts](#-vue.js-core-concepts)
+- [🌿 Vue Instance](#-vue-instance)
+- [🌿 Data](#-data)
+- [🌿 Methods](#-methods)
+- [🌿 Computed Properties](#-computed-properties)
+- [🌿 Lifecycle Hooks](#-lifecycle-hooks)
+- 
+  
 - [🌴 For setting up the project](#-for-setting-up-the-project)
 - [🌴 Setting up the development environment](#-setting-up-the-development-environment)
 - [🌴 Project structure](#-project-structure)
@@ -65,7 +71,7 @@
 Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks. <br>
 The Vue instance is at the core of Vue.js and serves as the root of every Vue application. It's responsible for managing the data, methods, computed properties, and lifecycle hooks of your Vue components.<br>
 
-## Vue Instance Creation:
+## 🌿 Vue Instance Creation:
 To create a Vue instance, you typically initialize it with a configuration object using the ``` new Vue() ``` constructor. <br>
 
 ```
@@ -74,7 +80,82 @@ var app = new Vue({
 });
 
 ```
+## 🌿 Data:
+The data property within the Vue instance holds the application's data. Vue.js ensures that any changes made to this data are reactive, meaning changes automatically update the corresponding parts of the UI.
 
+Example:
+```
+var app = new Vue({
+  data: {
+    message: 'Hello, Vue!'
+  }
+});
+
+```
+## 🌿 Methods:
+The methods property contains methods that can be used within the Vue instance. These methods can manipulate data or perform other tasks triggered by user actions or lifecycle events.
+
+Example:
+```
+var app = new Vue({
+  data: {
+    count: 0
+  },
+  methods: {
+    increment() {
+      this.count++;
+    },
+    decrement() {
+      this.count--;
+    }
+  }
+});
+
+```
+
+## 🌿 Computed Properties:
+The computed property allows you to define properties that are derived from the Vue instance's data. Computed properties are cached and only re-computed when their dependencies change.
+
+Example:
+
+```
+var app = new Vue({
+  data: {
+    radius: 5
+  },
+  computed: {
+    circleArea() {
+      return Math.PI * Math.pow(this.radius, 2);
+    }
+  }
+});
+
+```
+## 🌿 Lifecycle Hooks:
+Vue components have a series of lifecycle hooks that allow you to perform actions at specific stages of a component's life. Some common hooks include created, mounted, updated, and destroyed. These hooks provide an opportunity to execute code at various stages of a component's lifecycle.
+
+Example:
+
+```
+var app = new Vue({
+  data: {
+    message: 'Hello, Vue!'
+  },
+  created() {
+    console.log('Vue instance created');
+  },
+  mounted() {
+    console.log('Vue instance mounted to the DOM');
+  },
+  updated() {
+    console.log('Vue instance updated');
+  },
+  destroyed() {
+    console.log('Vue instance destroyed');
+  }
+});
+
+```
 
 ## For setting up the project
 
