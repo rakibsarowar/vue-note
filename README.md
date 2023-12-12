@@ -11,9 +11,9 @@
 |-----------------------------|----------------------|----------------|-----------------------|
 | **Emoji**                    | **Description**          | **Emoji**   | **Description**       |
 | 🌴                           | **Main Topic**       | 📌             | **Regular Note**      |
-| 🌿                           | **Paragraph**        | 💎             | **High Value info**   |
-| 📕                           | **Heavy Note**       | 🧨             | **Careful this**      |
-| 🍂                           | **Attention Note**   | ✋             | **Stop! check the point** |
+| 🌿                           | **Sub Category**        | 💎             | **High Value info**   |
+| 🍂                          | **Sub-sub Category**       | 🧨             | **Careful this**      |
+| 📕                           | **Attention Note**   | ✋             | **Stop! check the point** |
 | 🏷️                          | **Regular Note**     | 🎯             | **Focus**             |
 
 
