@@ -19,9 +19,38 @@
 
 <!-- NO COMMENT -->
 
+<!-- 
+1. Vue.js Core Concepts:
+ •	1.1 Vue Instance: Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks.
+ •	1.2 Components: Creating and managing components, props, events, slots.
+ •	1.3 Vue Directives: v-bind, v-if, v-for, v-on, etc.
+ •	1.4 Reactivity: Understanding Vue's reactivity system.
+2. Vue Router:
+ •	2.1 Routing: Implementing client-side routing using Vue Router.
+ •	2.2 Nested Routes: Configuring nested routes and handling dynamic routes.
+3. Vuex (State Management):
+ •	3.1 State: Managing application-level state using Vuex.
+ •	3.2 Mutations & Actions: Changing state through mutations and asynchronous actions.
+ •	3.3 Getters: Computing derived state.
+4. API Integration:
+ •	4.1 Axios/Fetch: Making HTTP requests to APIs.
+ •	4.2 Handling Responses: Managing API responses and integrating them into Vue components.
+5. Advanced Vue.js Topics:
+ •	5.1 Custom Directives: Creating custom directives for specific DOM manipulations.
+ •	5.2 Mixins: Reusing component logic.
+ •	5.3 Render Functions and JSX: Understanding and using render functions for more complex UI requirements.
+6. Testing:
+ •	6.1 Unit Testing: Writing unit tests for Vue components using testing libraries like Jest or Vue Test Utils.
+ •	6.2 End-to-End Testing: Using tools like Cypress for testing the entire application flow.
+7. Tooling:
+ •	7.1 Vue CLI: Setting up projects using the Vue CLI and understanding its features.
+ •	7.2 DevTools: Using browser extensions or Vue DevTools for debugging and inspecting Vue applications.
+
+ -->
+
 ## Table of Contents
-[🌴 Vue.js Core Concepts](#-vue.js-core-concepts)
-- [🌿 Vue Instance](#-vue-instance)
+[🌴 1. Vue.js Core Concepts](#-vue.js-core-concepts)
+- [🌿 1.1 Vue Instance](#-1-1-vue-instance)
  - [🍂 Data](#-data)
  - [🍂 Methods](#-methods)
  - [🍂 Computed Properties](#-computed-properties)
