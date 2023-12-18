@@ -51,10 +51,10 @@
 ## Table of Contents
 [🌴 1. Vue.js Core Concepts](#-vue.js-core-concepts)
 - [🌿 1.1 Vue Instance](#-1-1-vue-instance)
- - [🍂 Data](#-data)
- - [🍂 Methods](#-methods)
- - [🍂 Computed Properties](#-computed-properties)
- - [🍂 Lifecycle Hooks](#-lifecycle-hooks)
+  - [🍂 Data](#-data)
+  - [🍂 Methods](#-methods)
+  - [🍂 Computed Properties](#-computed-properties)
+  - [🍂 Lifecycle Hooks](#-lifecycle-hooks)
 - [🌿 Components](#-components) 
   
 - [🌴 For setting up the project](#-for-setting-up-the-project)
