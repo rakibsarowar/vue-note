@@ -470,7 +470,72 @@ export default {
 </script>
 
 ```
+<br>
 
+## Events (Custom Event Handling):
+Events allow child components to communicate with parent components. Child components can emit custom events that the parent can listen for and react to.
+<br>
+Child Component:
+
+```
+<template>
+  <button @click="sendMessage">Send Message</button>
+</template>
+
+<script>
+export default {
+  methods: {
+    sendMessage() {
+      this.$emit('message-sent', 'Hello from child');
+    }
+  }
+};
+</script>
+
+```
+<br>
+Parent Component:
+```
+<template>
+  <child-component @message-sent="handleMessage"></child-component>
+</template>
+
+<script>
+export default {
+  methods: {
+    handleMessage(message) {
+      console.log('Message received from child:', message);
+    }
+  }
+};
+</script>
+
+```
+<br>
+
+## Slots (Content Distribution):
+Slots allow you to create flexible components by allowing the parent to distribute content (HTML/markup) to a child component.
+
+Child Component:
+```
+<template>
+  <div>
+    <h2>Welcome</h2>
+    <slot></slot>
+  </div>
+</template>
+
+```
+<br>
+Parent Component:
+```
+<template>
+  <child-component>
+    <p>This content will be placed in the slot</p>
+  </child-component>
+</template>
+
+```
 
 ## For setting up the project
 
