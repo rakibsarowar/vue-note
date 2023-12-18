@@ -60,7 +60,12 @@
   - [🍂 1.2.2 Porps (Custom Attibutes)](#-methods)
   - [🍂 1.2.3 Events (Custom Event Handling)](#-computed-properties)
   - [🍂 1.2.4 Slots (Content Distribution)](#-lifecycle-hooks)
-  
+- [🌿 1.3 Vue Directives](#-components)
+  - [🍂 1.3.1 v-bind Directive](#-data)
+  - [🍂 1.3.2 v-bind Directive](#-data)
+  - [🍂 1.3.3 v-bind Directive](#-data)
+  - [🍂 1.3.4 v-bind Directive](#-data)
+
 - [🌴 For setting up the project](#-for-setting-up-the-project)
 - [🌴 Setting up the development environment](#-setting-up-the-development-environment)
 - [🌴 Project structure](#-project-structure)
@@ -591,11 +596,13 @@ Example:
 <img v-bind:src="imageUrl">
 <!-- Shorthand: -->
 <img :src="imageUrl">
+
 ```
 Here, imageUrl is a data property in your Vue instance, and v-bind binds the src attribute of the ``` <img> ``` tag to the value of imageUrl.
 
 ```
 <tag-name v-bind:attributeName="expression"> </tag-name>
+
 ```
 
 🏷️ The v-bind directive is often abbreviated with a colon (:), so you can also write it like this:
@@ -606,8 +613,8 @@ Here, imageUrl is a data property in your Vue instance, and v-bind binds the src
 
 Now, let's dive into some examples to illustrate how v-bind works:
 
-📌 Example 1: Binding a Data Property
-Suppose you have a data property called title in your Vue component, and you want to bind it to the title attribute of an <h1> element.
+📌 Example 1: Binding a Data Property <br>
+Suppose you have a data property called title in your Vue component, and you want to bind it to the title attribute of an ``` <h1> ``` element.
 
 ```
 <template>
@@ -630,8 +637,8 @@ In this example, the value of the title attribute will be dynamically updated wh
 
 <br>
 
-📌 Example 2: Binding a Computed Property
-You can also use v-bind with computed properties. Here's an example where we bind a computed property called fullName to the value attribute of an <input> element.
+📌 Example 2: Binding a Computed Property <br>
+You can also use v-bind with computed properties. Here's an example where we bind a computed property called fullName to the value attribute of an ``` <input> ``` element.
 
 ```
 <template>
@@ -660,7 +667,7 @@ export default {
 ```
 In this case, the input field will always display the full name, which is derived from the firstName and lastName data properties.
 
-📌 Example 3: Binding to Inline Styles
+📌 Example 3: Binding to Inline Styles <br>
 You can also use v-bind to bind CSS styles dynamically. Here's an example where we bind the backgroundColor style property to a data property called color.
 
 ```
@@ -681,8 +688,7 @@ export default {
 </script>
 
 ```
-In this example, the background color of the <div> element will be updated to the value of the color data property.
-
+In this example, the background color of the ``` <div> ``` element will be updated to the value of the color data property.
 
 
 
