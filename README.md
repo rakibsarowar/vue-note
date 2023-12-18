@@ -62,10 +62,13 @@
   - [🍂 1.2.4 Slots (Content Distribution)](#-lifecycle-hooks)
 - [🌿 1.3 Vue Directives](#-components)
   - [🍂 1.3.1 v-bind Directive](#-data)
-  - [🍂 1.3.2 v-bind Directive](#-data)
-  - [🍂 1.3.3 v-bind Directive](#-data)
-  - [🍂 1.3.4 v-bind Directive](#-data)
-
+  - [🍂 1.3.2 v-if and v-else Directives](#-data)
+  - [🍂 1.3.3 v-for Directive](#-data)
+  - [🍂 1.3.4 v-on Directive](#-data)
+  - [🍂 1.3.5 v-model Directive](#-data)
+  - [🍂 1.3.6 v-show Directive](#-data)
+  - [🍂 1.3.7 v-pre, v-cloak, v-once Directives](#-data)
+  
 - [🌴 For setting up the project](#-for-setting-up-the-project)
 - [🌴 Setting up the development environment](#-setting-up-the-development-environment)
 - [🌴 Project structure](#-project-structure)
