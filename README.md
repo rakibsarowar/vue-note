@@ -113,7 +113,7 @@ var app = new Vue({
 });
 
 ```
-## 🌿 Data:
+## 🍂 1.1.1 Data:
 The data property within the Vue instance holds the application's data. Vue.js ensures that any changes made to this data are reactive, meaning changes automatically update the corresponding parts of the UI.
 
 Example:
@@ -141,7 +141,7 @@ var app = new Vue({
 });
 
 ```
-### 🍂 Reactive Data:
+### 1.1.1.1 Reactive Data:
 The data property in a Vue instance defines the initial state of the application's data. Vue's reactivity system ensures that any changes made to this data are automatically reflected in the UI where that data is used.
 
 ```
@@ -157,7 +157,7 @@ var app = new Vue({
 });
 
 ```
-### 🍂 Reactivity in Vue:
+### 1.1.1.2 Reactivity in Vue:
 When properties are added or modified within the data object, Vue automatically detects these changes and updates the associated components in the DOM.
 
 Example:
@@ -168,7 +168,7 @@ app.items.push('grapes');
 app.user.age = 26;
 
 ```
-### 🍂 Accessing Data in Templates:
+### 1.1.1.3 Accessing Data in Templates:
 You can access data properties directly within Vue templates using the double curly braces {{ }} syntax.
 
 Example:
@@ -182,7 +182,7 @@ Example:
 </div>
 
 ```
-### 🍂 Changing Data:
+### 1.1.1.4 Changing Data:
 To modify data within Vue instances, you should use Vue's reactivity system by directly changing the properties. This ensures that the changes are reactive and trigger the necessary updates in the UI.
 
 Example:
@@ -192,7 +192,7 @@ app.message = 'Updated message'; // Reactive change
 app.items.push('new item'); // Reactive change
 
 ```
-### 🍂 Caveats with Reactivity:
+### 1.1.1.5 Caveats with Reactivity:
 It's important to note that Vue cannot detect property addition or deletion after the initial creation of the instance. To add or remove properties dynamically, use Vue.set or this.$set for object properties and splice for array elements.
 
 Example:
@@ -207,7 +207,7 @@ app.items.splice(index, 1);
 
 ```
 
-## 🌿 Methods:
+## 🍂 1.1.2 Methods:
 The methods property contains methods that can be used within the Vue instance. These methods can manipulate data or perform other tasks triggered by user actions or lifecycle events.
 
 Example:
@@ -230,7 +230,7 @@ var app = new Vue({
 
 💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the instance's scope. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
 
-### 🍂 Declaring Methods:
+### 1.1.2.1 Declaring Methods:
 Methods are defined within the methods object of the Vue instance, using key-value pairs where the key is the method name and the value is the function.
 
 Example:
@@ -254,7 +254,7 @@ var app = new Vue({
 });
 
 ```
-### 🍂 Accessing Methods in Templates:
+### 1.1.2.2 Accessing Methods in Templates:
 You can call these methods directly from your Vue templates by using Vue's event handling directives (v-on or @ shorthand).
 
 Example:
@@ -268,7 +268,7 @@ Example:
 </div>
 
 ```
-### 🍂 Method Scope and this Context:
+### 1.1.2.3 Method Scope and this Context:
 In Vue methods, this refers to the Vue instance itself, giving you access to the instance's data, methods, and lifecycle hooks.
 
 ```
@@ -285,7 +285,7 @@ var app = new Vue({
 });
 
 ```
-### 🍂 Parameters in Methods:
+### 1.1.2.4 Parameters in Methods:
 You can pass parameters to Vue methods when they are called from the template. These parameters can be accessed within the method's function body.
 
 ```
@@ -306,7 +306,7 @@ methods: {
 
 ```
 
-### 🍂 Method Lifecycle Hooks:
+### 1.1.2.5 Method Lifecycle Hooks:
 Vue also provides certain lifecycle hooks where you can define custom methods to be executed at specific stages of a Vue instance's lifecycle, such as created, mounted, updated, and destroyed.
 
 Example:
@@ -329,7 +329,7 @@ var app = new Vue({
 
 ```
 
-## 🌿 Computed Properties:
+## 🍂 1.1.3 Computed Properties:
 The computed property allows you to define properties that are derived from the Vue instance's data. Computed properties are cached and only re-computed when their dependencies change.
 
 Example:
@@ -349,7 +349,7 @@ var app = new Vue({
 ```
 💎 Computed properties in Vue.js are properties that are derived from the Vue instance's data and are calculated based on dependencies. They allow you to perform complex logic and calculations on your data in a way that is reactive—meaning these properties update automatically when their underlying dependencies change.
 
-### 🍂 Declaration of Computed Properties:
+### 1.1.3.1 Declaration of Computed Properties:
 Computed properties are defined within the computed object of the Vue instance.
 
 Example:
@@ -368,7 +368,7 @@ var app = new Vue({
 
 ```
 
-### 🍂 Usage in Templates:
+### 1.1.3.2 Usage in Templates:
 You can directly use computed properties in your Vue templates just like regular data properties.
 
 Example:
@@ -381,7 +381,7 @@ Example:
 </div>
 
 ```
-### 🍂 Characteristics of Computed Properties:
+### 1.1.3.3 Characteristics of Computed Properties:
 1. Reactivity: Computed properties are reactive, which means they update automatically whenever their dependent properties change. If radius changes in the above example, circleArea will be re-computed.
 
 2. Caching: Computed properties are cached based on their dependencies. They will only recompute if their dependencies change. This enhances performance as they won't recompute unless necessary.
@@ -396,7 +396,7 @@ computed: {
   }
 }
 ```
-### 🍂  Computed Properties vs. Methods:
+### 1.1.3.4 Computed Properties vs. Methods:
 While methods can also perform similar calculations, computed properties have an advantage in terms of caching. Computed properties are only re-evaluated if their dependencies change, while methods are called every time they are referenced in the template, regardless of whether their dependencies have changed.
 
 When to Use Computed Properties:
@@ -404,7 +404,7 @@ When to Use Computed Properties:
 - Dependency Tracking: When the result depends on reactive data, using computed properties ensures automatic update when these dependencies change.
 - Template Readability: Computed properties can improve template readability by abstracting complex logic out of the template.
 
-## 🌿 Lifecycle Hooks:
+## 🍂 1.1.4 Lifecycle Hooks:
 Vue components have a series of lifecycle hooks that allow you to perform actions at specific stages of a component's life. Some common hooks include created, mounted, updated, and destroyed. These hooks provide an opportunity to execute code at various stages of a component's lifecycle.
 
 Example:
@@ -430,10 +430,9 @@ var app = new Vue({
 
 ```
 
-## 🌿 Components:
+## 🌿 1.2 Components
 **[`Back to top ⬆️`](#table-of-contents)**
-
-## Creating Components:
+<br>
 Components in Vue.js are created using the ``` Vue.component ``` method or by defining components within a Vue instance using the ``` components ``` property.
 <br>
 Global Component (Using Vue.component):
@@ -459,7 +458,7 @@ var app = new Vue({
 ```
 <br>
 
-## Component Structure:
+## 🍂 1.2.1 Component Structure
 
 A Vue component typically consists of:
 
@@ -467,7 +466,7 @@ A Vue component typically consists of:
 - Script: Contains the component's logic, data, methods, computed properties, etc.
 - Style: Contains component-specific CSS or styling (optional).
 
-## Props (Custom Attributes):
+## 🍂 1.2.2 Porps (Custom Attibutes)
 Props allow you to pass data from a parent component to a child component. They are custom attributes defined in a parent's template that can be accessed within the child component.
 
 Parent Component:
@@ -505,7 +504,7 @@ export default {
 ```
 <br>
 
-## Events (Custom Event Handling):
+## 🍂 1.2.3 Events (Custom Event Handling)
 Events allow child components to communicate with parent components. Child components can emit custom events that the parent can listen for and react to.
 <br>
 
@@ -550,7 +549,7 @@ export default {
 
 <br>
 
-## Slots (Content Distribution):
+## 🍂 1.2.4 Slots (Content Distribution)
 Slots allow you to create flexible components by allowing the parent to distribute content (HTML/markup) to a child component.
 
 Child Component:
