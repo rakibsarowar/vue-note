@@ -22,11 +22,11 @@
 ## Table of Contents
 [🌴 Vue.js Core Concepts](#-vue.js-core-concepts)
 - [🌿 Vue Instance](#-vue-instance)
-- [🌿 Data](#-data)
-- [🌿 Methods](#-methods)
-- [🌿 Computed Properties](#-computed-properties)
-- [🌿 Lifecycle Hooks](#-lifecycle-hooks)
-- 
+ - [🍂 Data](#-data)
+ - [🍂 Methods](#-methods)
+ - [🍂 Computed Properties](#-computed-properties)
+ - [🍂 Lifecycle Hooks](#-lifecycle-hooks)
+- [🌿 Components](#-components) 
   
 - [🌴 For setting up the project](#-for-setting-up-the-project)
 - [🌴 Setting up the development environment](#-setting-up-the-development-environment)
@@ -396,6 +396,81 @@ var app = new Vue({
 });
 
 ```
+
+## 🌿 Components:
+**[`Back to top ⬆️`](#table-of-contents)**
+
+## Creating Components:
+Components in Vue.js are created using the ``` Vue.component ``` method or by defining components within a Vue instance using the ``` components ``` property.
+<br>
+Global Component (Using Vue.component):
+
+```
+Vue.component('my-component', {
+  // Options for the component
+});
+
+```
+<br>
+Component within a Vue Instance (Using components):
+
+```
+var app = new Vue({
+  components: {
+    'my-component': {
+      // Options for the component
+    }
+  }
+});
+
+```
+<br>
+
+## Component Structure:
+
+A Vue component typically consists of:
+
+- Template: Defines the component's structure (HTML markup).
+- Script: Contains the component's logic, data, methods, computed properties, etc.
+- Style: Contains component-specific CSS or styling (optional).
+
+## Props (Custom Attributes):
+Props allow you to pass data from a parent component to a child component. They are custom attributes defined in a parent's template that can be accessed within the child component.
+
+Parent Component:
+
+```
+<template>
+  <child-component :message="parentMessage"></child-component>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      parentMessage: 'Message from parent'
+    };
+  }
+};
+</script>
+
+```
+<br>
+Child Component:
+
+```
+<template>
+  <div>{{ message }}</div>
+</template>
+
+<script>
+export default {
+  props: ['message']
+};
+</script>
+
+```
+
 
 ## For setting up the project
 
