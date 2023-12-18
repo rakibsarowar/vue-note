@@ -475,6 +475,7 @@ export default {
 ## Events (Custom Event Handling):
 Events allow child components to communicate with parent components. Child components can emit custom events that the parent can listen for and react to.
 <br>
+
 Child Component:
 
 ```
@@ -494,7 +495,9 @@ export default {
 
 ```
 <br>
+
 Parent Component:
+
 ```
 <template>
   <child-component @message-sent="handleMessage"></child-component>
@@ -511,12 +514,14 @@ export default {
 </script>
 
 ```
+
 <br>
 
 ## Slots (Content Distribution):
 Slots allow you to create flexible components by allowing the parent to distribute content (HTML/markup) to a child component.
 
 Child Component:
+
 ```
 <template>
   <div>
@@ -526,8 +531,10 @@ Child Component:
 </template>
 
 ```
+
 <br>
 Parent Component:
+
 ```
 <template>
   <child-component>
