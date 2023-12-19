@@ -107,8 +107,8 @@
 
 <br>
 
-## 🌴 Vue.js Core Concepts
-## 🌿 Vue Instance: 
+## 🌴 1. Vue.js Core Concepts
+## 🌿 1.1 Vue Instance: 
 Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks. <br>
 The Vue instance is at the core of Vue.js and serves as the root of every Vue application. It's responsible for managing the data, methods, computed properties, and lifecycle hooks of your Vue components.<br>
 
@@ -394,7 +394,7 @@ Example:
 
 2. Caching: Computed properties are cached based on their dependencies. They will only recompute if their dependencies change. This enhances performance as they won't recompute unless necessary.
 
-### 🍂 Getter Function:
+### Getter Function:
 The function defined for a computed property serves as a getter function. It's a function that returns the computed value based on the dependent properties.
 
 ```
@@ -589,7 +589,7 @@ Parent Component:
 Vue directives are special attributes with the v- prefix that are used in Vue.js templates to apply reactive behavior to the rendered DOM. They enable you to manipulate the DOM, apply conditional rendering, handle events, bind data, and iterate through lists efficiently.
 <br>
 
-## 🍂 1.3.1 v-bind Directive:
+## 🍂 1.3.1 v-bind Directive
 v-bind is used to dynamically bind one or more attributes or a component prop to an expression.
 Or, in Vue.js, v-bind is a directive used to bind data or expressions to an HTML attribute. It allows you to dynamically update the value of an attribute based on the underlying data or computed properties in your Vue component.
 
@@ -868,7 +868,7 @@ In this example, the textStyle computed property dynamically computes the CSS st
 These examples demonstrate the basics of style binding in Vue.js 3. You can bind any CSS property and value pairs you need, and even use dynamic data or computed properties to compute the styles at runtime.Remember to prefix property names with a dash when using kebab -case CSS properties, such as 'font-weight' and 'text-decoration'.
 
 
-## 🍂 1.3.2 v-if and v-else Directives:
+## 🍂 1.3.2 v-if and v-else Directives
 v-if and v-else are used for conditional rendering. They conditionally render or remove DOM elements based on a condition means these directives allow you to conditionally show or hide elements in your Vue.js templates based on certain conditions.
 
 Let's start with the v-if directive. This directive is used to conditionally render an element if a given expression evaluates to true. If the expression is false, the element is not rendered in the DOM.
