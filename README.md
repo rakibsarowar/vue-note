@@ -122,6 +122,8 @@ var app = new Vue({
 
 ```
 ## 🍂 1.1.1 Data:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 The data property within the Vue instance holds the application's data. Vue.js ensures that any changes made to this data are reactive, meaning changes automatically update the corresponding parts of the UI.
 
 Example:
@@ -150,6 +152,8 @@ var app = new Vue({
 
 ```
 ### 1.1.1.1 Reactive Data:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 The data property in a Vue instance defines the initial state of the application's data. Vue's reactivity system ensures that any changes made to this data are automatically reflected in the UI where that data is used.
 
 ```
@@ -166,6 +170,7 @@ var app = new Vue({
 
 ```
 ### 1.1.1.2 Reactivity in Vue:
+**[`Back to top ⬆️`](#table-of-contents)**
 When properties are added or modified within the data object, Vue automatically detects these changes and updates the associated components in the DOM.
 
 Example:
@@ -177,6 +182,8 @@ app.user.age = 26;
 
 ```
 ### 1.1.1.3 Accessing Data in Templates:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 You can access data properties directly within Vue templates using the double curly braces {{ }} syntax.
 
 Example:
@@ -191,6 +198,7 @@ Example:
 
 ```
 ### 1.1.1.4 Changing Data:
+**[`Back to top ⬆️`](#table-of-contents)**
 To modify data within Vue instances, you should use Vue's reactivity system by directly changing the properties. This ensures that the changes are reactive and trigger the necessary updates in the UI.
 
 Example:
@@ -201,6 +209,8 @@ app.items.push('new item'); // Reactive change
 
 ```
 ### 1.1.1.5 Caveats with Reactivity:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 It's important to note that Vue cannot detect property addition or deletion after the initial creation of the instance. To add or remove properties dynamically, use Vue.set or this.$set for object properties and splice for array elements.
 
 Example:
@@ -216,6 +226,7 @@ app.items.splice(index, 1);
 ```
 
 ## 🍂 1.1.2 Methods:
+**[`Back to top ⬆️`](#table-of-contents)**
 The methods property contains methods that can be used within the Vue instance. These methods can manipulate data or perform other tasks triggered by user actions or lifecycle events.
 
 Example:
@@ -239,6 +250,8 @@ var app = new Vue({
 💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the instance's scope. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
 
 ### 1.1.2.1 Declaring Methods:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 Methods are defined within the methods object of the Vue instance, using key-value pairs where the key is the method name and the value is the function.
 
 Example:
@@ -263,6 +276,8 @@ var app = new Vue({
 
 ```
 ### 1.1.2.2 Accessing Methods in Templates:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 You can call these methods directly from your Vue templates by using Vue's event handling directives (v-on or @ shorthand).
 
 Example:
@@ -277,6 +292,8 @@ Example:
 
 ```
 ### 1.1.2.3 Method Scope and this Context:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 In Vue methods, this refers to the Vue instance itself, giving you access to the instance's data, methods, and lifecycle hooks.
 
 ```
@@ -294,6 +311,8 @@ var app = new Vue({
 
 ```
 ### 1.1.2.4 Parameters in Methods:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 You can pass parameters to Vue methods when they are called from the template. These parameters can be accessed within the method's function body.
 
 ```
@@ -315,6 +334,8 @@ methods: {
 ```
 
 ### 1.1.2.5 Method Lifecycle Hooks:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 Vue also provides certain lifecycle hooks where you can define custom methods to be executed at specific stages of a Vue instance's lifecycle, such as created, mounted, updated, and destroyed.
 
 Example:
@@ -338,6 +359,8 @@ var app = new Vue({
 ```
 
 ## 🍂 1.1.3 Computed Properties:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 The computed property allows you to define properties that are derived from the Vue instance's data. Computed properties are cached and only re-computed when their dependencies change.
 
 Example:
@@ -358,6 +381,8 @@ var app = new Vue({
 💎 Computed properties in Vue.js are properties that are derived from the Vue instance's data and are calculated based on dependencies. They allow you to perform complex logic and calculations on your data in a way that is reactive—meaning these properties update automatically when their underlying dependencies change.
 
 ### 1.1.3.1 Declaration of Computed Properties:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 Computed properties are defined within the computed object of the Vue instance.
 
 Example:
@@ -377,6 +402,8 @@ var app = new Vue({
 ```
 
 ### 1.1.3.2 Usage in Templates:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 You can directly use computed properties in your Vue templates just like regular data properties.
 
 Example:
@@ -390,6 +417,8 @@ Example:
 
 ```
 ### 1.1.3.3 Characteristics of Computed Properties:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 1. Reactivity: Computed properties are reactive, which means they update automatically whenever their dependent properties change. If radius changes in the above example, circleArea will be re-computed.
 
 2. Caching: Computed properties are cached based on their dependencies. They will only recompute if their dependencies change. This enhances performance as they won't recompute unless necessary.
@@ -405,6 +434,8 @@ computed: {
 }
 ```
 ### 1.1.3.4 Computed Properties vs. Methods:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 While methods can also perform similar calculations, computed properties have an advantage in terms of caching. Computed properties are only re-evaluated if their dependencies change, while methods are called every time they are referenced in the template, regardless of whether their dependencies have changed.
 
 When to Use Computed Properties:
@@ -413,6 +444,8 @@ When to Use Computed Properties:
 - Template Readability: Computed properties can improve template readability by abstracting complex logic out of the template.
 
 ## 🍂 1.1.4 Lifecycle Hooks:
+**[`Back to top ⬆️`](#table-of-contents)**
+
 Vue components have a series of lifecycle hooks that allow you to perform actions at specific stages of a component's life. Some common hooks include created, mounted, updated, and destroyed. These hooks provide an opportunity to execute code at various stages of a component's lifecycle.
 
 Example:
@@ -467,6 +500,7 @@ var app = new Vue({
 <br>
 
 ## 🍂 1.2.1 Component Structure
+**[`Back to top ⬆️`](#table-of-contents)**
 
 A Vue component typically consists of:
 
@@ -475,6 +509,8 @@ A Vue component typically consists of:
 - Style: Contains component-specific CSS or styling (optional).
 
 ## 🍂 1.2.2 Porps (Custom Attibutes)
+**[`Back to top ⬆️`](#table-of-contents)**
+
 Props allow you to pass data from a parent component to a child component. They are custom attributes defined in a parent's template that can be accessed within the child component.
 
 Parent Component:
@@ -513,6 +549,8 @@ export default {
 <br>
 
 ## 🍂 1.2.3 Events (Custom Event Handling)
+**[`Back to top ⬆️`](#table-of-contents)**
+
 Events allow child components to communicate with parent components. Child components can emit custom events that the parent can listen for and react to.
 <br>
 
@@ -558,6 +596,8 @@ export default {
 <br>
 
 ## 🍂 1.2.4 Slots (Content Distribution)
+**[`Back to top ⬆️`](#table-of-contents)**
+
 Slots allow you to create flexible components by allowing the parent to distribute content (HTML/markup) to a child component.
 
 Child Component:
@@ -585,11 +625,14 @@ Parent Component:
 ```
 
 ## 🌿 1.3 Vue Directives
+**[`Back to top ⬆️`](#table-of-contents)**
 
 Vue directives are special attributes with the v- prefix that are used in Vue.js templates to apply reactive behavior to the rendered DOM. They enable you to manipulate the DOM, apply conditional rendering, handle events, bind data, and iterate through lists efficiently.
 <br>
 
 ## 🍂 1.3.1 v-bind Directive
+**[`Back to top ⬆️`](#table-of-contents)**
+
 v-bind is used to dynamically bind one or more attributes or a component prop to an expression.
 Or, in Vue.js, v-bind is a directive used to bind data or expressions to an HTML attribute. It allows you to dynamically update the value of an attribute based on the underlying data or computed properties in your Vue component.
 
@@ -869,6 +912,8 @@ These examples demonstrate the basics of style binding in Vue.js 3. You can bind
 
 
 ## 🍂 1.3.2 v-if and v-else Directives
+**[`Back to top ⬆️`](#table-of-contents)**
+
 v-if and v-else are used for conditional rendering. They conditionally render or remove DOM elements based on a condition means these directives allow you to conditionally show or hide elements in your Vue.js templates based on certain conditions.
 
 Let's start with the v-if directive. This directive is used to conditionally render an element if a given expression evaluates to true. If the expression is false, the element is not rendered in the DOM.
@@ -1034,6 +1079,8 @@ These are the main techniques for conditional rendering in Vue.js 3. You can cho
 
 
 ## 🍂 1.3.3 v-for Directive
+**[`Back to top ⬆️`](#table-of-contents)**
+
 v-for is used for rendering a list of items by iterating over an array or an object.
 Example:
 
@@ -1145,6 +1192,8 @@ That's a basic overview of using v-for for array and object rendering in Vue.js 
 
 
 ## 🍂 1.3.4 v-on Directive
+**[`Back to top ⬆️`](#table-of-contents)**
+
 <br>
 v-on is used to attach event listeners to DOM elements and run methods when events are triggered.
 
@@ -1362,6 +1411,8 @@ These are the basics of event handling in Vue.js 3. I hope this explanation help
 
 
 ## 🍂 1.3.5 v-model Directive
+**[`Back to top ⬆️`](#table-of-contents)**
+
 v-model is used for two-way data binding on form inputs and components.
 
 ```
@@ -1414,6 +1465,8 @@ That's the basic usage of v-model in Vue.js 3. It's a simple yet powerful direct
 
 
 ## 🍂 1.3.6 v-show Directive
+**[`Back to top ⬆️`](#table-of-contents)**
+
 v-show toggles the visibility of an element based on a condition
 
 ```
@@ -1463,6 +1516,8 @@ Use the component wherever you need it within your application.
 Now, when you click the "Toggle Element" button, the ``` < p > ``` element will show or hide based on the value of showElement.
 
 ## 🍂 1.3.7 v-pre, v-cloak, v-once 
+**[`Back to top ⬆️`](#table-of-contents)**
+
 - v-pre: Skips compilation for this element and its children. It's useful when you want to display raw mustache tags.
 - v-cloak: This directive remains on the element until Vue.js finishes compilation. It's used with CSS to hide uncompiled mustache bindings.
 - v-once: Renders the element and its children only once. Subsequent re-renders will not affect it.
