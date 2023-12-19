@@ -52,7 +52,7 @@
 
 ## Table of Contents
 [🌴 1. Vue.js Core Concepts](#-vue.js-core-concepts)
-- [🌿 1.1 Vue Instance](#-11-vue-instance)
+- [🌿 1.1 Vue Instance](#vue-instance)
   - [🍂 1.1.1 Data](#-111-data)
   - [🍂 1.1.2 Methods](#-112-methods)
   - [🍂 1.1.3 Computed Properties](#-113-computed-properties)
@@ -114,10 +114,10 @@
 ## 🌴 1. Vue.js Core Concepts
 
 <details>
-    <summary> 🌿 1.1 Vue Instance </summary>
+    <summary> Vue Instance </summary>
     <br/>
     <br/>
-    ## 🌿 1.1 Vue Instance: 
+## 🌿 1.1 Vue Instance: 
 Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks. <br>
 The Vue instance is at the core of Vue.js and serves as the root of every Vue application. It's responsible for managing the data, methods, computed properties, and lifecycle hooks of your Vue components.<br>
 </details>
