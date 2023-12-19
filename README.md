@@ -52,7 +52,7 @@
 
 ## Table of Contents
 [🌴 1. Vue.js Core Concepts](#-vue.js-core-concepts)
-- [🌿 1.1 Vue Instance](#vue-instance)
+- [🌿 1.1 Vue Instance](#-11-vue-instance)
   - [🍂 1.1.1 Data](#-111-data)
   - [🍂 1.1.2 Methods](#-112-methods)
   - [🍂 1.1.3 Computed Properties](#-113-computed-properties)
@@ -114,7 +114,7 @@
 ## 🌴 1. Vue.js Core Concepts
 ## 🌿 1.1 Vue Instance
 <details>
-    <summary> 1.1 Vue Instance </summary>
+    <summary> click for details </summary>
     <br/>
     <br/>
 Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks. <br>
