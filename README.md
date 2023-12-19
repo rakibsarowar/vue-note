@@ -6,6 +6,7 @@
 > A hand note of my vue js journey.....
 
 <br>
+<div align="center"> 
 
 | Key Note                    |                      |                |                       |
 |-----------------------------|----------------------|----------------|-----------------------|
@@ -16,6 +17,7 @@
 | 📕                           | **Attention Note**   | ✋             | **Stop! check the point** |
 | 🏷️                          | **Regular Note**     | 🎯             | **Focus**             |
 
+</div> 
 
 <!-- NO COMMENT -->
 
@@ -107,10 +109,20 @@
 
 <br>
 
+
+
 ## 🌴 1. Vue.js Core Concepts
-## 🌿 1.1 Vue Instance: 
+
+<details>
+    <summary> 🌿 1.1 Vue Instance </summary>
+    <br/>
+    <br/>
+    ## 🌿 1.1 Vue Instance: 
 Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks. <br>
 The Vue instance is at the core of Vue.js and serves as the root of every Vue application. It's responsible for managing the data, methods, computed properties, and lifecycle hooks of your Vue components.<br>
+</details>
+
+
 
 ## 🌿 Vue Instance Creation:
 To create a Vue instance, you typically initialize it with a configuration object using the ``` new Vue() ``` constructor. <br>
