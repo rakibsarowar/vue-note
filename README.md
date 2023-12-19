@@ -1414,7 +1414,53 @@ That's the basic usage of v-model in Vue.js 3. It's a simple yet powerful direct
 
 
 ## 🍂 1.3.6 v-show Directive
+v-show toggles the visibility of an element based on a condition
 
+```
+<div v-show="isVisible">
+  This content will be shown/hidden based on the value of isVisible.
+</div>
+
+```
+
+The v - show directive allows you to conditionally show or hide elements based on the truthiness of an expression.When the expression evaluates to true, the element is shown; when it evaluates to false, the element is hidden.
+
+Here's an example of how to use v-show in Vue.js 3:
+
+```
+< template >
+  <div>
+    <button @click="toggleElement">Toggle Element</button>
+    <p v-show="showElement">This element will be shown or hidden</p>
+  </div >
+</template >
+
+<script>
+        export default {
+            data() {
+    return {
+            showElement: true
+    };
+  },
+        methods: {
+            toggleElement() {
+            this.showElement = !this.showElement;
+    }
+  }
+};
+</script>
+```
+
+In this example, we have a button that triggers the toggleElement method when clicked.The toggleElement method simply toggles the value of the showElement data property between true and false.
+
+The ``` < p > ``` element has the v - show directive, which is bound to the showElement property.When showElement is true, the ``` < p > ``` element is displayed; when it's false, the ``` <p> ``` element is hidden.
+
+To create this component, you can follow these steps:
+
+Create a new Vue component file(e.g., MyComponent.vue).
+Copy the HTML template and JavaScript code provided above into the respective sections of your component file.
+Use the component wherever you need it within your application.
+Now, when you click the "Toggle Element" button, the ``` < p > ``` element will show or hide based on the value of showElement.
 
 ## 🍂 1.3.7 v-pre, v-cloak, v-once 
 
