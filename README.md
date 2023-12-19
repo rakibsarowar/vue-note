@@ -1143,7 +1143,7 @@ export default {
 That's a basic overview of using v-for for array and object rendering in Vue.js 3. Remember to use the :key attribute with a unique identifier when using v-for, as it helps Vue.js efficiently track and update the rendered elements.
 
 
-🍂 1.3.4 v-on Directive
+## 🍂 1.3.4 v-on Directive
 <br>
 v-on is used to attach event listeners to DOM elements and run methods when events are triggered.
 
