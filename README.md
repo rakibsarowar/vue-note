@@ -11,11 +11,11 @@
 | Key Note                    |                      |                |                       |
 |-----------------------------|----------------------|----------------|-----------------------|
 | **Emoji**                    | **Description**          | **Emoji**   | **Description**       |
-| 🌴                           | **Main Topic**       | 📌             | **Regular Note**      |
-| 🌿                           | **Sub Category**        | 💎             | **High Value info**   |
-| 🍂                          | **Sub-sub Category**       | 🧨             | **Careful this**      |
-| 📕                           | **Attention Note**   | ✋             | **Stop! check the point** |
-| 🏷️                          | **Regular Note**     | 🎯             | **Focus**             |
+| 🌴                           | **Main Topic**       | 🏷️              | **Regular Note**      |
+| 🌿                           | **Main Category**        | 📌            | **Regular Note**    |
+| 🍃                          | **Sub Category**       | 💎            | **High Value info**      |
+| 🍂                          | **Sub-sub Category**   | ✋             | **Stop! check the point** |
+| 📕                           | **Attention Note**     | 🎯             | **Focus**             |
 
 </div> 
 
