@@ -1360,6 +1360,65 @@ In this example, the child component(ChildComponent) emits a custom event named 
 
 These are the basics of event handling in Vue.js 3. I hope this explanation helps you understand how to handle events effectively in your Vue.js applications.
 
+
+## 🍂 1.3.5 v-model Directive
+v-model is used for two-way data binding on form inputs and components.
+
+```
+<input v-model="message" type="text">
+<!-- Shorthand: -->
+<input :value="message" @input="message = $event.target.value" type="text">
+
+```
+Here, ``` message ``` is a data property that will be updated whenever the input value changes, and vice versa.
+
+Deep Drive:
+
+The v - model directive is a convenient way to create two - way data binding in Vue.js.It is used to bind form inputs or custom components to a data property, allowing you to easily synchronize the user input with the underlying data.
+
+To demonstrate its usage, let's create a simple example where we have an input field that binds to a data property using v-model.
+
+First, make sure you have Vue.js 3 installed and set up in your project.You can include Vue.js via a CDN or use a package manager like npm or yarn.
+
+  ✅  Here's an HTML template where we'll use v - model:
+
+```
+< div id = "app" >
+    <input type="text" v-model="message">
+    <p>The value you entered is: {{ message }}</p>
+</div>
+```   
+In this example, we have an input field and a paragraph.The v - model directive is applied to the input field, binding it to the message data property.The value entered by the user will be stored in message and displayed in the paragraph below.
+
+✅To use v - model, we need to define the Vue app and its associated data in JavaScript:
+
+```
+const app = Vue.createApp({
+    data() {
+        return {
+            message: ''
+        }
+    }
+})
+
+app.mount('#app')
+```
+
+In this code, we're creating a Vue app using Vue.createApp and defining a data function that returns an object with the initial state of our app. Here, message is our data property, which is initially set to an empty string.
+
+Finally, we mount the Vue app to the element with the ID "app" using app.mount('#app').
+
+When you run this code, you'll see an input field on the page. As you type in the input field, the value will be synchronized with the message property, and the value will be displayed below the input field.
+
+That's the basic usage of v-model in Vue.js 3. It's a simple yet powerful directive that simplifies data binding in your application.
+
+
+## 🍂 1.3.6 v-show Directive
+
+
+## 🍂 1.3.7 v-pre, v-cloak, v-once 
+
+
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------------------------------------------------------------------- -->
