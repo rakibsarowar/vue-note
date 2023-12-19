@@ -123,12 +123,16 @@ The Vue instance is at the core of Vue.js and serves as the root of every Vue ap
 
 
 
-## 🌿 Vue Instance Creation:
+## Vue Instance Creation:
 <details>
     <summary> click for details </summary>
     <br/>
     <br/>
-To create a Vue instance, you typically initialize it with a configuration object using the ``` new Vue() ``` constructor. <br>
+To create a Vue instance, you typically initialize it with a configuration object using the 
+``` 
+new Vue() 
+
+``` constructor. <br>
 
 ```
 var app = new Vue({
