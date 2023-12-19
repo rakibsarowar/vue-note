@@ -1089,7 +1089,7 @@ v -for directive for list rendering in Vue.js 3. The v -for directive is used to
 
 📕Let's start with array rendering using v-for in Vue.js 3. Imagine you have an array of items that you want to render in a list. Here's an example of how you can accomplish that:
 
-
+```
 < template >
     <ul>
         <li v-for="(item, index) in items" :key="index">{{ item }}</li>
@@ -1106,10 +1106,11 @@ v -for directive for list rendering in Vue.js 3. The v -for directive is used to
 };
 </script>
 
+```
 
 In this example, we have a component with a data property called items that contains an array of fruits.Inside the template, we use the v -for directive to iterate over each item in the items array.The(item, index) syntax allows us to access the current item and its index within the loop.We use: key = "index" to provide a unique key for each rendered item.
 
-The resulting output will be an unordered list(<ul>) with each item of the array rendered as a list item (<li>).
+The resulting output will be an unordered list ``` <ul> ``` with each item of the array rendered as a list item ``` <li> ``` .
 
 ✅ Now, let's move on to object rendering using v-for in Vue.js 3. If you have an object and you want to render its properties, you can use v-for in a slightly different way. Here's an example:
 
@@ -1138,7 +1139,7 @@ export default {
 
 🎯 In this example, we have a component with a data property called object that contains an object with some user information. Using the v-for directive, we can iterate over each property in the object and access its value and key. In this case, we use (value, key) to access the current value and key within the loop.
 
-🎯 The resulting output will be an unordered list (<ul>) with each property of the object rendered as a list item (<li>), showing both the key and its corresponding value.
+🎯 The resulting output will be an unordered list ``` <ul> ``` with each property of the object rendered as a list item ``` <li>``` , showing both the key and its corresponding value.
 
 That's a basic overview of using v-for for array and object rendering in Vue.js 3. Remember to use the :key attribute with a unique identifier when using v-for, as it helps Vue.js efficiently track and update the rendered elements.
 
