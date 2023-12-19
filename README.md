@@ -1463,7 +1463,9 @@ Use the component wherever you need it within your application.
 Now, when you click the "Toggle Element" button, the ``` < p > ``` element will show or hide based on the value of showElement.
 
 ## 🍂 1.3.7 v-pre, v-cloak, v-once 
-
+- v-pre: Skips compilation for this element and its children. It's useful when you want to display raw mustache tags.
+- v-cloak: This directive remains on the element until Vue.js finishes compilation. It's used with CSS to hide uncompiled mustache bindings.
+- v-once: Renders the element and its children only once. Subsequent re-renders will not affect it.
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------------------------------------------------------------------- -->
