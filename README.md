@@ -144,6 +144,7 @@ var app = new Vue({
 <br>
 
 💎 In Vue.js, the data property within a Vue instance holds the application's reactive data. Understanding how data works within Vue is crucial as it forms the basis for building reactive and dynamic applications.
+
 ```
 var app = new Vue({
   data: {
@@ -157,7 +158,7 @@ var app = new Vue({
 });
 
 ```
-### 1.1.1.1 Reactive Data:
+### 🍂 1.1.1.1 Reactive Data
 **[`Back to top ⬆️`](#table-of-contents)**
 
 The data property in a Vue instance defines the initial state of the application's data. Vue's reactivity system ensures that any changes made to this data are automatically reflected in the UI where that data is used.
@@ -175,7 +176,7 @@ var app = new Vue({
 });
 
 ```
-### 1.1.1.2 Reactivity in Vue:
+### 🍂 1.1.1.2 Reactivity in Vue
 **[`Back to top ⬆️`](#table-of-contents)**
 When properties are added or modified within the data object, Vue automatically detects these changes and updates the associated components in the DOM.
 
@@ -187,7 +188,7 @@ app.items.push('grapes');
 app.user.age = 26;
 
 ```
-### 1.1.1.3 Accessing Data in Templates:
+### 🍂 1.1.1.3 Accessing Data in Templates
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can access data properties directly within Vue templates using the double curly braces {{ }} syntax.
