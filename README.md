@@ -56,8 +56,15 @@
   - [🍃 1.1.1 Data](#-111-data)
     - [🍂 1.1.1.1 Reactive Data](#-1111-reactive-data)
     - [🍂 1.1.1.2 Reactivity in Vue](#-1112-reactivity-in-vue)
-    - [🍂 1.1.1.3 Accessing Data in Templates](#-1113-accessing-data-in-templates)  
+    - [🍂 1.1.1.3 Accessing Data in Templates](#-1113-accessing-data-in-templates)
+    - [🍂 1.1.1.4 Changing Data](#-1114-changing-data)
+    - [🍂 1.1.1.5 Caveats with Reactivity](#-1115-caveats-with-reactivity)   
   - [🍃 1.1.2 Methods](#-112-methods)
+    - [🍂 1.1.2.1 Declaring Methods](#-1121-declaring-methods)
+    - [🍂 1.1.2.2 Accessing Methods in Templates](#-1122-accessing-methods-in-templates)
+    - [🍂 1.1.2.3 Method Scope and this Context](#-1123-method-scope-and-this-context)
+    - [🍂 1.1.2.4 Parameters in Methods](#-1124-parameters-in-methods) 
+    - [🍂 1.1.2.5 Method Lifecycle Hooks](#-1125-method-lifecycle-hooks) 
   - [🍃 1.1.3 Computed Properties](#-113-computed-properties)
   - [🍃 1.1.4 Lifecycle Hooks](#-114-lifecycle-hooks)
 - [🌿 1.2 Components](#-12-components)
@@ -107,19 +114,13 @@
 - [🌴 Pagination Step 01 - Parse & set the current page from the router using Funciton Mode](#-Pagination-Step-01---Parse-&-set-the-current-page-from-the-router-using-Funciton-Mode)
 - [🌿 Nested Routing](#-nested-routing)
 
-    
-
-
 <br>
-
-
 
 ## 🌴 1. Vue.js Core Concepts
 ## 🌿 1.1 Vue Instance
 
 Understanding the Vue instance, data, methods, computed properties, and lifecycle hooks. <br>
 The Vue instance is at the core of Vue.js and serves as the root of every Vue application. It's responsible for managing the data, methods, computed properties, and lifecycle hooks of your Vue components.<br>
-
 
 **Vue Instance Creation:**
 To create a Vue instance, you typically initialize it with a configuration object using the ``` new Vue() ``` constructor. <br>
@@ -207,7 +208,7 @@ Example:
 </div>
 
 ```
-### 🍂 1.1.1.4 Changing Data:
+### 🍂 1.1.1.4 Changing Data
 **[`Back to top ⬆️`](#table-of-contents)**
 To modify data within Vue instances, you should use Vue's reactivity system by directly changing the properties. This ensures that the changes are reactive and trigger the necessary updates in the UI.
 
@@ -218,7 +219,7 @@ app.message = 'Updated message'; // Reactive change
 app.items.push('new item'); // Reactive change
 
 ```
-### 🍂 1.1.1.5 Caveats with Reactivity:
+### 🍂 1.1.1.5 Caveats with Reactivity
 **[`Back to top ⬆️`](#table-of-contents)**
 
 It's important to note that Vue cannot detect property addition or deletion after the initial creation of the instance. To add or remove properties dynamically, use Vue.set or this.$set for object properties and splice for array elements.
@@ -259,7 +260,7 @@ var app = new Vue({
 
 💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the instance's scope. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
 
-### 🍂 1.1.2.1 Declaring Methods:
+### 🍂 1.1.2.1 Declaring Methods
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Methods are defined within the methods object of the Vue instance, using key-value pairs where the key is the method name and the value is the function.
@@ -285,7 +286,7 @@ var app = new Vue({
 });
 
 ```
-### 🍂 1.1.2.2 Accessing Methods in Templates:
+### 🍂 1.1.2.2 Accessing Methods in Templates
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can call these methods directly from your Vue templates by using Vue's event handling directives (v-on or @ shorthand).
@@ -301,7 +302,7 @@ Example:
 </div>
 
 ```
-### 🍂 1.1.2.3 Method Scope and this Context:
+### 🍂 1.1.2.3 Method Scope and this Context
 **[`Back to top ⬆️`](#table-of-contents)**
 
 In Vue methods, this refers to the Vue instance itself, giving you access to the instance's data, methods, and lifecycle hooks.
@@ -320,7 +321,7 @@ var app = new Vue({
 });
 
 ```
-### 🍂 1.1.2.4 Parameters in Methods:
+### 🍂 1.1.2.4 Parameters in Methods
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can pass parameters to Vue methods when they are called from the template. These parameters can be accessed within the method's function body.
@@ -343,7 +344,7 @@ methods: {
 
 ```
 
-### 🍂 1.1.2.5 Method Lifecycle Hooks:
+### 🍂 1.1.2.5 Method Lifecycle Hooks
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Vue also provides certain lifecycle hooks where you can define custom methods to be executed at specific stages of a Vue instance's lifecycle, such as created, mounted, updated, and destroyed.
