@@ -15,7 +15,7 @@
 | 🌿                           | **Main Category**        | 📌            | **Regular Note**    |
 | 🍃                          | **Sub Category**       | 💎            | **High Value info**      |
 | 🍂                          | **Sub-sub Category**   | ✋             | **Stop! check the point** |
-| 📕                           | **Attention Note**     | 🎯             | **Focus**             |
+| 🎈                           | **Step**     | 🎯             | **Focus**             |
 
 </div> 
 
@@ -1217,10 +1217,10 @@ Deep Drive zone:
 
 The v - on directive is used for event handling in Vue.js, allowing you to listen for and respond to events triggered by the user or by the system.Here's a step-by-step explanation along with code examples to illustrate its usage.
 
-Step 1: Setting Up Vue.js
+🎈 **Step 1: Setting Up Vue.js**
 Before we dive into v-on, make sure you have Vue.js 3 installed and set up in your project. You can include Vue.js via a CDN or use a package manager like npm or yarn to install it.
 
-✅Step 2: Basic v-on Syntax
+🎈 **Step 2: Basic v-on Syntax**
 The basic syntax for using v-on is as follows:
 
 
@@ -1228,7 +1228,7 @@ The basic syntax for using v-on is as follows:
 
 Here, eventName represents the event you want to listen for (e.g., click, input, keydown, etc.), and handler is the method or expression you want to execute when the event occurs.
 
-✅Step 3: Using Methods as Event Handlers
+🎈 **Step 3: Using Methods as Event Handlers**
 In Vue.js, you typically define methods in the methods option of your Vue component. Let's see an example:
 
 
@@ -1251,7 +1251,7 @@ export default {
 
 In this example, when the button is clicked, the sayHello method is called, which logs 'Hello!' to the console. You can bind multiple event handlers by separating them with commas.
 
-✅ Step 4: Accessing Event Information
+🎈 **Step 4: Accessing Event Information**
 You can also access event information within your event handlers. Vue.js automatically passes the event object as the first argument to the handler method. Let's modify the previous example to include event information:
 
 
@@ -1274,7 +1274,7 @@ export default {
 
 Now, when the button is clicked, the handleClick method is called, and it logs both the custom message and the event object to the console.
 
-✅Step 5: Inline Event Handlers
+🎈 **Step 5: Inline Event Handlers**
 Instead of referencing a method in your component, you can use an inline expression as the event handler. Let's see an example:
 
 ```
@@ -1295,7 +1295,7 @@ export default {
 ```
 In this example, when the button is clicked, the counter variable increments directly within the inline expression. The updated value is then displayed in the paragraph below the button.
 
-✅Step 6: Shorthand Syntax
+🎈 **Step 6: Shorthand Syntax**
 Vue.js provides a shorthand syntax for the v-on directive using the @ symbol. It has the same effect as using v-on:eventName. Let's modify the first example using the shorthand syntax:
 
 ```
