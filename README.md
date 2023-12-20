@@ -121,7 +121,7 @@ Understanding the Vue instance, data, methods, computed properties, and lifecycl
 The Vue instance is at the core of Vue.js and serves as the root of every Vue application. It's responsible for managing the data, methods, computed properties, and lifecycle hooks of your Vue components.<br>
 
 
-## 🌿 Vue Instance Creation:
+**Vue Instance Creation:**
 To create a Vue instance, you typically initialize it with a configuration object using the ``` new Vue() ``` constructor. <br>
 
 ```
@@ -130,7 +130,7 @@ var app = new Vue({
 });
 
 ```
-## 🍂 1.1.1 Data:
+## 🍃 1.1.1 Data:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 The data property within the Vue instance holds the application's data. Vue.js ensures that any changes made to this data are reactive, meaning changes automatically update the corresponding parts of the UI.
@@ -207,7 +207,7 @@ Example:
 </div>
 
 ```
-### 1.1.1.4 Changing Data:
+### 🍂 1.1.1.4 Changing Data:
 **[`Back to top ⬆️`](#table-of-contents)**
 To modify data within Vue instances, you should use Vue's reactivity system by directly changing the properties. This ensures that the changes are reactive and trigger the necessary updates in the UI.
 
@@ -218,7 +218,7 @@ app.message = 'Updated message'; // Reactive change
 app.items.push('new item'); // Reactive change
 
 ```
-### 1.1.1.5 Caveats with Reactivity:
+### 🍂 1.1.1.5 Caveats with Reactivity:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 It's important to note that Vue cannot detect property addition or deletion after the initial creation of the instance. To add or remove properties dynamically, use Vue.set or this.$set for object properties and splice for array elements.
@@ -235,7 +235,7 @@ app.items.splice(index, 1);
 
 ```
 
-## 🍂 1.1.2 Methods:
+## 🍃 1.1.2 Methods:
 **[`Back to top ⬆️`](#table-of-contents)**
 The methods property contains methods that can be used within the Vue instance. These methods can manipulate data or perform other tasks triggered by user actions or lifecycle events.
 
@@ -259,7 +259,7 @@ var app = new Vue({
 
 💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the instance's scope. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
 
-### 1.1.2.1 Declaring Methods:
+### 🍂 1.1.2.1 Declaring Methods:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Methods are defined within the methods object of the Vue instance, using key-value pairs where the key is the method name and the value is the function.
@@ -285,7 +285,7 @@ var app = new Vue({
 });
 
 ```
-### 1.1.2.2 Accessing Methods in Templates:
+### 🍂 1.1.2.2 Accessing Methods in Templates:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can call these methods directly from your Vue templates by using Vue's event handling directives (v-on or @ shorthand).
@@ -301,7 +301,7 @@ Example:
 </div>
 
 ```
-### 1.1.2.3 Method Scope and this Context:
+### 🍂 1.1.2.3 Method Scope and this Context:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 In Vue methods, this refers to the Vue instance itself, giving you access to the instance's data, methods, and lifecycle hooks.
@@ -320,7 +320,7 @@ var app = new Vue({
 });
 
 ```
-### 1.1.2.4 Parameters in Methods:
+### 🍂 1.1.2.4 Parameters in Methods:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can pass parameters to Vue methods when they are called from the template. These parameters can be accessed within the method's function body.
@@ -343,7 +343,7 @@ methods: {
 
 ```
 
-### 1.1.2.5 Method Lifecycle Hooks:
+### 🍂 1.1.2.5 Method Lifecycle Hooks:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Vue also provides certain lifecycle hooks where you can define custom methods to be executed at specific stages of a Vue instance's lifecycle, such as created, mounted, updated, and destroyed.
@@ -368,7 +368,7 @@ var app = new Vue({
 
 ```
 
-## 🍂 1.1.3 Computed Properties:
+## 🍃 1.1.3 Computed Properties:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 The computed property allows you to define properties that are derived from the Vue instance's data. Computed properties are cached and only re-computed when their dependencies change.
@@ -390,7 +390,7 @@ var app = new Vue({
 ```
 💎 Computed properties in Vue.js are properties that are derived from the Vue instance's data and are calculated based on dependencies. They allow you to perform complex logic and calculations on your data in a way that is reactive—meaning these properties update automatically when their underlying dependencies change.
 
-### 1.1.3.1 Declaration of Computed Properties:
+### 🍂 1.1.3.1 Declaration of Computed Properties:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Computed properties are defined within the computed object of the Vue instance.
@@ -411,7 +411,7 @@ var app = new Vue({
 
 ```
 
-### 1.1.3.2 Usage in Templates:
+### 🍂 1.1.3.2 Usage in Templates:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can directly use computed properties in your Vue templates just like regular data properties.
@@ -426,7 +426,7 @@ Example:
 </div>
 
 ```
-### 1.1.3.3 Characteristics of Computed Properties:
+### 🍂 1.1.3.3 Characteristics of Computed Properties:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 1. Reactivity: Computed properties are reactive, which means they update automatically whenever their dependent properties change. If radius changes in the above example, circleArea will be re-computed.
@@ -443,7 +443,7 @@ computed: {
   }
 }
 ```
-### 1.1.3.4 Computed Properties vs. Methods:
+### 🍂 1.1.3.4 Computed Properties vs. Methods:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 While methods can also perform similar calculations, computed properties have an advantage in terms of caching. Computed properties are only re-evaluated if their dependencies change, while methods are called every time they are referenced in the template, regardless of whether their dependencies have changed.
@@ -453,7 +453,7 @@ When to Use Computed Properties:
 - Dependency Tracking: When the result depends on reactive data, using computed properties ensures automatic update when these dependencies change.
 - Template Readability: Computed properties can improve template readability by abstracting complex logic out of the template.
 
-## 🍂 1.1.4 Lifecycle Hooks:
+## 🍃 1.1.4 Lifecycle Hooks:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Vue components have a series of lifecycle hooks that allow you to perform actions at specific stages of a component's life. Some common hooks include created, mounted, updated, and destroyed. These hooks provide an opportunity to execute code at various stages of a component's lifecycle.
@@ -481,7 +481,7 @@ var app = new Vue({
 
 ```
 
-## 🌿 1.2 Components
+## 🍃 1.2 Components
 **[`Back to top ⬆️`](#table-of-contents)**
 <br>
 Components in Vue.js are created using the ``` Vue.component ``` method or by defining components within a Vue instance using the ``` components ``` property.
