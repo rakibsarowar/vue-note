@@ -1637,8 +1637,8 @@ Shopping Cart UI: <br>
 
 ```
 ### Real-Time Updates:
-- Add Items to Cart: When a user clicks an "Add to Cart" button, it triggers the addToCart method, adding the item to the cart array and recalculating the total.
-- Remove Items from Cart: Clicking the "Remove" button triggers the removeFromCart method, removing the item from the cart and recalculating the total.
+- Add Items to Cart: When a user clicks an Add to Cart button, it triggers the ``` addToCart ``` method, adding the item to the cart array and recalculating the total.
+- Remove Items from Cart: Clicking the "Remove" button triggers the ``` removeFromCart ``` method, removing the item from the cart and recalculating the total.
 
 ### How Reactivity Helps:
 Vue's reactivity system ensures that as items are added or removed from the cart, the UI instantly reflects these changes. The total price dynamically updates based on the cart contents without needing manual re-rendering.
