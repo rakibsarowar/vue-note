@@ -85,7 +85,8 @@
   - [🍃 1.3.6 v-show Directive](#-136-v-show-directive)
   - [🍃 1.3.7 v-pre, v-cloak, v-once Directives](#-137-v-pre-v-cloak-v-once)
 - [🌿 1.4 Reactivity: Understanding Vue's reactivity system](#-14-reactivity-understanding-vues-reactivity-system)
- [🌴 2. Vue Router](#-2-vue-router)
+
+[🌴 2. Vue Router](#-2-vue-router)
   - [🌿 2.1 Installation and Setup](#-step-1-installation-and-setup)
   - [🌿 2.2 Configuration](#-step-2-configuration)
   - [🌿 2.3 Integrate the Router in your main Vue instance](#-step-3-integrate-the-router-in-your-main-vue-instance)
