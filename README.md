@@ -84,7 +84,7 @@
   - [🍃 1.3.5 v-model Directive](#-135-v-model-directive)
   - [🍃 1.3.6 v-show Directive](#-136-v-show-directive)
   - [🍃 1.3.7 v-pre, v-cloak, v-once Directives](#-137-v-pre-v-cloak-v-once)
-  
+- [🌿 1.4 Reactivity: Understanding Vue's reactivity system](#-14-reactivity-understanding-vues-reactivity-system) 
 - [🌴 For setting up the project](#-for-setting-up-the-project)
 - [🌴 Setting up the development environment](#-setting-up-the-development-environment)
 - [🌴 Project structure](#-project-structure)
@@ -1537,11 +1537,12 @@ Now, when you click the "Toggle Element" button, the ``` < p > ``` element will 
 - v-cloak: This directive remains on the element until Vue.js finishes compilation. It's used with CSS to hide uncompiled mustache bindings.
 - v-once: Renders the element and its children only once. Subsequent re-renders will not affect it.
 
-## 🍃 1.4 Reactivity: Understanding Vue's reactivity system.
+## 🌿 1.4 Reactivity: Understanding Vue's reactivity system.
 Vue's reactivity system is fundamental to how data changes are tracked and reflected in the UI. It ensures that when data changes, the corresponding parts of the UI are automatically updated, making development more straightforward and efficient.
 
 <br>
-** Understanding Vue's Reactivity System**
+Understanding Vue's Reactivity System:
+<br>
 We will create a simple to-do list application and imagine you have a Vue instance managing the list of tasks,
 
 ```
@@ -1557,7 +1558,7 @@ var app = new Vue({
 });
 
 ```
-** Real-Time Updates **
+Real-Time Updates: <br>
 Suppose you have a template that displays these tasks,
 
 ```
@@ -1573,25 +1574,25 @@ Suppose you have a template that displays these tasks,
 ```
 Here, v-model binds the checkbox to the completed property of each task, and the span's class changes based on the completed state.
 
-** Reactivity in Action**
-- ** Change in Data Triggers UI Update: ** 
+Reactivity in Action: <br>
+- Change in Data Triggers UI Update: <br>
 If you modify the completed property of a task in your JavaScript code:
 
 ```
 app.tasks[0].completed = true;
 
 ```
-** Automatic UI Update: ** 
+Automatic UI Update: <br>
 The UI will automatically reflect this change. The corresponding task's appearance will update, reflecting the completion status change without explicitly re-rendering the entire list.
 
 <br>
 
-** Reactive Properties: **
+Reactive Properties:<br>
 Vue's reactivity system works because it's aware of the dependencies between data properties and the DOM elements that rely on them. When a reactive property changes, Vue knows which parts of the UI need to be updated.
 
 <br>
 
-** Benefits in Real Life: **
+Benefits in Real Life: <br>
 Imagine managing a more complex application where changes in data should reflect instantly in the UI, such as live chat applications, stock market dashboards, or collaborative editing tools. Vue's reactivity makes it efficient to handle these real-time updates, as the UI automatically adapts to the changing data without manual intervention.
 
 
