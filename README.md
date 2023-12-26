@@ -1655,7 +1655,7 @@ Understanding and leveraging Vue's reactivity system in scenarios like this enab
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-# Vue Router
+# 🌴 2. Vue Router
 **[`Back to top ⬆️`](#table-of-contents)**
 <br>
 Vue Router is a powerful routing library that allows you to build single - page applications with multiple views and handle navigation between them.Let's dive into the details and explore some code examples!
