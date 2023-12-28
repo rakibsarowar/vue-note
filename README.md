@@ -221,7 +221,9 @@ Example:
 ```
 ### 🍂 1.1.1.4 Changing Data
 **[`Back to top ⬆️`](#table-of-contents)**
+
 To modify data within Vue instances, you should use Vue's reactivity system by directly changing the properties. This ensures that the changes are reactive and trigger the necessary updates in the UI.
+> Vue ইন্সট্যান্সের মধ্যে ডেটা পরিবর্তন করতে, Vue-র রিঅ্যাক্টিভিটি সিস্টেম ব্যবহার করে - প্রোপার্টিগুলি সরাসরি পরিবর্তন করা উচিত। Vue-র রিঅ্যাক্টিভিটি সিস্টেম নিশ্চিত করে যে, পরিবর্তনগুলি রিঅ্যাক্টিভ হবে এবং UI-তে প্রয়োজনীয় আপডেট করবে।
 
 Example:
 
@@ -233,7 +235,9 @@ app.items.push('new item'); // Reactive change
 ### 🍂 1.1.1.5 Caveats with Reactivity
 **[`Back to top ⬆️`](#table-of-contents)**
 
-It's important to note that Vue cannot detect property addition or deletion after the initial creation of the instance. To add or remove properties dynamically, use Vue.set or this.$set for object properties and splice for array elements.
+It's important to note that Vue cannot detect property addition or deletion after the initial creation of the instance. To add or remove properties dynamically, use ``` Vue.set ``` or ``` this.$set ``` for object properties and splice for array elements.
+
+> মনে রাখা গুরুত্বপূর্ণ যে, ভিউ ইন্সট্যান্স তৈরি করার পরে - প্রপার্টি যোগ বা বাদ দিলে ভিউ সেটা সনাক্ত করতে পারে না। অবজেক্ট প্রপার্টিগুলির জন্য Vue.set বা this.$set এবং অ্যারে এলিমেন্টগুলির জন্য splice ব্যবহার করে প্রোপার্টিগুলি যোগ বা মুছে তৈরি করা যায়।
 
 Example:
 
