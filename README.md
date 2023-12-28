@@ -140,6 +140,8 @@ var app = new Vue({
 
 The data property within the Vue instance holds the application's data. Vue.js ensures that any changes made to this data are reactive, meaning changes automatically update the corresponding parts of the UI.
 
+>> Vue ইনস্ট্যান্সের মধ্যে ডেটা প্রপার্টি অ্যাপ্লিকেশনের ডেটা ধারণ করে। Vue.js এই ডেটা যেকোনো পরিবর্তন রিঅ্যাক্টিভ করে, অর্থাৎ পরিবর্তন করলে নিজেই UI এর সংশ্লিষ্ট অংশগুলি আপডেট হয়।
+
 Example:
 ```
 var app = new Vue({
