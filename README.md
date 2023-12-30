@@ -273,7 +273,7 @@ var app = new Vue({
 
 > Vue.js-এ, Vue ইন্সট্যান্সের methods প্রপার্টিতে মেথডগুলি থাকে যা সংযোজনের সীমার মধ্যে ব্যবহার করা যেতে পারে। এই মেথডগুলি আপনাকে বিভিন্ন কাজ করতে, ডেটা পরিবর্তন করতে, ইভেন্ট হ্যান্ডল করতে, এবং ভিউ কম্পোনেন্টগুলোর মধ্যে আরও অনেক কিছু করতে সাহায্য করে।
 
-- `instance's scope` In Vue.js, the "instance's scope" refers to the accessibility or context within which certain methods or properties are available and can be used. Think of it as the specific environment or area where these methods or properties exist and function.
+-`instance's scope` In Vue.js, the "instance's scope" refers to the accessibility or context within which certain methods or properties are available and can be used. Think of it as the specific environment or area where these methods or properties exist and function.
 
 Imagine you're working in an office building. Each floor might represent a different scope. Suppose you're on the fifth floor, where specific resources, meeting rooms, and colleagues are available to you. This floor represents your "scope" the area where you can access and use those resources and interact with those colleagues.
 
@@ -490,9 +490,9 @@ When to Use Computed Properties:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Vue components have a series of lifecycle hooks that allow you to perform actions at specific stages of a component's life. Some common hooks include created, mounted, updated, and destroyed. These hooks provide an opportunity to execute code at various stages of a component's lifecycle.
+> Vue কম্পোনেন্টগুলির বিভিন্ন লাইফসাইকেল হুক রয়েছে, যা কম্পোনেন্টের লাইফ সাইকেলের নির্দিষ্ট স্টেজে একশন সম্পাদন করার সুযোগ দেয়। কিছু সাধারণ হুক হল: `created`, `mounted`, `updated`, এবং `destroyed`। এই হুকগুলি কম্পোনেন্টের লাইফ সাইকেলের বিভিন্ন স্টেজে কোড এক্সিকিউট করার সুযোগ দেয়।
 
 Example:
-
 ```
 var app = new Vue({
   data: {
@@ -518,6 +518,8 @@ var app = new Vue({
 **[`Back to top ⬆️`](#table-of-contents)**
 <br>
 Components in Vue.js are created using the ``` Vue.component ``` method or by defining components within a Vue instance using the ``` components ``` property.
+
+> Vue.js এ কম্পোনেন্টগুলি তৈরি করা হয় `Vue.component` মেথড ব্যবহার করে অথবা একটি Vue ইন্সট্যান্সের মধ্যে `components` প্রোপার্টি ব্যবহার করে কম্পোনেন্টগুলি ডিফাইন করা হয়।
 <br>
 Global Component (Using Vue.component):
 
