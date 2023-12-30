@@ -514,6 +514,156 @@ var app = new Vue({
 
 ```
 
+
+## 🍂 1.1.4.1 beforeCreate:
+`beforeCreate` is the first lifecycle hook that gets called in Vue JS. beforeCreate is called right after a new Vue instance is initialized. Here, the computed properties, watchers, events, data properties, etc., are not set up.
+
+```
+<template>
+    <h2>Component</h2>
+    <p>This is the component</p>
+    <p id="pResult">{{ text }}</p>
+</template>
+
+<script>
+export default {
+	data() {
+		return {
+			text: '...'
+		}
+	},
+  beforeCreate() {
+		this.text = 'initial text';
+    console.log("beforeCreate: The component is not created yet.");
+  }
+}
+</script> 
+
+```
+The `beforeCreate` hook can be used to for example set up a global event listener, but we should avoid trying to access elements that belong to the component from the beforeCreate lifecycle hook, such as data, watchers and methods, because they are not created yet at this stage.
+
+Also, it does not make sense to try to access DOM elements from the `beforeCreate` lifecycle hook, because they are not created until after the component is `mounted`.
+
+## 🍂 1.1.4.2 create:
+`created` is the next lifecycle hook that gets called after the `beforeCreate` hook. Here, the computed properties, watchers, events, data properties, etc., are also activated.
+
+And, the `created` lifecycle hook happens after the component is initialized, so Vue has already set up the component's data, computed properties, methods, and event listeners.
+
+We should avoid trying to access DOM elements from the `created` lifecycle hook, because DOM elements are not accessible until the component is `mounted`.
+
+The created lifecycle hook can be used to fetch data with HTTP requests, or set up initial data values. Like in the example below, the data property 'text' is given an initial value.
+
+```
+<template>
+    <h2>Component</h2>
+    <p>This is the component</p>
+    <p id="pResult">{{ text }}</p>
+</template>
+
+<script>
+export default {
+	data() {
+		return {
+			text: '...'
+		}
+	},
+  created() {
+		this.text = 'initial text';
+    console.log("created: The component just got created.");
+  }
+}
+</script>    
+
+```
+## 🍂 1.1.4.3 beforeMount:
+`beforeMount` is the next lifecycle hook that gets called after the created hook and right before the Vue instance is mounted on the DOM. The template and the styles are all compiled here, but the DOM cannot be manipulated yet.
+
+`beforeMount` is useful for performing tasks that need to occur just before the component's template is rendered and appended to the DOM. 
+
+Example: 
+One real-life scenario is initializing or interacting with third-party libraries that require access to the DOM elements. Let's consider a scenario where you have a chart component using a third-party library like Chart.js. You need to initialize and render the chart once the component is about to be mounted to the DOM.
+
+```
+<template>
+  <div>
+    <canvas ref="chartCanvas"></canvas>
+  </div>
+</template>
+
+<script>
+import { ref } from 'vue';
+import Chart from 'chart.js/auto';
+
+export default {
+  setup() {
+    const chartInstance = ref(null);
+
+    const initializeChart = () => {
+      const canvas = document.getElementById('chartCanvas');
+
+      // Check if canvas element is available
+      if (canvas) {
+        chartInstance.value = new Chart(canvas, {
+          type: 'bar',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      }
+    };
+
+    return {
+      chartInstance,
+      initializeChart
+    };
+  },
+  beforeMount() {
+    this.initializeChart();
+  }
+};
+</script>
+
+```
+In this example:
+
+🎯 The `beforeMount` hook triggers the `initializeChart` method before the component is mounted.
+
+🎯 `initializeChart` fetches the canvas element using `ref` and initializes the Chart.js library with mock data.
+
+🎯 Once the component is mounted (`mounted` hook), the chart is already initialized and ready to display data.
+
+This demonstrates how beforeMount can be used to set up interactions with third-party libraries or perform DOM-related tasks right before the component is rendered to the screen.
+
+
+
 ## 🍃 1.2 Components
 **[`Back to top ⬆️`](#table-of-contents)**
 <br>
@@ -542,7 +692,6 @@ var app = new Vue({
 });
 
 ```
-<br>
 
 ## 🍂 1.2.1 Component Structure
 **[`Back to top ⬆️`](#table-of-contents)**
@@ -555,7 +704,6 @@ A Vue component typically consists of:
 
 ## 🍂 1.2.2 Porps (Custom Attibutes)
 **[`Back to top ⬆️`](#table-of-contents)**
-
 Props allow you to pass data from a parent component to a child component. They are custom attributes defined in a parent's template that can be accessed within the child component.
 
 Parent Component:
