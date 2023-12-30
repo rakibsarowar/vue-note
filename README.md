@@ -255,6 +255,8 @@ app.items.splice(index, 1);
 **[`Back to top ⬆️`](#table-of-contents)**
 The methods property contains methods that can be used within the Vue instance. These methods can manipulate data or perform other tasks triggered by user actions or lifecycle events.
 
+> `methods` প্রপার্টিতে মেথডগুলি থাকে যা Vue ইন্সট্যান্সের মধ্যে ব্যবহার করা যাবে। এই মেথডগুলি ডেটা পরিবর্তন করতে বা ব্যবহারকারীর অ্যাকশন বা লাইফসাইকেল ঘটনাগুলির দ্বারা অন্যান্য কাজ সম্পাদন করতে ব্যবহার করা যেতে পারে।
+
 Example:
 ```
 var app = new Vue({
