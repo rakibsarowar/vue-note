@@ -269,7 +269,7 @@ var app = new Vue({
 
 ```
 
-💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the `instance's scope`. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
+💎💎💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the `instance's scope`. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
 
 > Vue.js-এ, Vue ইন্সট্যান্সের methods প্রপার্টিতে মেথডগুলি থাকে যা সংযোজনের সীমার মধ্যে ব্যবহার করা যেতে পারে। এই মেথডগুলি আপনাকে বিভিন্ন কাজ করতে, ডেটা পরিবর্তন করতে, ইভেন্ট হ্যান্ডল করতে, এবং ভিউ কম্পোনেন্টগুলোর মধ্যে আরও অনেক কিছু করতে সাহায্য করে।
 
@@ -285,7 +285,6 @@ So, the "instance's scope" in Vue.js denotes the specific context or environment
 
 ### 🍂 1.1.2.1 Declaring Methods
 **[`Back to top ⬆️`](#table-of-contents)**
-
 Methods are defined within the methods object of the Vue instance, using key-value pairs where the key is the method name and the value is the function.
 > Vue ইন্সট্যান্সের methods অবজেক্টে, মেথডগুলি সংজ্ঞায়িত হয়। আর, মেথডটি কী-ভ্যালু পেয়ার হিসেবে তৈরি হয়, যেখানে "কী" তে থাকে মেথডের নাম এবং "ভ্যালু" তে থাকে ফাংশন।
 
@@ -312,7 +311,6 @@ var app = new Vue({
 ```
 ### 🍂 1.1.2.2 Accessing Methods in Templates
 **[`Back to top ⬆️`](#table-of-contents)**
-
 You can call these methods directly from your Vue templates by using Vue's event handling directives (v-on or @ shorthand).
 > Vue-র ইভেন্ট হ্যান্ডলিং ডিরেক্টিভ  `v-on` বা `@  - শর্টহ্যান্ড` ব্যবহার করে, Vue টেমপ্লেট থেকে `মেথড` সরাসরি কল করা যায়।
 
@@ -329,7 +327,6 @@ Example:
 ```
 ### 🍂 1.1.2.3 Method Scope and this Context
 **[`Back to top ⬆️`](#table-of-contents)**
-
 In Vue methods, `this` refers to the Vue instance itself, giving you access to the instance's data, methods, and lifecycle hooks.
 > Vue মেথডগুলিতে, `this` ব্যবহার করলে এটি নিজেই Vue ইন্সট্যান্সের প্রতিনিধিত্ব করে, যা আপনাকে ইন্সট্যান্সের ডেটা, মেথড, এবং লাইফসাইকেল হুকের অ্যাক্সেস দেয়।
 
@@ -349,7 +346,6 @@ var app = new Vue({
 ```
 ### 🍂 1.1.2.4 Parameters in Methods
 **[`Back to top ⬆️`](#table-of-contents)**
-
 You can pass parameters to Vue methods when they are called from the template. These parameters can be accessed within the method's function body.
 
 > টেমপ্লেট থেকে কল করা হলে,  Vue - মেথডগুলিতে প্যারামিটার পাস করা যায়। এই প্যারামিটারগুলি মেথডের ফাংশন বডির মধ্যে অ্যাক্সেস করা যায়।
@@ -374,8 +370,14 @@ methods: {
 
 ### 🍂 1.1.2.5 Method Lifecycle Hooks
 **[`Back to top ⬆️`](#table-of-contents)**
-
 Vue also provides certain lifecycle hooks where you can define custom methods to be executed at specific stages of a Vue instance's lifecycle, such as created, mounted, updated, and destroyed.
+> Vue.js নির্দিষ্ট কিছু লাইফসাইকেল হুক প্রদান করে,  
+যা দিয়ে - Vue ইনস্ট্যান্সের লাইফসাইকেলের - নির্দিষ্ট স্টেজে কার্যকর করার জন্য -  কাস্টম মেথড ব্যবহার করা যায় , যেমন `created`, `mounted`, `updated`, and `destroyed` ।
+
+- created: কম্পোনেন্ট তৈরি হয়, কিন্তু DOM এ এখনো এ্যাট্যাচ (attach) হয়নি।
+- mounted: কম্পোনেন্টটি DOM এ মাউন্ট করা হয়েছে।
+- updated: কম্পোনেন্টের অপডেট হয়েছে এবং এটি DOM-এ প্রতিফলন করা হয়েছে।
+- destroyed: কম্পোনেন্ট ধ্বংস হওয়ায় ডিসপোজ করা হচ্ছে।
 
 Example:
 
@@ -399,8 +401,8 @@ var app = new Vue({
 
 ## 🍃 1.1.3 Computed Properties:
 **[`Back to top ⬆️`](#table-of-contents)**
-
 The computed property allows you to define properties that are derived from the Vue instance's data. Computed properties are cached and only re-computed when their dependencies change.
+> কম্পিউটেড প্রোপার্টি দিয়ে -  Vue ইন্সট্যান্সের ডেটা থেকে যে প্রোপার্টি উদ্ভূত হয় ডিফাইন করা যায়। কম্পিউটেড প্রোপার্টিগুলি ক্যাশ থাকে এবং শুধুমাত্র তাদের ডিপেন্ডেন্সি পরিবর্তন হলেই পুনরায় কম্পিউটেড হয়।
 
 Example:
 
@@ -417,12 +419,12 @@ var app = new Vue({
 });
 
 ```
-💎 Computed properties in Vue.js are properties that are derived from the Vue instance's data and are calculated based on dependencies. They allow you to perform complex logic and calculations on your data in a way that is reactive—meaning these properties update automatically when their underlying dependencies change.
+💎💎💎 Computed properties in Vue.js are properties that are derived from the Vue instance's data and are calculated based on dependencies. They allow you to perform complex logic and calculations on your data in a way that is reactive—meaning these properties update automatically when their underlying dependencies change.
 
 ### 🍂 1.1.3.1 Declaration of Computed Properties:
 **[`Back to top ⬆️`](#table-of-contents)**
-
 Computed properties are defined within the computed object of the Vue instance.
+> কম্পিউটেড প্রোপার্টিগুলি Vue ইন্সট্যান্সের - কম্পিউটেড অবজেক্টের ভিতরে ডিফাইন করা হয়।
 
 Example:
 
@@ -442,8 +444,8 @@ var app = new Vue({
 
 ### 🍂 1.1.3.2 Usage in Templates:
 **[`Back to top ⬆️`](#table-of-contents)**
-
 You can directly use computed properties in your Vue templates just like regular data properties.
+> কম্পিউটেড প্রোপার্টি টেমপ্লেটে সাধারণ ডেটা প্রোপার্টির মতো ব্যবহার করতে পারা যায়।
 
 Example:
 ```
@@ -459,8 +461,10 @@ Example:
 **[`Back to top ⬆️`](#table-of-contents)**
 
 1. Reactivity: Computed properties are reactive, which means they update automatically whenever their dependent properties change. If radius changes in the above example, circleArea will be re-computed.
+> রিঅ্যাক্টিভিটি: কম্পিউটেড প্রোপার্টিগুলি রিঅ্যাক্টিভ, অর্থাৎ যখনই ডিপেন্ডেন্ট প্রোপার্টিগুলি পরিবর্তন হয়, তখন স্বয়ংক্রিয়ভাবে আপডেট হয়। উপরের উদাহরণে যদি ব্যাসার্ধি পরিবর্তন হয়, তাহলে সার্কেলের ক্ষেত্রফলটি পুনরায় ক্যালকুলেট হবে
 
 2. Caching: Computed properties are cached based on their dependencies. They will only recompute if their dependencies change. This enhances performance as they won't recompute unless necessary.
+> ক্যাশিং: কম্পিউটেড প্রোপার্টিগুলি তাদের ডিপেন্ডেন্সির উপর ভিত্তি করে ক্যাশ হয়। শুধু মাত্র ডিপেন্ডেন্সিগুলি যখন পরিবর্তন হয়, তখন ই পুনরায় ক্যালকুলেট হবে। এটি পারফরম্যান্স উন্নয়নের  জন্য, যেহেতু প্রয়োজন হলেই - মাত্র পুনরায় ক্যালকুলেট হবে।
 
 ### Getter Function:
 The function defined for a computed property serves as a getter function. It's a function that returns the computed value based on the dependent properties.
