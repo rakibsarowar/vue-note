@@ -663,6 +663,60 @@ In this example:
 This demonstrates how beforeMount can be used to set up interactions with third-party libraries or perform DOM-related tasks right before the component is rendered to the screen.
 
 
+## 🍂 1.1.4.4 onMount:
+`mounted` is the next lifecycle hook that gets called after the `beforeMount` hook and right after the Vue instance has been mounted. The app component or any other component becomes functional and is ready to use.
+
+Right after a component is added to the DOM tree, the `mounted()` function is called, and we can add our code to that stage.
+
+This is the first chance we have to do things related to DOM elements that belong to the component, like using the `ref` attribute and `$refs` object, as we do in the second example below here.
+
+Example:
+ the mounted hook is invoked after the component has been mounted to the DOM. This hook is useful for performing tasks that require access to the component's DOM elements or for setting up interactions with third-party libraries after the component is fully rendered.
+
+Let's consider a scenario where you have a component that needs to fetch data from an API and display it on the screen. You can use the mounted hook to trigger the API request after the component has been mounted.
+
+```
+<template>
+  <div>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      post: {}
+    };
+  },
+  mounted() {
+    this.fetchData();
+  },
+  methods: {
+    async fetchData() {
+      try {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
+        this.post = response.data;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+  }
+};
+</script>
+
+
+```
+In this example:
+
+- The `mounted()` hook is used to trigger the `fetchData()` method after the component is mounted to the DOM.
+- The `fetchData()` method makes an asynchronous API request using Axios to fetch data from a placeholder API (`https://jsonplaceholder.typicode.com/posts/1`).
+- Upon successful data retrieval, the `post` data is updated, and it's used to display the post title and body in the component's template.
+
+This approach utilizes the `mounted()` lifecycle hook from the Options API to achieve the same goal of fetching data after the component is mounted, as opposed to the Composition API's `onMounted()` function. Both achieve similar outcomes but in different API styles offered by Vue.js.
 
 ## 🍃 1.2 Components
 **[`Back to top ⬆️`](#table-of-contents)**
