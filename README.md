@@ -137,7 +137,6 @@ var app = new Vue({
 ```
 ## 🍃 1.1.1 Data:
 **[`Back to top ⬆️`](#table-of-contents)**
-
 The data property within the Vue instance holds the application's data. Vue.js ensures that any changes made to this data are reactive, meaning changes automatically update the corresponding parts of the UI.
 
 > Vue ইনস্ট্যান্সের মধ্যে, "ডেটা প্রপার্টি" অ্যাপ্লিকেশনের ডেটা ধারণ করে। Vue.js এই ডেটার যেকোনো পরিবর্তন রিঅ্যাক্টিভ করে, অর্থাৎ পরিবর্তন করলে নিজেই UI এর সংশ্লিষ্ট অংশগুলি আপডেট হয়ে যায়।
@@ -171,7 +170,6 @@ var app = new Vue({
 ```
 ### 🍂 1.1.1.1 Reactive Data
 **[`Back to top ⬆️`](#table-of-contents)**
-
 The data property in a Vue instance defines the initial state of the application's data. Vue's reactivity system ensures that any changes made to this data are automatically reflected in the UI where that data is used.
 > Vue ইন্সট্যান্সে ডেটা প্রপার্টি অ্যাপ্লিকেশনের তথ্যের প্রাথমিক অবস্থা নির্ধারণ করে। Vue-র রিঅ্যাক্টিভিটি সিস্টেম নিশ্চিত করে যে যেকোনো পরিবর্তন যেই ডেটা থাকে, সেই পরিবর্তন স্বয়ংক্রিয়ভাবে ইউআই-তে প্রতিফলিত হবে যেখানে সেই ডেটা ব্যবহার হয়।
 
@@ -190,7 +188,6 @@ var app = new Vue({
 ```
 ### 🍂 1.1.1.2 Reactivity in Vue
 **[`Back to top ⬆️`](#table-of-contents)**
-
 When properties are added or modified within the data object, Vue automatically detects these changes and updates the associated components in the DOM.
 > যখন ডেটা অবজেক্টে প্রোপার্টিগুলি যোগ বা পরিবর্তন হয়, ভিউ তখন স্বয়ংক্রিয়ভাবে এই পরিবর্তনগুলি ধরে নেয় এবং DOM-এ সংযুক্ত করা অ্যাসোসিয়েটেড কম্পোনেন্টগুলি আপডেট করে।
 
@@ -204,7 +201,6 @@ app.user.age = 26;
 ```
 ### 🍂 1.1.1.3 Accessing Data in Templates
 **[`Back to top ⬆️`](#table-of-contents)**
-
 You can access data properties directly within Vue templates using the double curly braces {{ }} syntax.
 > Vue টেমপ্লেটে ডেটা প্রপার্টিগুলি ডবল কার্লি ব্রেস {{ }} সিনট্যাক্স ব্যবহার করে সরাসরি অ্যাক্সেস করা যায়।
 
@@ -221,7 +217,6 @@ Example:
 ```
 ### 🍂 1.1.1.4 Changing Data
 **[`Back to top ⬆️`](#table-of-contents)**
-
 To modify data within Vue instances, you should use Vue's reactivity system by directly changing the properties. This ensures that the changes are reactive and trigger the necessary updates in the UI.
 > Vue ইন্সট্যান্সের মধ্যে ডেটা পরিবর্তন করতে, Vue-র রিঅ্যাক্টিভিটি সিস্টেম ব্যবহার করে - প্রোপার্টিগুলি সরাসরি পরিবর্তন করা উচিত। Vue-র রিঅ্যাক্টিভিটি সিস্টেম নিশ্চিত করে যে, পরিবর্তনগুলি রিঅ্যাক্টিভ হবে এবং UI-তে প্রয়োজনীয় আপডেট করবে।
 
@@ -234,7 +229,6 @@ app.items.push('new item'); // Reactive change
 ```
 ### 🍂 1.1.1.5 Caveats with Reactivity
 **[`Back to top ⬆️`](#table-of-contents)**
-
 It's important to note that Vue cannot detect property addition or deletion after the initial creation of the instance. To add or remove properties dynamically, use ``` Vue.set ``` or ``` this.$set ``` for object properties and splice for array elements.
 
 > মনে রাখা গুরুত্বপূর্ণ যে, ভিউ ইন্সট্যান্স তৈরি করার পরে - প্রপার্টি যোগ বা বাদ দিলে ভিউ সেটা সনাক্ত করতে পারে না। অবজেক্ট প্রপার্টিগুলির জন্য Vue.set বা this.$set এবং অ্যারে এলিমেন্টগুলির জন্য splice ব্যবহার করে প্রোপার্টিগুলি যোগ বা মুছে তৈরি করা যায়।
@@ -275,12 +269,25 @@ var app = new Vue({
 
 ```
 
-💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the instance's scope. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
+💎 In Vue.js, the methods property within a Vue instance contains methods that can be used within the `instance's scope`. These methods enable you to perform various tasks, manipulate data, handle events, and more within your Vue components.
+
+> Vue.js-এ, Vue ইন্সট্যান্সের methods প্রপার্টিতে মেথডগুলি থাকে যা সংযোজনের সীমার মধ্যে ব্যবহার করা যেতে পারে। এই মেথডগুলি আপনাকে বিভিন্ন কাজ করতে, ডেটা পরিবর্তন করতে, ইভেন্ট হ্যান্ডল করতে, এবং ভিউ কম্পোনেন্টগুলোর মধ্যে আরও অনেক কিছু করতে সাহায্য করে।
+
+- `instance's scope` In Vue.js, the "instance's scope" refers to the accessibility or context within which certain methods or properties are available and can be used. Think of it as the specific environment or area where these methods or properties exist and function.
+
+Imagine you're working in an office building. Each floor might represent a different scope. Suppose you're on the fifth floor, where specific resources, meeting rooms, and colleagues are available to you. This floor represents your "scope" the area where you can access and use those resources and interact with those colleagues.
+
+Similarly, in Vue.js, when you define methods within a Vue instance, they're accessible and usable within that particular Vue instance or component. For instance, if you have a Vue component representing a to-do list, the methods (like adding or deleting tasks) defined within that component are part of its scope. They can interact with the component's data and perform actions specific to that to-do list without affecting other parts of the application.
+
+So, the "instance's scope" in Vue.js denotes the specific context or environment where methods or properties are defined and can be utilized, much like the defined space or resources available on a particular floor of an office building.
+
+<!-- End of this section's note -------------------------------------------------------------------------------------->
 
 ### 🍂 1.1.2.1 Declaring Methods
 **[`Back to top ⬆️`](#table-of-contents)**
 
 Methods are defined within the methods object of the Vue instance, using key-value pairs where the key is the method name and the value is the function.
+> Vue ইন্সট্যান্সের methods অবজেক্টে, মেথডগুলি সংজ্ঞায়িত হয়। আর, মেথডটি কী-ভ্যালু পেয়ার হিসেবে তৈরি হয়, যেখানে "কী" তে থাকে মেথডের নাম এবং "ভ্যালু" তে থাকে ফাংশন।
 
 Example:
 
@@ -307,6 +314,7 @@ var app = new Vue({
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can call these methods directly from your Vue templates by using Vue's event handling directives (v-on or @ shorthand).
+> Vue-র ইভেন্ট হ্যান্ডলিং ডিরেক্টিভ  `v-on` বা `@  - শর্টহ্যান্ড` ব্যবহার করে, Vue টেমপ্লেট থেকে `মেথড` সরাসরি কল করা যায়।
 
 Example:
 
@@ -322,7 +330,8 @@ Example:
 ### 🍂 1.1.2.3 Method Scope and this Context
 **[`Back to top ⬆️`](#table-of-contents)**
 
-In Vue methods, this refers to the Vue instance itself, giving you access to the instance's data, methods, and lifecycle hooks.
+In Vue methods, `this` refers to the Vue instance itself, giving you access to the instance's data, methods, and lifecycle hooks.
+> Vue মেথডগুলিতে, `this` ব্যবহার করলে এটি নিজেই Vue ইন্সট্যান্সের প্রতিনিধিত্ব করে, যা আপনাকে ইন্সট্যান্সের ডেটা, মেথড, এবং লাইফসাইকেল হুকের অ্যাক্সেস দেয়।
 
 ```
 var app = new Vue({
@@ -342,6 +351,8 @@ var app = new Vue({
 **[`Back to top ⬆️`](#table-of-contents)**
 
 You can pass parameters to Vue methods when they are called from the template. These parameters can be accessed within the method's function body.
+
+> টেমপ্লেট থেকে কল করা হলে,  Vue - মেথডগুলিতে প্যারামিটার পাস করা যায়। এই প্যারামিটারগুলি মেথডের ফাংশন বডির মধ্যে অ্যাক্সেস করা যায়।
 
 ```
 // html
