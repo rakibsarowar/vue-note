@@ -759,6 +759,14 @@ export default {
 </script>
 
 ```
+## 🍂 1.1.4.6 update:
+The updated lifecycle hook is called after our component has updated its DOM tree.
+
+```
+
+```
+
+## 🍂 1.1.4.6 beforeUnmount:
 
 
 ## 🍃 1.2 Components
