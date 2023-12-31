@@ -513,7 +513,25 @@ var app = new Vue({
 });
 
 ```
+<div align=center> 
+<img src="./assest/life-cycle-hook.png"/>
+</div>
+These are all the lifecycle hooks a component has:
 
+1. beforeCreate
+2. created
+3. beforeMount
+4. mounted
+5. beforeUpdate
+6. updated
+7. beforeUnmount
+8. unmounted
+9. errorCaptured
+10. renderTracked
+11. renderTriggered
+12. activated
+13. deactivated
+14. serverPrefetch
 
 ## 🍂 1.1.4.1 beforeCreate:
 `beforeCreate` is the first lifecycle hook that gets called in Vue JS. beforeCreate is called right after a new Vue instance is initialized. Here, the computed properties, watchers, events, data properties, etc., are not set up.
