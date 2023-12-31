@@ -718,6 +718,49 @@ In this example:
 
 This approach utilizes the `mounted()` lifecycle hook from the Options API to achieve the same goal of fetching data after the component is mounted, as opposed to the Composition API's `onMounted()` function. Both achieve similar outcomes but in different API styles offered by Vue.js.
 
+## 🍂 1.1.4.5 beforeUpdate:
+
+The `beforeUpdate` lifecycle hook is called whenever there is a change in the data of our component, but before the update is rendered to the screen. The `beforeUpdate` lifecycle hook happens right before the updated lifecycle hook.
+
+Something special about the `beforeUpdate` hook is that we can do changes to the application without it triggering a new update, so we avoid the otherwise infinite loop. That is the reason for not doing changes to the application in the updated lifecycle hook, because with that hook, an infinite loop will be created. Just take a look at the third example below from here, in red.
+
+Example:
+You can use beforeUpdate to trigger form validation before any changes are committed. This way, you can check user input before the data is updated in the component.
+
+```
+<template>
+  <form @submit.prevent="submitForm">
+    <input v-model="username" />
+    <button type="submit">Submit</button>
+  </form>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      username: ''
+    };
+  },
+  beforeUpdate() {
+    // Perform form validation before data is updated
+    if (this.username.length < 5) {
+      alert('Username must be at least 5 characters long.');
+      // Prevent updating data when validation fails
+      this.$data.username = ''; // Resetting the data
+    }
+  },
+  methods: {
+    submitForm() {
+      // Actual form submission logic
+    }
+  }
+};
+</script>
+
+```
+
+
 ## 🍃 1.2 Components
 **[`Back to top ⬆️`](#table-of-contents)**
 <br>
