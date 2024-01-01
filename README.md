@@ -71,6 +71,20 @@
     - [🍂 1.1.3.3 Characteristics of Computed Properties](#-1133-characteristics-of-computed-properties)
     - [🍂 1.1.3.4 Computed Properties vs. Methods](#-1134-computed-properties-vs-methods)  
   - [🍃 1.1.4 Lifecycle Hooks](#-114-lifecycle-hooks)
+    - [🍂 1.1.4.1 beforeCreate](#-1141-beforeCreate)
+    - [🍂 1.1.4.2 create](#-1142-create)
+    - [🍂 1.1.4.3 beforeMount](#-1143-beforeMount)
+    - [🍂 1.1.4.4 mount](#-1144-mount)
+    - [🍂 1.1.4.5 beforeUpdate](#-1145-beforeUpdate)
+    - [🍂 1.1.4.6 update](#-1146-update)
+    - [🍂 1.1.4.7 update](#-1147-beforeUnmount)
+    - [🍂 1.1.4.8 unmounted](#-1148-unmounted)
+    - [🍂 1.1.4.9 errorCaptured](#-1149-errorCaptured)
+    - [🍂 1.1.4.10 renderTracked](#-11410-renderTracked)
+    - [🍂 1.1.4.11 renderTriggered](#-11411-renderTriggered)
+    - [🍂 1.1.4.12 activated](#-11412-activated)
+    - [🍂 1.1.4.13 deactivated](#-11413-deactivated)
+    - [🍂 1.1.4.14 serverPrefetch](#-11414-serverPrefetch)
 - [🌿 1.2 Components](#-12-components)
   - [🍃 1.2.1 Component Structure](#-121-component-structure)
   - [🍃 1.2.2 Porps (Custom Attibutes)](#-122-porps-custom-attibutes)
@@ -784,8 +798,39 @@ The updated lifecycle hook is called after our component has updated its DOM tre
 
 ```
 
-## 🍂 1.1.4.6 beforeUnmount:
+## 🍂 1.1.4.7 beforeUnmount:
+The `beforeUnmount` lifecycle hook is called just before a component is removed from the DOM.
 
+As we can see in the example below, we can still access component elements in the DOM in the `beforeUnmount` hook.
+
+Example:
+Cleanup Event Listeners:
+When you've added event listeners during the component's lifecycle, `beforeUnmount` is a good place to remove them to prevent memory leaks.
+
+```
+<script>
+import { ref, onBeforeUnmount } from 'vue';
+
+export default {
+  setup() {
+    const handleClick = () => {
+      // Event handling logic
+    };
+
+    // Adding event listener
+    window.addEventListener('click', handleClick);
+
+    // Cleanup before unmounting
+    onBeforeUnmount(() => {
+      // Removing event listener
+      window.removeEventListener('click', handleClick);
+    });
+  }
+};
+</script>
+
+```
+## 🍂 1.1.4.8 mount:
 
 ## 🍃 1.2 Components
 **[`Back to top ⬆️`](#table-of-contents)**
